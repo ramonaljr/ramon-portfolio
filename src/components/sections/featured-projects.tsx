@@ -62,15 +62,13 @@ export function FeaturedProjects() {
             >
               <div className="group cursor-pointer">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg mb-8">
-                  <ParallaxLayer speed={0.1}>
-                    <div className="absolute inset-[-10%]">
-                      <Image
-                        src={project.image}
-                        alt={project.imageAlt}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-1000"
-                      />
-                    </div>
+                  <ParallaxLayer speed={0.1} className="absolute inset-[-10%]">
+                    <Image
+                      src={project.image}
+                      alt={project.imageAlt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                    />
                   </ParallaxLayer>
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-700" />
                 </div>
