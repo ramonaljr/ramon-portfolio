@@ -1,49 +1,28 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 import { MaterialIcon } from "@/components/shared/material-icon";
 
 const navLinks = [
-  { label: "Services", href: "#services", id: "services" },
-  { label: "Work", href: "#work", id: "work" },
-  { label: "Process", href: "#process", id: "process" },
-  { label: "About", href: "#about", id: "about" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/about" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sectionIds = navLinks.map((l) => l.id);
-    const observers: IntersectionObserver[] = [];
-
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
-        },
-        { rootMargin: "-40% 0px -55% 0px" }
-      );
-      observer.observe(el);
-      observers.push(observer);
-    });
-
-    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   useEffect(() => {
@@ -56,6 +35,11 @@ export function Navbar() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  const isActive = (href: string) => {
+    if (href.startsWith("/#")) return pathname === "/";
+    return pathname === href || pathname.startsWith(href + "/");
+  };
 
   return (
     <>
@@ -71,21 +55,21 @@ export function Navbar() {
         )}
       >
         <div className="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-2xl font-headline italic text-white transition-colors duration-500"
           >
             ramon.
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-12">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className={cn(
                   "relative font-body text-sm font-medium tracking-wide transition-all duration-300",
-                  activeSection === link.id
+                  isActive(link.href)
                     ? "text-primary"
                     : "text-white/50 hover:text-white/80"
                 )}
@@ -94,20 +78,20 @@ export function Navbar() {
                 <span
                   className={cn(
                     "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300",
-                    activeSection === link.id ? "w-full" : "w-0"
+                    isActive(link.href) ? "w-full" : "w-0"
                   )}
                 />
-              </a>
+              </Link>
             ))}
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="hidden md:inline-flex px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 active:scale-[0.97] bg-primary-container text-on-primary-container hover:shadow-[0_0_30px_rgba(250,112,37,0.3)]"
             >
               Let&apos;s Talk
-            </a>
+            </Link>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -143,10 +127,8 @@ export function Navbar() {
             >
               <nav className="space-y-8">
                 {navLinks.map((link, i) => (
-                  <motion.a
+                  <motion.div
                     key={link.label}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
@@ -155,28 +137,36 @@ export function Navbar() {
                       damping: 25,
                       stiffness: 150,
                     }}
-                    className={cn(
-                      "block text-3xl font-headline transition-colors",
-                      activeSection === link.id
-                        ? "text-primary"
-                        : "text-white/80 hover:text-primary"
-                    )}
                   >
-                    {link.label}
-                  </motion.a>
+                    <Link
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={cn(
+                        "block text-3xl font-headline transition-colors",
+                        isActive(link.href)
+                          ? "text-primary"
+                          : "text-white/80 hover:text-primary"
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
                 ))}
               </nav>
 
-              <motion.a
-                href="#contact"
-                onClick={() => setMobileOpen(false)}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, type: "spring", damping: 25 }}
-                className="mt-16 inline-flex justify-center bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg active:scale-[0.97]"
               >
-                Let&apos;s Talk
-              </motion.a>
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="mt-16 inline-flex justify-center bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg active:scale-[0.97]"
+                >
+                  Let&apos;s Talk
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
         )}
