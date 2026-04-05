@@ -7,6 +7,7 @@ import { MidCTA } from "@/components/sections/mid-cta";
 import { UnifiedLayer } from "@/components/sections/unified-layer";
 import { About } from "@/components/sections/about";
 import { Testimonial } from "@/components/sections/testimonial";
+import { Testimonials } from "@/components/sections/testimonials";
 import { FinalCTA } from "@/components/sections/final-cta";
 import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/shared/back-to-top";
@@ -24,6 +25,7 @@ export default function Home() {
         <UnifiedLayer />
         <About />
         <Testimonial />
+        <Testimonials />
         <FinalCTA />
       </main>
       <Footer />
