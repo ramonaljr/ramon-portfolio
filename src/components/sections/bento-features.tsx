@@ -10,7 +10,7 @@ import {
 
 export function BentoFeatures() {
   return (
-    <section id="services" className="py-32 px-8 max-w-screen-2xl mx-auto">
+    <section id="services" className="pt-32 pb-20 px-8 max-w-screen-2xl mx-auto">
       {/* Section Header */}
       <FadeIn className="mb-20">
         <span className="text-primary font-bold uppercase tracking-widest text-xs">

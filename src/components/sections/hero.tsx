@@ -94,7 +94,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ ...cinematicSpring, delay: 0.4 }}
-          className="text-5xl md:text-7xl font-headline font-bold text-white leading-[1.08] tracking-tight mb-6"
+          className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold text-white leading-[1.08] tracking-tight mb-6"
         >
           I architect AI-powered systems that transform enterprises
         </motion.h1>
@@ -104,7 +104,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...cinematicSpring, delay: 0.6 }}
-          className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 font-body leading-relaxed"
+          className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto mb-12 font-body leading-relaxed"
         >
           Full-stack development and autonomous AI workflows — bespoke solutions
           for organizations ready to operate at a new scale.
@@ -119,13 +119,13 @@ export function Hero() {
         >
           <a
             href="#work"
-            className="group bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(250,112,37,0.4)] transition-all duration-500"
+            className="group bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(255,255,255,0.25)] hover:bg-orange-50 active:scale-[0.97] transition-all duration-500"
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:border-white/40 hover:bg-white/10 transition-all duration-500"
+            className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:border-white/40 hover:bg-white/10 active:scale-[0.97] transition-all duration-500"
           >
             Let&apos;s Talk
           </a>
@@ -153,7 +153,7 @@ export function Hero() {
               </div>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-3 gap-4 md:gap-6">
                 <ConsoleMetric
                   label="Neural Load"
                   value={84.2}

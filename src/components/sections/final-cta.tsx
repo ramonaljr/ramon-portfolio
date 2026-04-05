@@ -28,13 +28,13 @@ export function FinalCTA() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:hello@ramon.dev"
-                  className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-orange-50 hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] transition-all duration-500"
+                  className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-orange-50 hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] active:scale-[0.97] transition-all duration-500"
                 >
                   Start a Conversation
                 </a>
                 <a
                   href="#process"
-                  className="bg-transparent text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-500"
+                  className="bg-transparent text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/50 active:scale-[0.97] transition-all duration-500"
                 >
                   View My Process
                 </a>
