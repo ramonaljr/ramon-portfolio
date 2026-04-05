@@ -1,33 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { MaterialIcon } from "@/components/shared/material-icon";
 import { FadeIn, ParallaxLayer } from "@/components/shared/motion";
-
-const projects = [
-  {
-    number: "01",
-    category: "Web3 Infrastructure",
-    title: "Copper Genesis",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCkmcAx7dORfN5pYSVnUsyYq83yeyoyOWFBRz26d2nIGUNY3wnkb1ANXxfXBouDDzk5--gmdzBe8eDbb1O6dFj4LFKfnnvGqSae_AmlT9_DTBlyD2xQDAsY0DM27qW3xTIkGTADQwwuJT33kloGgaJ43oEEags_S9WAwyS-mGaZO-d95npOy4IfYlkuq5ZepNI-Di9hQokLt5avwkDbH6_-JENwAFJwz6KD-Alhh01yG7SORY5KpfUaYiZKRFKZ_Wyz2Nl0mX-2BEY",
-    imageAlt:
-      "Dark moody 3D render of architectural geometric shapes with sharp golden light edges",
-    offset: false,
-  },
-  {
-    number: "02",
-    category: "AI Automation",
-    title: "Circuit Authority",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDwhs0x8G6d4o-LIM-l4c2L9FnYH9xSvSo_hy4WWq0fNOoQVug0PcDe9tUNqcy_DPqt4aPllvp5oRNbLd0iGDZ5tcfphmXFMPCcQHP0Dt4o1HOLaVN57leD6ETMXtnpNnpn5aTSkVkjDg-bSH4vH1R7w3OLbnS7RncW91Zj8_ocWZonF-V_0B0VJD65pWpJ3XsHk6YeKm8GQ5tGRqCZTYkxgJpjxx3zAtI_ocXM65wzxdu02DKkDLSfXzANeyAv4Ji4_VjB459jvH4",
-    imageAlt:
-      "Cinematic 3D render of floating copper circuits glowing with intense orange light",
-    offset: true,
-  },
-];
+import { projects } from "@/data/projects";
 
 export function FeaturedProjects() {
+  // Show first 2 projects on landing page
+  const featured = projects.slice(0, 2);
+
   return (
     <section
       id="work"
@@ -53,16 +35,22 @@ export function FeaturedProjects() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {projects.map((project, i) => (
+          {featured.map((project, i) => (
             <FadeIn
-              key={project.number}
+              key={project.slug}
               delay={i * 0.3}
               distance={80}
-              className={project.offset ? "lg:mt-32" : ""}
+              className={i === 1 ? "lg:mt-32" : ""}
             >
-              <div className="group cursor-pointer">
+              <Link
+                href={`/work/${project.slug}`}
+                className="group block cursor-pointer"
+              >
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg mb-8">
-                  <ParallaxLayer speed={0.1} className="absolute inset-[-10%]">
+                  <ParallaxLayer
+                    speed={0.1}
+                    className="absolute inset-[-10%]"
+                  >
                     <Image
                       src={project.image}
                       alt={project.imageAlt}
@@ -85,10 +73,24 @@ export function FeaturedProjects() {
                     <MaterialIcon name="north_east" />
                   </div>
                 </div>
-              </div>
+              </Link>
             </FadeIn>
           ))}
         </div>
+
+        {/* View All Link */}
+        <FadeIn delay={0.5} className="mt-20 text-center">
+          <Link
+            href="/work"
+            className="inline-flex items-center gap-2 text-white/60 hover:text-white font-bold transition-colors group"
+          >
+            View all projects
+            <MaterialIcon
+              name="arrow_forward"
+              className="group-hover:translate-x-1 transition-transform"
+            />
+          </Link>
+        </FadeIn>
       </div>
     </section>
   );

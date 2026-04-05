@@ -7,27 +7,27 @@ const footerColumns = [
   {
     title: "Navigate",
     links: [
-      { label: "Services", href: "#services" },
-      { label: "Work", href: "#work" },
-      { label: "Process", href: "#process" },
-      { label: "About", href: "#about" },
+      { label: "Services", href: "/services" },
+      { label: "Work", href: "/work" },
+      { label: "About", href: "/about" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "AI Automation", href: "#services" },
-      { label: "Full-Stack Development", href: "#services" },
-      { label: "Scalable Systems", href: "#services" },
-      { label: "Intelligent Workflows", href: "#services" },
+      { label: "AI Automation", href: "/services" },
+      { label: "Full-Stack Development", href: "/services" },
+      { label: "Scalable Systems", href: "/services" },
+      { label: "Intelligent Workflows", href: "/services" },
     ],
   },
   {
     title: "Connect",
     links: [
       { label: "Email", href: "mailto:hello@ramon.dev" },
-      { label: "LinkedIn", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/ramon-vallejera-jr-mba-6976a3115/" },
+      { label: "GitHub", href: "https://github.com/ramonaljr" },
       { label: "Twitter / X", href: "#" },
     ],
   },
