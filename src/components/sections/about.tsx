@@ -22,7 +22,7 @@ export function About() {
               About
             </span>
             <h2 className="text-4xl md:text-5xl font-headline font-bold mt-4 leading-tight text-on-surface">
-              Building at the intersection of design &amp; intelligence
+              A bit about me
             </h2>
 
             {/* Stats */}
@@ -44,23 +44,20 @@ export function About() {
           <FadeIn direction="right" delay={0.2} className="lg:col-span-7">
             <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
               <p>
-                I&apos;m a full-stack developer and AI specialist who believes
-                technology should feel invisible — powerful systems that just
-                work, wrapped in interfaces that feel effortless. My work lives
-                at the intersection of deep technical craft and thoughtful
-                design.
+                I&apos;m a full-stack developer who&apos;s spent the last 8+
+                years building software — mostly in React, Next.js, Node, and
+                Python. Lately I&apos;ve been deep in AI, building agents and
+                automation that actually save people time.
               </p>
               <p>
-                I&apos;ve spent years building for organizations that refuse to
-                accept &ldquo;good enough&rdquo; — from autonomous workflow
-                engines that eliminate entire categories of manual work, to
-                pixel-perfect frontends that make complex systems feel simple.
+                I&apos;ve shipped everything from AI-powered accounting
+                platforms to payroll systems to personal finance apps. I care
+                about clean code, good UX, and not overengineering things.
               </p>
               <p className="text-on-surface font-medium">
-                Every project I take on is a partnership. I care deeply about
-                understanding your domain, your constraints, and your ambitions
-                — because the best technology is built from empathy, not just
-                engineering.
+                I treat every project like a collaboration. I want to understand
+                your problem as well as you do — that&apos;s how the best
+                software gets built.
               </p>
             </div>
           </FadeIn>

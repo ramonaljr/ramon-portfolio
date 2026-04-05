@@ -160,7 +160,7 @@ export function ServicesContent() {
           <section
             key={service.title}
             className={`py-24 overflow-hidden ${
-              isDark ? "bg-on-background text-white" : "bg-surface"
+              isDark ? "bg-surface-container-high text-white" : "bg-surface"
             }`}
           >
             <div className="max-w-screen-2xl mx-auto px-8">

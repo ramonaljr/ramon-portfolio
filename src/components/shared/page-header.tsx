@@ -20,8 +20,9 @@ export function PageHeader({
 }) {
   return (
     <section className="relative pt-40 pb-20 overflow-hidden">
-      <div className="absolute inset-0 hero-gradient opacity-90" />
-      <div className="absolute inset-0 mesh-accent opacity-30" />
+      <div className="absolute inset-0 bg-[#0a0a0a]" />
+      <div className="absolute inset-0 mesh-accent opacity-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="relative z-10 max-w-screen-2xl mx-auto px-8">
         <motion.span

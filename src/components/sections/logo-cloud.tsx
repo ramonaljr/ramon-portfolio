@@ -22,18 +22,18 @@ export function LogoCloud() {
   const items = [...technologies, ...technologies];
 
   return (
-    <section className="py-16 bg-surface-container-low overflow-hidden">
+    <section className="py-16 bg-surface-container-low overflow-hidden border-y border-white/5">
       <FadeIn>
         <p className="text-center text-outline text-xs uppercase tracking-[0.3em] font-bold mb-12">
-          Technologies &amp; Platforms I Work With
+          Tools I use every day
         </p>
       </FadeIn>
 
       {/* Marquee container */}
       <div className="relative">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-surface-container-low to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-surface-container-low to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0f0f0f] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0f0f0f] to-transparent z-10" />
 
         <div className="flex animate-marquee whitespace-nowrap">
           {items.map((name, i) => (
@@ -41,7 +41,7 @@ export function LogoCloud() {
               key={`${name}-${i}`}
               className="mx-8 md:mx-12 flex-shrink-0 flex items-center"
             >
-              <span className="font-headline font-bold text-xl md:text-2xl text-on-surface/40 hover:text-on-surface/80 transition-colors duration-500 cursor-default">
+              <span className="font-headline font-bold text-xl md:text-2xl text-white/20 hover:text-white/50 transition-colors duration-500 cursor-default">
                 {name}
               </span>
             </div>

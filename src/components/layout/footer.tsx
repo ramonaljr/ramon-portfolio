@@ -35,7 +35,7 @@ const footerColumns = [
 
 export function Footer() {
   return (
-    <footer className="w-full rounded-t-[3rem] mt-20 text-orange-50 font-serif text-sm tracking-wide leading-relaxed shadow-2xl hero-gradient relative overflow-hidden">
+    <footer className="w-full rounded-t-[3rem] mt-20 text-white/90 font-serif text-sm tracking-wide leading-relaxed shadow-2xl bg-[#0f0f0f] border-t border-white/5 relative overflow-hidden">
       <div className="absolute inset-0 mesh-accent opacity-30 pointer-events-none" />
 
       {/* Main Footer Grid */}
@@ -46,8 +46,8 @@ export function Footer() {
             ramon.
           </div>
           <p className="max-w-xs mb-8 text-white/80">
-            Full-stack development and AI automation — bespoke solutions for
-            organizations ready to operate at a new scale.
+            Full-stack developer &amp; AI engineer based in the Philippines.
+            Let&apos;s build something great.
           </p>
           <div className="flex gap-4">
             <a

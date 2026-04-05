@@ -1,54 +1,62 @@
 "use client";
 
-import Image from "next/image";
 import { MaterialIcon } from "@/components/shared/material-icon";
-import { FadeIn, ParallaxLayer } from "@/components/shared/motion";
+import { FadeIn, StaggerChildren, StaggerItem } from "@/components/shared/motion";
+
+const valueProps = [
+  {
+    icon: "rocket_launch",
+    title: "I ship fast",
+    description:
+      "I build in short cycles and keep you in the loop. No disappearing for weeks — you'll see progress early and often.",
+  },
+  {
+    icon: "layers",
+    title: "Full-stack means full-stack",
+    description:
+      "Frontend, backend, infrastructure, AI — I handle the whole stack so you don't need 4 different contractors.",
+  },
+  {
+    icon: "tune",
+    title: "I care about the details",
+    description:
+      "Good software isn't just functional. I sweat the small stuff — performance, accessibility, the little interactions that make things feel polished.",
+  },
+];
 
 export function Testimonial() {
   return (
-    <section className="py-32 relative overflow-hidden bg-on-background text-white">
-      {/* Ambient glow with parallax */}
-      <ParallaxLayer
-        speed={0.15}
-        className="absolute inset-0 pointer-events-none"
-      >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-container/10 blur-[120px] rounded-full" />
-      </ParallaxLayer>
-
-      <div className="max-w-4xl mx-auto px-8 relative z-10 text-center">
-        <FadeIn>
-          <MaterialIcon
-            name="format_quote"
-            className="text-6xl text-primary-container mb-8"
-          />
+    <section className="py-32 relative overflow-hidden bg-surface-container">
+      <div className="max-w-screen-2xl mx-auto px-8">
+        <FadeIn className="text-center mb-20">
+          <span className="text-primary font-bold uppercase tracking-widest text-xs">
+            Why me
+          </span>
+          <h2 className="text-4xl md:text-5xl font-headline font-bold mt-4 text-on-surface">
+            Why work with me
+          </h2>
         </FadeIn>
 
-        <FadeIn delay={0.2}>
-          <blockquote className="text-3xl md:text-5xl font-headline font-medium text-white leading-tight mb-12">
-            &ldquo;The integration didn&rsquo;t just speed up our processes; it
-            fundamentally changed how we perceive organizational scale. We are
-            now executing at a volume that was previously impossible.&rdquo;
-          </blockquote>
-        </FadeIn>
-
-        <FadeIn delay={0.5}>
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-white/20 shadow-lg relative">
-              <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLeFCFTwE9KFNHb1gpz4BP4420JooOTEDgvxvXcmKzJ4SCGzYSsEgQnWpNyytXSVW0eZ-PhIdBmv73f7GbjI0yl_ur1AofVDoWRYvSM4JkBVIQMIc6bOvuMvz7wwgiMbclV0A2amX3zy9Xa6YVw8YrBhf-Z_SKc51b815Eu742t8RL79J2JeHYvDjOSGdVlBj-Id4zGuI8cKXx76-2SlOT2NyutWX0X_ubJHHX2g2RNwob59gQsSE86gvfVjFUaR5EMwIHHOxBBaQ"
-                alt="Portrait of Julian Thorne, CTO at Alstom Global"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h5 className="text-xl font-headline font-bold text-white">
-              Julian Thorne
-            </h5>
-            <p className="text-white/50 text-sm uppercase tracking-widest">
-              CTO, Alstom Global
-            </p>
-          </div>
-        </FadeIn>
+        <StaggerChildren
+          stagger={0.15}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          {valueProps.map((prop) => (
+            <StaggerItem key={prop.title}>
+              <div className="p-8 rounded-xl bg-surface border border-outline-variant/20 hover:border-primary-container hover:shadow-[0_0_30px_rgba(250,112,37,0.08)] transition-all duration-500 h-full">
+                <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+                  <MaterialIcon name={prop.icon} />
+                </div>
+                <h3 className="text-xl font-headline font-bold text-on-surface mb-3">
+                  {prop.title}
+                </h3>
+                <p className="text-on-surface-variant leading-relaxed">
+                  {prop.description}
+                </p>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
       </div>
     </section>
   );

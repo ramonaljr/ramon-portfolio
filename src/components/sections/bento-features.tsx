@@ -14,10 +14,10 @@ export function BentoFeatures() {
       {/* Section Header */}
       <FadeIn className="mb-20">
         <span className="text-primary font-bold uppercase tracking-widest text-xs">
-          Services
+          What I do
         </span>
         <h2 className="text-4xl md:text-5xl font-headline font-bold mt-4 text-on-surface">
-          What I Build
+          Things I&apos;m good at
         </h2>
       </FadeIn>
 
@@ -35,11 +35,11 @@ export function BentoFeatures() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-0 p-10">
               <h3 className="text-3xl font-headline text-white font-bold mb-4">
-                Scalable Systems
+                Systems that scale
               </h3>
               <p className="text-white/70 max-w-md font-body leading-relaxed">
-                I design back-end architectures built for global demand — ensuring
-                zero-latency communication between your core data and AI layers.
+                I design backends that hold up under real traffic — clean APIs,
+                solid databases, and infrastructure that doesn&apos;t fall over at 2 AM.
               </p>
             </div>
           </div>
@@ -57,11 +57,11 @@ export function BentoFeatures() {
             <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-60" />
             <div className="absolute bottom-0 p-10">
               <h3 className="text-2xl font-headline text-white font-bold mb-2">
-                AI Automation
+                AI that does the boring stuff
               </h3>
               <p className="text-white/80 text-sm font-body">
-                Custom AI agents tailored to your unique business logic — systems
-                that learn, adapt, and scale autonomously.
+                Custom AI agents that handle the repetitive work your team
+                shouldn&apos;t be doing manually.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ export function BentoFeatures() {
         {/* Feature 3: Full-stack Development — solid card */}
         <StaggerItem className="md:col-span-4">
           <div className="group relative overflow-hidden bg-surface-container-high rounded-xl min-h-[400px] h-full">
-            <div className="p-10 h-full flex flex-col justify-between bg-on-primary-container text-white">
+            <div className="p-10 h-full flex flex-col justify-between bg-surface-container-highest text-white">
               <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center">
                 <MaterialIcon
                   name="developer_mode"
@@ -82,8 +82,8 @@ export function BentoFeatures() {
                   Full-Stack Development
                 </h3>
                 <p className="text-white/60 text-sm">
-                  End-to-end builds — from pixel-perfect interfaces to robust
-                  server-side logic, with cutting-edge frontend craft.
+                  End-to-end builds — from the UI your users see to the servers
+                  running behind it.
                 </p>
               </div>
             </div>
@@ -96,17 +96,17 @@ export function BentoFeatures() {
             <div className="flex flex-col md:flex-row h-full">
               <div className="p-10 md:w-1/2">
                 <h3 className="text-3xl font-headline text-on-primary-container font-bold mb-4">
-                  Intelligent Workflows
+                  Workflow automation
                 </h3>
                 <p className="text-on-primary-container/80 font-body mb-8">
-                  I build reasoning engines that eliminate manual bottlenecks —
-                  reducing human overhead by up to 85%.
+                  I connect the tools you already use and automate the steps in
+                  between — less copy-paste, more getting things done.
                 </p>
                 <a
                   href="#process"
                   className="inline-flex items-center gap-2 font-bold text-on-primary-container group/link"
                 >
-                  See My Process
+                  How I work
                   <MaterialIcon
                     name="arrow_forward"
                     className="group-hover/link:translate-x-1 transition-transform"

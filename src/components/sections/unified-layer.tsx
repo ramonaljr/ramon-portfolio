@@ -11,27 +11,27 @@ const logEntries = [
     color: "text-primary-container",
     borderColor: "border-primary",
     message:
-      "DISCOVERY: Mapping existing infrastructure. Identifying automation opportunities across departments...",
+      "DISCOVERY: Mapping out your existing setup. Finding the spots where automation makes sense...",
   },
   {
     time: "14:02:13",
     color: "text-secondary",
     borderColor: "border-secondary",
     message:
-      "ANALYSIS: 98% probability of workflow optimization. Designing custom AI agent architecture...",
+      "ANALYSIS: High confidence this workflow can be automated. Sketching out the AI agent architecture...",
   },
   {
     time: "14:02:15",
     color: "text-outline",
     borderColor: "border-on-surface",
     message:
-      "BUILD: Deploying autonomous pipeline v2. Integrating with existing CRM and ERP systems.",
+      "BUILD: Deploying the pipeline. Connecting it to your existing tools — CRM, database, the works.",
   },
   {
     time: "14:02:18",
     color: "text-primary-container",
     borderColor: "border-primary-container",
-    message: "RESULT: System live. Efficiency gain +14%. Zero manual intervention required.",
+    message: "RESULT: Live and running. 14% efficiency gain. No manual steps needed.",
     highlight: true,
   },
 ];
@@ -41,17 +41,17 @@ const processSteps = [
     icon: "search",
     iconBg: "bg-primary-fixed",
     iconColor: "text-primary",
-    title: "Discovery & Strategy",
+    title: "Understand first",
     description:
-      "I map your systems, identify high-impact automation opportunities, and define a clear roadmap.",
+      "I ask a lot of questions upfront so I'm building the right thing, not just the first thing that comes to mind.",
   },
   {
     icon: "auto_awesome",
     iconBg: "bg-secondary-fixed",
     iconColor: "text-secondary",
-    title: "Build & Iterate",
+    title: "Build & ship",
     description:
-      "Rapid prototyping with continuous feedback — self-healing pipelines that adapt in real-time.",
+      "Fast iterations with constant check-ins. You'll see working code early and often — no big reveals.",
   },
 ];
 
@@ -108,12 +108,12 @@ export function UnifiedLayer() {
         {/* Left Column */}
         <FadeIn direction="left" distance={40}>
           <h2 className="text-5xl font-headline font-bold leading-tight mb-8">
-            How I work — a unified layer for enterprise-wide automation
+            How I work
           </h2>
           <p className="text-on-surface-variant text-lg leading-relaxed mb-12">
-            I believe in eliminating silos. My approach places a unified AI layer
-            atop your existing tech stack — connective tissue that translates
-            intent into action across every department.
+            Every project starts with understanding your problem — not jumping to
+            code. I dig into what you&apos;re actually trying to solve, then build
+            the simplest thing that works well.
           </p>
 
           <div className="space-y-6">
@@ -144,11 +144,11 @@ export function UnifiedLayer() {
 
             <div
               ref={logRef}
-              className="relative glass-card rounded-lg p-6 shadow-xl border border-white"
+              className="relative glass-card rounded-lg p-6 shadow-xl border border-white/10"
             >
               <div className="flex items-center justify-between mb-6">
                 <h4 className="text-sm font-bold uppercase tracking-widest text-outline">
-                  Real-time Decision Log
+                  How a typical project unfolds
                 </h4>
                 <span className="text-xs font-mono text-secondary">
                   ID: NODE_7742

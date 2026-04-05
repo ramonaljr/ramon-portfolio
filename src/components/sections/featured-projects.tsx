@@ -13,22 +13,22 @@ export function FeaturedProjects() {
   return (
     <section
       id="work"
-      className="py-32 bg-on-background text-white overflow-hidden"
+      className="py-32 bg-surface-container text-white overflow-hidden"
     >
       <div className="max-w-screen-2xl mx-auto px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-20">
           <FadeIn>
             <span className="text-primary-container font-bold uppercase tracking-widest text-xs">
-              Portfolio
+              Recent work
             </span>
             <h2 className="text-5xl md:text-7xl font-headline font-bold mt-4">
-              Selected Work
+              Projects I&apos;ve shipped
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-white/40 max-w-xs font-body italic mt-8 md:mt-0">
-              Projects where design meets deep technical craft.
+              Real products, real users, real code.
             </p>
           </FadeIn>
         </div>

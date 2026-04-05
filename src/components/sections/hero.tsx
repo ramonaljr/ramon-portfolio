@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "motion/react";
+import dynamic from "next/dynamic";
 import { GlassCard } from "@/components/shared/glass-card";
-import { CountUp, ParallaxLayer } from "@/components/shared/motion";
+import { CountUp } from "@/components/shared/motion";
+
+const Galaxy = dynamic(() => import("@/components/Galaxy"), { ssr: false });
 
 const cinematicSpring = {
   type: "spring" as const,
@@ -35,7 +38,7 @@ function ConsoleMetric({
       transition={{ ...cinematicSpring, delay: 1.2 + delay }}
       className="p-4 rounded-xl bg-white/5 border border-white/5"
     >
-      <div className="text-white/60 text-xs mb-2">{label}</div>
+      <div className="text-white/50 text-xs mb-2">{label}</div>
       <div className={`text-2xl font-headline ${color}`}>
         <CountUp target={value} suffix={suffix} decimals={decimals} />
       </div>
@@ -44,7 +47,11 @@ function ConsoleMetric({
           className={`${color.replace("text-", "bg-")} h-full rounded-full`}
           initial={{ width: 0 }}
           animate={{ width }}
-          transition={{ duration: 2, ease: [0.25, 0.1, 0.25, 1], delay: 1.4 + delay }}
+          transition={{
+            duration: 2,
+            ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
+            delay: 1.4 + delay,
+          }}
         />
       </div>
     </motion.div>
@@ -54,27 +61,26 @@ function ConsoleMetric({
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Parallax gradient layers */}
-      <ParallaxLayer speed={0.15} className="absolute inset-0">
-        <div className="absolute inset-0 hero-gradient opacity-90" />
-      </ParallaxLayer>
-      <ParallaxLayer speed={0.25} direction="down" className="absolute inset-0">
-        <div className="absolute inset-0 mesh-accent opacity-40" />
-      </ParallaxLayer>
+      {/* Galaxy WebGL Background */}
+      <div className="absolute inset-0 z-0">
+        <Galaxy
+          hueShift={25}
+          speed={0.3}
+          density={1.2}
+          saturation={0.6}
+          glowIntensity={0.4}
+          starSpeed={0.3}
+          twinkleIntensity={0.4}
+          rotationSpeed={0.02}
+          mouseRepulsion={true}
+          repulsionStrength={1.5}
+          transparent={false}
+        />
+      </div>
 
-      {/* Ambient glow orb */}
-      <motion.div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary-container/20 blur-[160px]"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.2, 0.35, 0.2],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+      {/* Subtle gradient overlay to warm the bottom */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
+      <div className="absolute inset-0 z-[1] mesh-accent opacity-30" />
 
       <div className="relative z-10 max-w-5xl px-6 text-center">
         {/* Status Badge */}
@@ -85,7 +91,7 @@ export function Hero() {
         >
           <GlassCard className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-white/80 text-sm font-medium mb-8 border border-white/10">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Available for Projects
+            Open to new projects
           </GlassCard>
         </motion.div>
 
@@ -96,7 +102,7 @@ export function Hero() {
           transition={{ ...cinematicSpring, delay: 0.4 }}
           className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold text-white leading-[1.08] tracking-tight mb-6"
         >
-          I architect AI-powered systems that transform enterprises
+          I build smart software that actually works
         </motion.h1>
 
         {/* Subtext */}
@@ -104,10 +110,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...cinematicSpring, delay: 0.6 }}
-          className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto mb-12 font-body leading-relaxed"
+          className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 font-body leading-relaxed"
         >
-          Full-stack development and autonomous AI workflows — bespoke solutions
-          for organizations ready to operate at a new scale.
+          Full-stack apps, AI integrations, and automation — I help teams
+          ship products that feel effortless.
         </motion.p>
 
         {/* CTAs */}
@@ -119,15 +125,15 @@ export function Hero() {
         >
           <a
             href="#work"
-            className="group bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(255,255,255,0.25)] hover:bg-orange-50 active:scale-[0.97] transition-all duration-500"
+            className="group bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(250,112,37,0.4)] active:scale-[0.97] transition-all duration-500"
           >
-            View My Work
+            See what I&apos;ve built
           </a>
           <a
             href="#contact"
-            className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:border-white/40 hover:bg-white/10 active:scale-[0.97] transition-all duration-500"
+            className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/15 hover:border-white/30 hover:bg-white/10 active:scale-[0.97] transition-all duration-500"
           >
-            Let&apos;s Talk
+            Get in touch
           </a>
         </motion.div>
 
@@ -138,16 +144,16 @@ export function Hero() {
           transition={{ ...cinematicSpring, delay: 1.0 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="glass-card rounded-lg p-px bg-gradient-to-br from-white/20 to-transparent">
-            <div className="bg-[#1c1c18]/40 backdrop-blur-3xl rounded-[calc(2rem-1px)] p-8 text-left border border-white/5">
+          <div className="rounded-2xl p-px bg-gradient-to-br from-white/10 to-transparent">
+            <div className="bg-[#0a0a0a]/80 backdrop-blur-3xl rounded-[calc(2rem-1px)] p-8 text-left border border-white/5">
               {/* Console Header */}
               <div className="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
                 <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-error" />
-                  <div className="w-3 h-3 rounded-full bg-secondary-container" />
-                  <div className="w-3 h-3 rounded-full bg-primary-container" />
+                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
                 </div>
-                <span className="text-white/40 text-xs font-mono uppercase tracking-widest">
+                <span className="text-white/30 text-xs font-mono uppercase tracking-widest">
                   AI Performance Console
                 </span>
               </div>
@@ -168,7 +174,7 @@ export function Hero() {
                   value={99.9}
                   suffix="%"
                   decimals={1}
-                  color="text-secondary-fixed"
+                  color="text-secondary-container"
                   width="99%"
                   delay={0.15}
                 />
@@ -192,7 +198,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

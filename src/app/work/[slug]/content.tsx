@@ -169,7 +169,7 @@ export function CaseStudyContent({
       </section>
 
       {/* Tech Stack Detail */}
-      <section className="py-24 bg-on-background text-white">
+      <section className="py-24 bg-surface-container-high text-white">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16">
             <span className="text-primary-container font-bold uppercase tracking-widest text-xs">

@@ -12,15 +12,15 @@ export function FinalCTA() {
           <div className="relative z-10">
             <FadeIn>
               <h2 className="text-4xl md:text-6xl font-headline font-bold text-white mb-8">
-                Let&apos;s build something extraordinary
+                Let&apos;s build something together
               </h2>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-white/80 text-lg mb-12 max-w-2xl mx-auto">
-                Have a project in mind? I&apos;d love to hear about it. Whether
-                you need a full platform, an AI integration, or a strategic
-                technology partner — let&apos;s talk.
+                Whether you&apos;re hiring for a team, need a freelance
+                developer, or just want to talk through an idea — I&apos;d love
+                to hear from you.
               </p>
             </FadeIn>
 
@@ -30,13 +30,13 @@ export function FinalCTA() {
                   href="mailto:hello@ramon.dev"
                   className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-orange-50 hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] active:scale-[0.97] transition-all duration-500"
                 >
-                  Start a Conversation
+                  Send me a message
                 </a>
                 <a
-                  href="#process"
+                  href="#work"
                   className="bg-transparent text-white border border-white/30 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/50 active:scale-[0.97] transition-all duration-500"
                 >
-                  View My Process
+                  See my work
                 </a>
               </div>
             </FadeIn>
