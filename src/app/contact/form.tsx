@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 import { motion } from "motion/react";
 import { MaterialIcon } from "@/components/shared/material-icon";
+import { ResumeButton } from "@/components/shared/resume-button";
 import { FadeIn } from "@/components/shared/motion";
 import { sendContactEmail } from "./action";
 
@@ -119,6 +120,13 @@ export function ContactForm() {
                     </a>
                   ))}
                 </div>
+              </div>
+
+              <div className="pt-6 border-t border-outline-variant/30">
+                <p className="text-sm text-on-surface-variant mb-4">
+                  Download my resume
+                </p>
+                <ResumeButton />
               </div>
             </div>
           </FadeIn>

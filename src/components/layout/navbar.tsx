@@ -6,6 +6,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 import { MaterialIcon } from "@/components/shared/material-icon";
+import { ResumeButton } from "@/components/shared/resume-button";
 
 const navLinks = [
   { label: "Services", href: "/services" },
@@ -86,12 +87,15 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
-              href="/contact"
-              className="hidden md:inline-flex px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 active:scale-[0.97] bg-primary-container text-on-primary-container hover:shadow-[0_0_30px_rgba(250,112,37,0.3)]"
-            >
-              Let&apos;s Talk
-            </Link>
+            <div className="hidden md:flex items-center gap-4">
+              <ResumeButton variant="compact" />
+              <Link
+                href="/contact"
+                className="inline-flex px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 active:scale-[0.97] bg-primary-container text-on-primary-container hover:shadow-[0_0_30px_rgba(250,112,37,0.3)]"
+              >
+                Let&apos;s Talk
+              </Link>
+            </div>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}

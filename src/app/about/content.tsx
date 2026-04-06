@@ -1,6 +1,7 @@
 "use client";
 
 import { MaterialIcon } from "@/components/shared/material-icon";
+import { ResumeButton } from "@/components/shared/resume-button";
 import {
   FadeIn,
   StaggerChildren,
@@ -155,6 +156,9 @@ export function AboutContent() {
                 and built cross-platform applications used across web, iOS, and
                 Android.
               </p>
+              <div className="pt-2">
+                <ResumeButton />
+              </div>
             </div>
           </FadeIn>
         </div>
