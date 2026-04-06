@@ -58,9 +58,10 @@ export default async function Image({
             fontWeight: 700,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
+            display: "flex",
           }}
         >
-          {project.number} — {project.category}
+          {`${project.number} — ${project.category}`}
         </div>
         <div
           style={{

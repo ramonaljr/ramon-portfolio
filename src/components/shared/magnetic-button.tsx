@@ -7,12 +7,11 @@ export function MagneticButton({
   children,
   className,
   href,
-  ...props
 }: {
   children: React.ReactNode;
   className?: string;
   href: string;
-} & Omit<React.ComponentPropsWithoutRef<"a">, "ref">) {
+}) {
   const ref = useRef<HTMLAnchorElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -38,7 +37,6 @@ export function MagneticButton({
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", damping: 15, stiffness: 150 }}
       className={className}
-      {...props}
     >
       {children}
     </motion.a>
