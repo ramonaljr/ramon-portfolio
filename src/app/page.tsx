@@ -4,7 +4,7 @@ import { LogoCloud } from "@/components/sections/logo-cloud";
 import { BentoFeatures } from "@/components/sections/bento-features";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { MidCTA } from "@/components/sections/mid-cta";
-import { UnifiedLayer } from "@/components/sections/unified-layer";
+import { ProcessTimeline } from "@/components/sections/process-timeline";
 import { About } from "@/components/sections/about";
 import { Testimonial } from "@/components/sections/testimonial";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -22,7 +22,7 @@ export default function Home() {
         <BentoFeatures />
         <FeaturedProjects />
         <MidCTA />
-        <UnifiedLayer />
+        <ProcessTimeline />
         <About />
         <Testimonial />
         <Testimonials />
