@@ -7,75 +7,7 @@ import {
   StaggerChildren,
   StaggerItem,
 } from "@/components/shared/motion";
-
-const skills = [
-  {
-    category: "Frontend",
-    items: [
-      "React / Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Three.js",
-      "Radix UI",
-    ],
-  },
-  {
-    category: "Backend",
-    items: [
-      "Node.js",
-      "Supabase",
-      "PostgreSQL",
-      "REST APIs",
-      "Edge Functions",
-      "Server Actions",
-    ],
-  },
-  {
-    category: "AI & ML",
-    items: [
-      "OpenAI API",
-      "Google Gemini",
-      "Anthropic Claude",
-      "LangChain",
-      "AI Agents",
-      "Prompt Engineering",
-    ],
-  },
-  {
-    category: "Mobile",
-    items: [
-      "React Native",
-      "Expo",
-      "NativeWind",
-      "iOS / Android",
-      "Biometric Auth",
-      "Push Notifications",
-    ],
-  },
-  {
-    category: "Infrastructure",
-    items: [
-      "Docker",
-      "Turborepo",
-      "Vercel",
-      "Railway",
-      "AWS",
-      "CI/CD Pipelines",
-    ],
-  },
-  {
-    category: "Design",
-    items: [
-      "Figma",
-      "UI/UX Design",
-      "Design Systems",
-      "Prototyping",
-      "Motion Design",
-      "Accessibility",
-    ],
-  },
-];
+import { TechStackGrid } from "@/components/sections/tech-stack-grid";
 
 const timeline = [
   {
@@ -165,43 +97,7 @@ export function AboutContent() {
       </section>
 
       {/* Skills Grid */}
-      <section className="py-24 md:py-32 bg-surface-container">
-        <div className="max-w-screen-2xl mx-auto px-8">
-          <FadeIn className="mb-16">
-            <span className="text-primary font-bold uppercase tracking-widest text-xs">
-              Technical Expertise
-            </span>
-            <h2 className="text-3xl md:text-4xl font-headline font-bold mt-4 text-on-surface">
-              Skills & Technologies
-            </h2>
-          </FadeIn>
-
-          <StaggerChildren
-            stagger={0.1}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {skills.map((group) => (
-              <StaggerItem key={group.category}>
-                <div className="bg-surface rounded-xl p-8 border border-outline-variant/20 h-full">
-                  <h3 className="font-bold text-lg text-on-surface mb-4">
-                    {group.category}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <span
-                        key={item}
-                        className="text-sm px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerChildren>
-        </div>
-      </section>
+      <TechStackGrid />
 
       {/* Timeline */}
       <section className="py-24 md:py-32 bg-surface">
