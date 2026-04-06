@@ -216,6 +216,10 @@ export default function Galaxy({
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
+
+    // ── Reduced motion: render one static frame only ──
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     const renderer = new Renderer({
       alpha: transparent,
       premultipliedAlpha: false
@@ -277,6 +281,19 @@ export default function Galaxy({
     });
 
     const mesh = new Mesh(gl, { geometry, program });
+    ctn.appendChild(gl.canvas);
+
+    // When reduced motion is preferred, render a single static frame and stop.
+    if (prefersReduced) {
+      renderer.render({ scene: mesh });
+
+      return () => {
+        window.removeEventListener('resize', resize);
+        ctn.removeChild(gl.canvas);
+        gl.getExtension('WEBGL_lose_context')?.loseContext();
+      };
+    }
+
     let animateId: number;
 
     function update(t: number) {
@@ -299,7 +316,6 @@ export default function Galaxy({
       renderer.render({ scene: mesh });
     }
     animateId = requestAnimationFrame(update);
-    ctn.appendChild(gl.canvas);
 
     function handleMouseMove(e: MouseEvent) {
       const rect = ctn.getBoundingClientRect();

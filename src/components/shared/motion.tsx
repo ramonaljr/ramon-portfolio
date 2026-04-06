@@ -9,7 +9,29 @@ import {
   useSpring,
   type Transition,
 } from "motion/react";
-import { useRef, useEffect, useState, type ReactNode } from "react";
+import { useRef, useEffect, useState, useSyncExternalStore, type ReactNode } from "react";
+
+// ── Reduced Motion Hook ─────────────────────────────────
+// Custom hook since motion/react v12 doesn't export useReducedMotion.
+const QUERY = "(prefers-reduced-motion: reduce)";
+
+function subscribe(callback: () => void) {
+  const mql = window.matchMedia(QUERY);
+  mql.addEventListener("change", callback);
+  return () => mql.removeEventListener("change", callback);
+}
+
+function getSnapshot() {
+  return window.matchMedia(QUERY).matches;
+}
+
+function getServerSnapshot() {
+  return false; // SSR: assume no preference
+}
+
+export function useReducedMotion(): boolean {
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}
 
 // ── Cinematic Spring Config ──────────────────────────────
 const cinematicSpring: Transition = {
@@ -17,6 +39,11 @@ const cinematicSpring: Transition = {
   damping: 30,
   stiffness: 100,
   mass: 1.2,
+};
+
+// ── Instant transition for reduced motion ────────────────
+const instantTransition: Transition = {
+  duration: 0.01,
 };
 
 // ── FadeIn ───────────────────────────────────────────────
@@ -40,6 +67,8 @@ export function FadeIn({
   once?: boolean;
   amount?: number;
 }) {
+  const reduced = useReducedMotion();
+
   const directionMap = {
     up: { y: distance },
     down: { y: -distance },
@@ -48,16 +77,21 @@ export function FadeIn({
     none: {},
   };
 
-  const initial = { opacity: 0, ...directionMap[direction] };
+  const initial = reduced
+    ? { opacity: 0 }
+    : { opacity: 0, ...directionMap[direction] };
+
   const animate = {
     opacity: 1,
     x: 0,
     y: 0,
   };
 
-  const transition: Transition = duration
-    ? { duration, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number], delay }
-    : { ...cinematicSpring, delay };
+  const transition: Transition = reduced
+    ? instantTransition
+    : duration
+      ? { duration, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number], delay }
+      : { ...cinematicSpring, delay };
 
   return (
     <motion.div
@@ -87,6 +121,25 @@ export function StaggerChildren({
   once?: boolean;
   amount?: number;
 }) {
+  const reduced = useReducedMotion();
+
+  if (reduced) {
+    return (
+      <motion.div
+        initial="visible"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: { staggerChildren: 0 },
+          },
+        }}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
   return (
     <motion.div
       initial="hidden"
@@ -119,12 +172,33 @@ export function StaggerItem({
   direction?: "up" | "down" | "left" | "right";
   distance?: number;
 }) {
+  const reduced = useReducedMotion();
+
   const directionMap = {
     up: { y: distance },
     down: { y: -distance },
     left: { x: distance },
     right: { x: -distance },
   };
+
+  if (reduced) {
+    return (
+      <motion.div
+        variants={{
+          hidden: { opacity: 1, x: 0, y: 0 },
+          visible: {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            transition: instantTransition,
+          },
+        }}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    );
+  }
 
   return (
     <motion.div
@@ -157,6 +231,8 @@ export function ParallaxLayer({
   speed?: number;
   direction?: "up" | "down";
 }) {
+  const reduced = useReducedMotion();
+
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -165,6 +241,14 @@ export function ParallaxLayer({
 
   const factor = direction === "up" ? -1 : 1;
   const y = useTransform(scrollYProgress, [0, 1], [factor * 100 * speed, factor * -100 * speed]);
+
+  if (reduced) {
+    return (
+      <div ref={ref} className={className}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div ref={ref} style={{ y }} className={className}>
@@ -190,6 +274,7 @@ export function CountUp({
   duration?: number;
   className?: string;
 }) {
+  const reduced = useReducedMotion();
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const motionValue = useMotionValue(0);
@@ -198,20 +283,29 @@ export function CountUp({
     stiffness: 80,
     mass: 1,
   });
-  const [display, setDisplay] = useState(`${prefix}0${suffix}`);
+
+  const finalDisplay = `${prefix}${target.toFixed(decimals)}${suffix}`;
+  const [display, setDisplay] = useState(
+    reduced ? finalDisplay : `${prefix}${(0).toFixed(decimals)}${suffix}`
+  );
 
   useEffect(() => {
+    if (reduced) {
+      setDisplay(finalDisplay);
+      return;
+    }
     if (isInView) {
       motionValue.set(target);
     }
-  }, [isInView, motionValue, target]);
+  }, [isInView, motionValue, target, reduced, finalDisplay]);
 
   useEffect(() => {
+    if (reduced) return;
     const unsubscribe = spring.on("change", (value) => {
       setDisplay(`${prefix}${value.toFixed(decimals)}${suffix}`);
     });
     return unsubscribe;
-  }, [spring, prefix, suffix, decimals]);
+  }, [spring, prefix, suffix, decimals, reduced]);
 
   return (
     <span ref={ref} className={className}>
@@ -237,12 +331,14 @@ export function ScaleIn({
   once?: boolean;
   amount?: number;
 }) {
+  const reduced = useReducedMotion();
+
   return (
     <motion.div
-      initial={{ opacity: 0, scale: initialScale }}
+      initial={reduced ? { opacity: 0 } : { opacity: 0, scale: initialScale }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once, amount }}
-      transition={{ ...cinematicSpring, delay }}
+      transition={reduced ? instantTransition : { ...cinematicSpring, delay }}
       className={className}
     >
       {children}
@@ -261,12 +357,22 @@ export function TextReveal({
   className?: string;
   delay?: number;
 }) {
+  const reduced = useReducedMotion();
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      initial={
+        reduced
+          ? { opacity: 0 }
+          : { opacity: 0, y: 30, filter: "blur(10px)" }
+      }
+      whileInView={
+        reduced
+          ? { opacity: 1 }
+          : { opacity: 1, y: 0, filter: "blur(0px)" }
+      }
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ ...cinematicSpring, delay }}
+      transition={reduced ? instantTransition : { ...cinematicSpring, delay }}
       className={className}
     >
       {children}

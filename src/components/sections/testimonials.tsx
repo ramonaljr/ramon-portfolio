@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { FadeIn } from "@/components/shared/motion";
+import { FadeIn, useReducedMotion } from "@/components/shared/motion";
 
 interface Testimonial {
   text: string;
@@ -81,16 +81,22 @@ function TestimonialsColumn({
   items: Testimonial[];
   duration?: number;
 }) {
+  const reduced = useReducedMotion();
+
   return (
     <div className={className}>
       <motion.div
-        animate={{ translateY: "-50%" }}
-        transition={{
-          duration,
-          repeat: Infinity,
-          ease: "linear",
-          repeatType: "loop",
-        }}
+        animate={reduced ? {} : { translateY: "-50%" }}
+        transition={
+          reduced
+            ? {}
+            : {
+                duration,
+                repeat: Infinity,
+                ease: "linear",
+                repeatType: "loop",
+              }
+        }
         className="flex flex-col gap-6 pb-6"
       >
         {[...new Array(2)].map((_, index) => (
