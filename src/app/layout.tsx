@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ViewTransition } from "react";
 import { Newsreader, Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -103,7 +104,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ViewTransition>{children}</ViewTransition>
+      </body>
     </html>
   );
 }
