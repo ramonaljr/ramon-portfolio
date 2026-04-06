@@ -1,6 +1,6 @@
 "use client";
 
-import { FadeIn, ScaleIn } from "@/components/shared/motion";
+import { FadeIn, ScaleIn, TextReveal } from "@/components/shared/motion";
 
 export function FinalCTA() {
   return (
@@ -10,11 +10,11 @@ export function FinalCTA() {
           <div className="absolute inset-0 hero-gradient opacity-60" />
 
           <div className="relative z-10">
-            <FadeIn>
+            <TextReveal>
               <h2 className="text-4xl md:text-6xl font-headline font-bold text-white mb-8">
                 Let&apos;s build something together
               </h2>
-            </FadeIn>
+            </TextReveal>
 
             <FadeIn delay={0.2}>
               <p className="text-white/80 text-lg mb-12 max-w-2xl mx-auto">

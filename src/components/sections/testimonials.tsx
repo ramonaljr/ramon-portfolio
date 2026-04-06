@@ -150,17 +150,21 @@ export function Testimonials() {
       </div>
 
       <div className="flex justify-center gap-6 max-h-[600px] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]">
-        <TestimonialsColumn items={firstColumn} duration={15} />
-        <TestimonialsColumn
-          items={secondColumn}
-          duration={19}
-          className="hidden md:block"
-        />
-        <TestimonialsColumn
-          items={thirdColumn}
-          duration={17}
-          className="hidden lg:block"
-        />
+        <FadeIn delay={0}>
+          <TestimonialsColumn items={firstColumn} duration={15} />
+        </FadeIn>
+        <FadeIn delay={0.15} className="hidden md:block">
+          <TestimonialsColumn
+            items={secondColumn}
+            duration={19}
+          />
+        </FadeIn>
+        <FadeIn delay={0.3} className="hidden lg:block">
+          <TestimonialsColumn
+            items={thirdColumn}
+            duration={17}
+          />
+        </FadeIn>
       </div>
     </section>
   );

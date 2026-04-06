@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Link from "next/link";
+import { ScaleIn } from "@/components/shared/motion";
 
 const IMG_PADDING = 12;
 
@@ -66,39 +67,41 @@ function OverlayCopy() {
 export function MidCTA() {
   return (
     <section className="bg-surface">
-      <div
-        style={{
-          paddingLeft: IMG_PADDING,
-          paddingRight: IMG_PADDING,
-        }}
-      >
-        <div className="relative h-[150vh]">
-          <StickyImage imgUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" />
-          <OverlayCopy />
-        </div>
-        <div className="mx-auto max-w-screen-xl px-4 pb-24 pt-12">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-12 items-center">
-            <div className="col-span-1 md:col-span-7">
-              <h3 className="text-2xl md:text-3xl font-headline font-bold text-on-surface mb-4">
-                Got something you want to build?
-              </h3>
-              <p className="text-lg text-on-surface-variant leading-relaxed">
-                I&apos;m taking on new projects — whether it&apos;s a full
-                product build, an AI feature, or just figuring out the right
-                architecture. Let&apos;s talk about what you need.
-              </p>
-            </div>
-            <div className="col-span-1 md:col-span-5 flex md:justify-end">
-              <Link
-                href="/contact"
-                className="inline-flex bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(250,112,37,0.3)] active:scale-[0.97] transition-all duration-500"
-              >
-                Let&apos;s chat
-              </Link>
+      <ScaleIn initialScale={0.95}>
+        <div
+          style={{
+            paddingLeft: IMG_PADDING,
+            paddingRight: IMG_PADDING,
+          }}
+        >
+          <div className="relative h-[150vh]">
+            <StickyImage imgUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" />
+            <OverlayCopy />
+          </div>
+          <div className="mx-auto max-w-screen-xl px-4 pb-24 pt-12">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-12 items-center">
+              <div className="col-span-1 md:col-span-7">
+                <h3 className="text-2xl md:text-3xl font-headline font-bold text-on-surface mb-4">
+                  Got something you want to build?
+                </h3>
+                <p className="text-lg text-on-surface-variant leading-relaxed">
+                  I&apos;m taking on new projects — whether it&apos;s a full
+                  product build, an AI feature, or just figuring out the right
+                  architecture. Let&apos;s talk about what you need.
+                </p>
+              </div>
+              <div className="col-span-1 md:col-span-5 flex md:justify-end">
+                <Link
+                  href="/contact"
+                  className="inline-flex bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(250,112,37,0.3)] active:scale-[0.97] transition-all duration-500"
+                >
+                  Let&apos;s chat
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </ScaleIn>
     </section>
   );
 }
