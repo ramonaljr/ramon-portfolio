@@ -1,6 +1,6 @@
 "use client";
 
-import { FadeIn } from "@/components/shared/motion";
+import { FadeIn, ParallaxLayer } from "@/components/shared/motion";
 
 const highlights = [
   { label: "Years Building", value: "8+" },
@@ -12,8 +12,12 @@ export function About() {
   return (
     <section
       id="about"
-      className="py-24 md:py-32 bg-surface-container overflow-hidden"
+      className="relative py-24 md:py-32 bg-surface-container overflow-hidden"
     >
+      <ParallaxLayer speed={0.15} direction="up">
+        <div className="absolute inset-0 mesh-accent opacity-20 pointer-events-none" />
+      </ParallaxLayer>
+
       <div className="max-w-screen-2xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left — Headline accent */}

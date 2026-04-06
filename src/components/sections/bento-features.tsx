@@ -4,13 +4,18 @@ import Image from "next/image";
 import { MaterialIcon } from "@/components/shared/material-icon";
 import {
   FadeIn,
+  ParallaxLayer,
   StaggerChildren,
   StaggerItem,
 } from "@/components/shared/motion";
 
 export function BentoFeatures() {
   return (
-    <section id="services" className="py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
+    <section id="services" className="relative overflow-hidden py-24 md:py-32 px-8 max-w-screen-2xl mx-auto">
+      <ParallaxLayer speed={0.1} direction="up">
+        <div className="absolute inset-0 mesh-accent opacity-30 pointer-events-none" />
+      </ParallaxLayer>
+
       {/* Section Header */}
       <FadeIn className="mb-20">
         <span className="text-primary font-bold uppercase tracking-widest text-xs">

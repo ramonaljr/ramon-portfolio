@@ -1,13 +1,15 @@
 "use client";
 
-import { FadeIn, ScaleIn, TextReveal } from "@/components/shared/motion";
+import { FadeIn, ParallaxLayer, ScaleIn, TextReveal } from "@/components/shared/motion";
 
 export function FinalCTA() {
   return (
     <section id="contact" className="p-8">
       <ScaleIn initialScale={0.95}>
         <div className="max-w-screen-2xl mx-auto relative rounded-xl overflow-hidden bg-primary p-20 text-center">
-          <div className="absolute inset-0 hero-gradient opacity-60" />
+          <ParallaxLayer speed={0.2}>
+            <div className="absolute inset-0 hero-gradient opacity-60 pointer-events-none" />
+          </ParallaxLayer>
 
           <div className="relative z-10">
             <TextReveal>
