@@ -38,7 +38,7 @@ export function PersonalIntro() {
           <div className="lg:col-span-8">
             <FadeIn direction="right" delay={0.15}>
               <span className="text-primary font-bold uppercase tracking-widest text-xs">
-                Hey, I&apos;m Ramon
+                Hey, I&apos;m Ramon A. Vallejera Jr.
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-headline font-bold mt-4 leading-tight text-on-surface">
                 I turn complex problems into
