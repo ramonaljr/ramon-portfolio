@@ -22,7 +22,7 @@ export function LogoCloud() {
   const items = [...technologies, ...technologies];
 
   return (
-    <section className="py-16 bg-surface-container-low overflow-hidden border-y border-white/5">
+    <section className="py-24 md:py-32 bg-surface-container-low overflow-hidden border-y border-white/5">
       <FadeIn direction="up">
         <p className="text-center text-outline text-xs uppercase tracking-[0.3em] font-bold mb-12">
           Tools I use every day

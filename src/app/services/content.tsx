@@ -159,7 +159,7 @@ export function ServicesContent() {
         return (
           <section
             key={service.title}
-            className={`py-24 overflow-hidden ${
+            className={`py-24 md:py-32 overflow-hidden ${
               isDark ? "bg-surface-container-high text-white" : "bg-surface"
             }`}
           >
@@ -312,7 +312,7 @@ export function ServicesContent() {
       })}
 
       {/* Process */}
-      <section className="py-24 bg-surface-container">
+      <section className="py-24 md:py-32 bg-surface-container">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16 text-center">
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -363,7 +363,7 @@ export function ServicesContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 md:py-32 bg-surface">
         <ScaleIn initialScale={0.95}>
           <div className="max-w-screen-2xl mx-auto px-8">
             <div className="relative rounded-2xl overflow-hidden bg-primary p-16 md:p-20 text-center">

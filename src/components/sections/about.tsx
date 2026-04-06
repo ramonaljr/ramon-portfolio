@@ -12,7 +12,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="py-32 bg-surface-container overflow-hidden"
+      className="py-24 md:py-32 bg-surface-container overflow-hidden"
     >
       <div className="max-w-screen-2xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">

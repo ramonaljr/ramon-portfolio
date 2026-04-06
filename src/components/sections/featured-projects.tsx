@@ -33,7 +33,7 @@ export function FeaturedProjects() {
   }, [carouselApi]);
 
   return (
-    <section id="work" className="py-32 bg-surface-container overflow-hidden">
+    <section id="work" className="py-24 md:py-32 bg-surface-container overflow-hidden">
       <div className="container max-w-screen-2xl mx-auto px-8">
         <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16">
           <FadeIn>

@@ -103,7 +103,7 @@ export function UnifiedLayer() {
   const isLogInView = useInView(logRef, { once: true, amount: 0.3 });
 
   return (
-    <section id="process" className="py-32 bg-surface overflow-hidden">
+    <section id="process" className="py-24 md:py-32 bg-surface overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Column */}
         <FadeIn direction="left" distance={40}>

@@ -128,7 +128,7 @@ export function AboutContent() {
   return (
     <>
       {/* Story */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
           <FadeIn direction="left">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface leading-tight">
@@ -161,7 +161,7 @@ export function AboutContent() {
       </section>
 
       {/* Skills Grid */}
-      <section className="py-24 bg-surface-container">
+      <section className="py-24 md:py-32 bg-surface-container">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16">
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -200,7 +200,7 @@ export function AboutContent() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-3xl mx-auto px-8">
           <FadeIn className="mb-16 text-center">
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -239,7 +239,7 @@ export function AboutContent() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-surface-container-high text-white">
+      <section className="py-24 md:py-32 bg-surface-container-high text-white">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16 text-center">
             <span className="text-primary-container font-bold uppercase tracking-widest text-xs">
@@ -277,7 +277,7 @@ export function AboutContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-surface text-center">
+      <section className="py-24 md:py-32 bg-surface text-center">
         <FadeIn>
           <div className="max-w-2xl mx-auto px-8">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-on-surface mb-6">

@@ -26,7 +26,7 @@ const valueProps = [
 
 export function Testimonial() {
   return (
-    <section className="py-32 relative overflow-hidden bg-surface-container">
+    <section className="py-24 md:py-32 relative overflow-hidden bg-surface-container">
       <div className="max-w-screen-2xl mx-auto px-8">
         <FadeIn className="text-center mb-20">
           <span className="text-primary font-bold uppercase tracking-widest text-xs">

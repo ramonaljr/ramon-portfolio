@@ -106,7 +106,7 @@ export function CaseStudyContent({
       </section>
 
       {/* Overview */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-3xl mx-auto px-8">
           <FadeIn>
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -129,7 +129,7 @@ export function CaseStudyContent({
       </section>
 
       {/* Key Features */}
-      <section className="py-24 bg-surface-container">
+      <section className="py-24 md:py-32 bg-surface-container">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16">
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -169,7 +169,7 @@ export function CaseStudyContent({
       </section>
 
       {/* Tech Stack Detail */}
-      <section className="py-24 bg-surface-container-high text-white">
+      <section className="py-24 md:py-32 bg-surface-container-high text-white">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16">
             <span className="text-primary-container font-bold uppercase tracking-widest text-xs">
@@ -229,7 +229,7 @@ export function CaseStudyContent({
       </section>
 
       {/* Next Project */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-screen-2xl mx-auto px-8 text-center">
           <FadeIn>
             <span className="text-on-surface-variant text-sm uppercase tracking-widest">

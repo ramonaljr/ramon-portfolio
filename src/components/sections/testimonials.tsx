@@ -137,7 +137,7 @@ function TestimonialsColumn({
 
 export function Testimonials() {
   return (
-    <section className="py-32 bg-surface overflow-hidden">
+    <section className="py-24 md:py-32 bg-surface overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-8">
         <FadeIn className="text-center mb-16">
           <span className="text-primary font-bold uppercase tracking-widest text-xs">
