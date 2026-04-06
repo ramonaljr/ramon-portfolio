@@ -128,8 +128,114 @@ export function CaseStudyContent({
         </div>
       </section>
 
-      {/* Key Features */}
+      {/* Challenge / Solution / Result */}
       <section className="py-24 md:py-32 bg-surface-container">
+        <div className="max-w-screen-2xl mx-auto px-8">
+          <FadeIn className="mb-16">
+            <span className="text-primary font-bold uppercase tracking-widest text-xs">
+              Case Study
+            </span>
+            <h2 className="text-3xl md:text-4xl font-headline font-bold mt-4 text-on-surface">
+              The Story
+            </h2>
+          </FadeIn>
+
+          <StaggerChildren
+            stagger={0.15}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
+            {[
+              {
+                icon: "report_problem",
+                label: "Challenge",
+                text: project.challenge,
+              },
+              {
+                icon: "lightbulb",
+                label: "Solution",
+                text: project.solution,
+              },
+              {
+                icon: "emoji_events",
+                label: "Result",
+                text: project.result,
+              },
+            ].map((item) => (
+              <StaggerItem key={item.label}>
+                <div className="bg-surface rounded-xl p-8 border border-outline-variant/20 h-full">
+                  <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-5">
+                    <MaterialIcon
+                      name={item.icon}
+                      className="text-primary text-xl"
+                    />
+                  </div>
+                  <h3 className="font-bold text-lg text-on-surface mb-3">
+                    {item.label}
+                  </h3>
+                  <p className="text-on-surface-variant leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
+        </div>
+      </section>
+
+      {/* Key Metrics */}
+      <section className="py-24 md:py-32 bg-surface">
+        <div className="max-w-screen-2xl mx-auto px-8">
+          <FadeIn className="mb-16">
+            <span className="text-primary font-bold uppercase tracking-widest text-xs">
+              Impact
+            </span>
+            <h2 className="text-3xl md:text-4xl font-headline font-bold mt-4 text-on-surface">
+              Key Metrics
+            </h2>
+          </FadeIn>
+
+          <StaggerChildren
+            stagger={0.12}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
+            {project.metrics.map((metric) => (
+              <StaggerItem key={metric.label}>
+                <div className="bg-surface-container rounded-xl p-8 border border-outline-variant/20 text-center h-full">
+                  <p className="text-5xl md:text-6xl font-headline font-bold text-primary mb-3">
+                    {metric.value}
+                  </p>
+                  <h3 className="font-bold text-lg text-on-surface mb-2">
+                    {metric.label}
+                  </h3>
+                  <p className="text-on-surface-variant leading-relaxed">
+                    {metric.description}
+                  </p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
+        </div>
+      </section>
+
+      {/* What I Learned */}
+      <section className="py-24 md:py-32 bg-surface-container">
+        <div className="max-w-3xl mx-auto px-8">
+          <FadeIn>
+            <span className="text-primary font-bold uppercase tracking-widest text-xs">
+              Reflection
+            </span>
+            <h2 className="text-3xl md:text-4xl font-headline font-bold mt-4 text-on-surface mb-10">
+              What I Learned
+            </h2>
+            <p className="text-on-surface-variant text-lg leading-relaxed">
+              {project.learnings}
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Key Features */}
+      <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-screen-2xl mx-auto px-8">
           <FadeIn className="mb-16">
             <span className="text-primary font-bold uppercase tracking-widest text-xs">
@@ -146,7 +252,7 @@ export function CaseStudyContent({
           >
             {project.features.map((feature) => (
               <StaggerItem key={feature.title}>
-                <div className="bg-surface rounded-xl p-8 border border-outline-variant/20 h-full flex gap-5">
+                <div className="bg-surface-container rounded-xl p-8 border border-outline-variant/20 h-full flex gap-5">
                   <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
                     <MaterialIcon
                       name={feature.icon}

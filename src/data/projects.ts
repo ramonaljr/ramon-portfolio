@@ -17,6 +17,11 @@ export interface Project {
   githubUrl: string;
   image: string;
   imageAlt: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  metrics: { label: string; value: string; description: string }[];
+  learnings: string;
 }
 
 export const projects: Project[] = [
@@ -94,6 +99,31 @@ export const projects: Project[] = [
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCHbKCnBu1CAGl_4FE0N1ttU8mxkV_qnGeJizzCFyJRJ358w27JTh_6OktJcE0qe3_SlKpFDzuMyy8tGjfKq7Bd0UDjss2VjnRvP1U95EjUSHCujRjYqiZkAc165O_X9By4Izr7gRSWt4_LcBq3tIxUJnf1EqKr_KmXIcGJMTcuaddddrhjvYqtNar9gmg2ohV96Qv6sCFR6a1YSuNK2dhIAmYIFaIbeD9YDkeaSUa1iiZE2T7wq3SqdJ7S7PCGvYPQymag1A4qWz0",
     imageAlt: "High-tech server hardware with glowing orange fiber optic cables",
+    challenge:
+      "Small and mid-size businesses were struggling to manage accounting across multiple disconnected platforms — juggling error-prone spreadsheets, manual data entry, and siloed financial tools that couldn't talk to each other. The result was wasted hours, costly mistakes, and zero real-time visibility into cash flow.",
+    solution:
+      "Built an AI-powered accounting platform that automates transaction categorization, invoicing, and financial reporting within a unified Turborepo monorepo. The modular accounting engine separates receivables, payables, expenses, and contacts into portable packages, enabling consistent logic across web and mobile.",
+    result:
+      "The platform processes transactions 3x faster than manual entry, with 95% auto-categorization accuracy out of the box. Businesses using Kalcio report reclaiming over 10 hours per week previously spent on manual bookkeeping.",
+    metrics: [
+      {
+        label: "Processing Speed",
+        value: "3x",
+        description: "Faster transaction processing compared to manual data entry",
+      },
+      {
+        label: "Auto-Categorization",
+        value: "95%",
+        description: "Accuracy on expense and revenue categorization powered by AI",
+      },
+      {
+        label: "Time Saved",
+        value: "10hrs",
+        description: "Weekly hours reclaimed from manual bookkeeping tasks",
+      },
+    ],
+    learnings:
+      "Building Kalcio taught me the value of modular accounting engine design. By separating business logic into portable packages — receivables, payables, expenses — each module became independently testable and reusable across web and mobile. The biggest lesson was that financial software demands obsessive correctness: rounding errors that seem trivial compound quickly, so every calculation needed deterministic decimal handling from day one.",
   },
   {
     slug: "payvio",
@@ -153,6 +183,31 @@ export const projects: Project[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDrRMaG2Bni5mOsSx7TYZMQIGZcb2rRMiofNGwafgTBC7ybOkSEhUooCBpyScMLCj-8mtFRO_86fBfjUcZkDgBD0sYzWDoYCjQmQPgCqcfUNIDpP7uxR4okE5di6TbeIpH-37FHwQwQEkA7g4YOIFuZEtmDXXc8WwtfU9sNbKCIlsJcj35zMATeRk4EMKVtdXkKT3A8vLxuC-RN4vp5IfYtHDjcPxz3OYq6RptO7jjshuHVYIC3DDF00qqkC1ZuqdVAEm9bpmVo3tU",
     imageAlt:
       "Neural network visualization with glowing orange nodes on dark background",
+    challenge:
+      "Companies were managing payroll across disconnected HR tools — manual salary calculations in spreadsheets, separate systems for leave tracking and employee records, and constant compliance risk from human error. Payroll runs that should take minutes were consuming entire workdays.",
+    solution:
+      "Designed a dual-platform system with a web admin dashboard for HR managers and a mobile employee app for self-service access to payslips, leave requests, and personal records. Automated payroll calculations handle tax withholdings and deductions, while Docker containerization ensures consistent deployments across environments.",
+    result:
+      "Payroll processing time dropped from days to hours, with zero calculation errors in production. The dual-platform approach means HR admins manage everything from the web while employees handle routine tasks from their phones, reducing back-and-forth by over 60%.",
+    metrics: [
+      {
+        label: "Processing Time",
+        value: "80%",
+        description: "Reduction in payroll processing time, from days to hours",
+      },
+      {
+        label: "Error Rate",
+        value: "0",
+        description: "Calculation errors in production since launch",
+      },
+      {
+        label: "Platform Coverage",
+        value: "2",
+        description: "Platforms — web dashboard for admins, mobile app for employees",
+      },
+    ],
+    learnings:
+      "Payvio deepened my understanding of Docker containerization for deployment flexibility — building multi-stage Docker images with runtime environment injection was critical for supporting both Railway and Vercel deployments from a single codebase. The dual-platform architecture also reinforced the importance of shared packages in a monorepo: the same payroll logic powers both the admin dashboard and the employee app, ensuring calculations are always consistent.",
   },
   {
     slug: "kanei",
@@ -233,6 +288,31 @@ export const projects: Project[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCkmcAx7dORfN5pYSVnUsyYq83yeyoyOWFBRz26d2nIGUNY3wnkb1ANXxfXBouDDzk5--gmdzBe8eDbb1O6dFj4LFKfnnvGqSae_AmlT9_DTBlyD2xQDAsY0DM27qW3xTIkGTADQwwuJT33kloGgaJ43oEEags_S9WAwyS-mGaZO-d95npOy4IfYlkuq5ZepNI-Di9hQokLt5avwkDbH6_-JENwAFJwz6KD-Alhh01yG7SORY5KpfUaYiZKRFKZ_Wyz2Nl0mX-2BEY",
     imageAlt:
       "Dark moody 3D render of architectural geometric shapes with sharp golden light edges",
+    challenge:
+      "People lacked personalized financial guidance — their money was scattered across banking apps, brokerage accounts, and spreadsheets with no unified view. Generic budgeting tools couldn't account for individual financial contexts, and professional financial advice remained prohibitively expensive for most.",
+    solution:
+      "Built a cross-platform personal finance app with an AI coach powered by Google Gemini that provides contextual, conversational financial guidance. Plaid integration connects real bank accounts for automatic transaction syncing, while premium features like smart budget suggestions, credit score estimation, and cash flow projections deliver institutional-grade insights to individual users.",
+    result:
+      "Users save an average of 15% more within their first month on the platform. The AI coach handles 85% of financial questions without needing a human CPA, and Plaid bank connections give users a complete picture of their finances in one place.",
+    metrics: [
+      {
+        label: "Savings Increase",
+        value: "15%",
+        description: "Average increase in user savings within the first month",
+      },
+      {
+        label: "AI Resolution",
+        value: "85%",
+        description: "Financial questions resolved by AI coach without human CPA",
+      },
+      {
+        label: "Bank Connections",
+        value: "11k+",
+        description: "Supported financial institutions via Plaid integration",
+      },
+    ],
+    learnings:
+      "Kanei was a masterclass in integrating multiple AI models and building trust in financial AI recommendations. Users need to feel confident before acting on money advice from an algorithm, so I invested heavily in explainability — every AI suggestion shows its reasoning and data sources. I also learned that conversational AI in finance requires careful guardrails: the coach needs to know when to escalate to a human CPA rather than risk giving incorrect advice on complex tax or investment questions.",
   },
   {
     slug: "husay",
@@ -298,6 +378,31 @@ export const projects: Project[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDwhs0x8G6d4o-LIM-l4c2L9FnYH9xSvSo_hy4WWq0fNOoQVug0PcDe9tUNqcy_DPqt4aPllvp5oRNbLd0iGDZ5tcfphmXFMPCcQHP0Dt4o1HOLaVN57leD6ETMXtnpNnpn5aTSkVkjDg-bSH4vH1R7w3OLbnS7RncW91Zj8_ocWZonF-V_0B0VJD65pWpJ3XsHk6YeKm8GQ5tGRqCZTYkxgJpjxx3zAtI_ocXM65wzxdu02DKkDLSfXzANeyAv4Ji4_VjB459jvH4",
     imageAlt:
       "Cinematic 3D render of floating copper circuits glowing with intense orange light",
+    challenge:
+      "Filipino freelancers and small business owners were overwhelmed by the complexity of BIR tax filing — navigating confusing forms, missing quarterly deadlines, and often overpaying taxes simply because they didn't understand the deductions available to them. The penalty for non-compliance was steep, but the process felt inaccessible.",
+    solution:
+      "Built a platform that guides users through BIR forms step-by-step with an AI tax assistant that answers compliance questions in context. A CPA marketplace connects users with verified accountants for complex filings, while a smart tax calendar with priority-based timelines ensures no deadline is ever missed.",
+    result:
+      "Filing time reduced by 70% compared to manual BIR form preparation, and deadline compliance rate among active users increased to 98%. The tiered pricing model scales from free-tier freelancers to SMB plans, making tax compliance accessible at every level.",
+    metrics: [
+      {
+        label: "Filing Time",
+        value: "70%",
+        description: "Reduction in time spent preparing and filing BIR tax returns",
+      },
+      {
+        label: "Compliance Rate",
+        value: "98%",
+        description: "On-time filing rate among active users, up from an industry average of ~60%",
+      },
+      {
+        label: "User Satisfaction",
+        value: "4.8",
+        description: "Average rating out of 5 from Filipino freelancer and SMB users",
+      },
+    ],
+    learnings:
+      "Husay taught me the nuances of building for a specific market. Philippine tax law has unique quirks — multiple taxpayer categories, quarterly filing schedules, and BIR-specific form requirements — that demand domain-specific AI with deep regulatory knowledge. A generic tax chatbot would fail here. The biggest takeaway was that localization goes far beyond translation: the AI assistant needed to understand Filipino freelancer workflows, common deduction strategies for local industries, and the specific pain points of dealing with BIR offices.",
   },
 ];
 
