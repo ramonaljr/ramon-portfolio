@@ -62,7 +62,12 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Galaxy WebGL Background */}
-      <div className="absolute inset-0 z-0">
+      <motion.div
+        className="absolute inset-0 z-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.1 }}
+      >
         <Galaxy
           hueShift={25}
           speed={0.3}
@@ -76,7 +81,7 @@ export function Hero() {
           repulsionStrength={1.5}
           transparent={false}
         />
-      </div>
+      </motion.div>
 
       {/* Subtle gradient overlay to warm the bottom */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
@@ -85,7 +90,7 @@ export function Hero() {
       <div className="relative z-10 max-w-5xl px-6 text-center">
         {/* Status Badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 20, filter: "blur(15px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ ...cinematicSpring, delay: 0.2 }}
         >
@@ -97,7 +102,7 @@ export function Hero() {
 
         {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+          initial={{ opacity: 0, y: 40, filter: "blur(15px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ ...cinematicSpring, delay: 0.4 }}
           className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold text-white leading-[1.08] tracking-tight mb-6"
@@ -205,7 +210,17 @@ export function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5"
         >
-          <motion.div className="w-1.5 h-1.5 rounded-full bg-white/40" />
+          <motion.div
+            className="w-1.5 h-1.5 rounded-full bg-white/40"
+            animate={{
+              boxShadow: [
+                "0 0 0px rgba(250,112,37,0)",
+                "0 0 12px rgba(250,112,37,0.4)",
+                "0 0 0px rgba(250,112,37,0)",
+              ],
+            }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          />
         </motion.div>
       </motion.div>
     </section>
