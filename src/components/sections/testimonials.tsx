@@ -8,7 +8,6 @@ interface Testimonial {
   text: string;
   name: string;
   role: string;
-  image: string;
 }
 
 const testimonials: Testimonial[] = [
@@ -16,57 +15,62 @@ const testimonials: Testimonial[] = [
     text: "Ramon delivered our AI-powered dashboard in half the time we expected. His full-stack skills meant we didn't need to hire three separate contractors.",
     name: "Sarah Chen",
     role: "CTO, TechFlow",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Sarah",
   },
   {
     text: "What stood out was how well he understood our business problem before writing a single line of code. The final product was exactly what we needed.",
     name: "Marcus Rivera",
     role: "Founder, Payvio",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Marcus",
   },
   {
     text: "Ramon's attention to detail is incredible. The animations, the micro-interactions — everything feels polished and intentional.",
     name: "Aisha Patel",
     role: "Design Lead, Kalcio",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Aisha",
   },
   {
     text: "We needed someone who could handle both the React frontend and the Python AI backend. Ramon was the perfect fit — shipped a production-ready MVP in 6 weeks.",
     name: "James Park",
     role: "CEO, NeuralOps",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=James",
   },
   {
     text: "Great communicator. He kept us in the loop every step of the way and was always open to feedback. A rare find in freelance development.",
     name: "Elena Voss",
     role: "Product Manager, Husay",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Elena",
   },
   {
     text: "Ramon turned our clunky internal tool into a sleek, modern app. Our team's productivity jumped 30% in the first month after launch.",
     name: "David Kim",
     role: "VP Engineering, Kanei",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=David",
   },
   {
     text: "He doesn't just build what you ask for — he'll push back when something doesn't make sense and suggest a better approach. That kind of partnership is invaluable.",
     name: "Priya Sharma",
     role: "Founder, DataLens",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Priya",
   },
   {
     text: "The automation Ramon built saves us 20+ hours a week. What used to be a manual nightmare now runs itself. Worth every penny.",
     name: "Tom Nguyen",
     role: "Operations, ScaleBase",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Tom",
   },
   {
     text: "I've worked with a lot of developers. Ramon is one of the few who genuinely cares about the user experience, not just making things 'work'.",
     name: "Lisa Chang",
     role: "Head of Product, Flowstate",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Lisa",
   },
 ];
+
+function Avatar({ name }: { name: string }) {
+  const initials = name.split(" ").map(n => n[0]).join("");
+  const colors = [
+    "bg-primary-container", "bg-secondary-container", "bg-tertiary-container",
+    "bg-primary-fixed", "bg-secondary-fixed",
+  ];
+  const colorIndex = name.length % colors.length;
+  return (
+    <div className={`w-10 h-10 rounded-full ${colors[colorIndex]} flex items-center justify-center text-sm font-bold text-white`}>
+      {initials}
+    </div>
+  );
+}
 
 const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
@@ -110,13 +114,7 @@ function TestimonialsColumn({
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
                 <div className="flex items-center gap-3 mt-6">
-                  <img
-                    width={40}
-                    height={40}
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="h-10 w-10 rounded-full bg-surface-container-high"
-                  />
+                  <Avatar name={testimonial.name} />
                   <div className="flex flex-col">
                     <div className="font-medium text-on-surface tracking-tight leading-5 text-sm">
                       {testimonial.name}
