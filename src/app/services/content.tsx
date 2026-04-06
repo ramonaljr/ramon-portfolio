@@ -8,6 +8,7 @@ import {
   StaggerItem,
   ScaleIn,
 } from "@/components/shared/motion";
+import { FAQ } from "@/components/sections/faq";
 
 const stats = [
   { value: "40+", label: "Projects Delivered" },
@@ -361,6 +362,8 @@ export function ServicesContent() {
           </div>
         </div>
       </section>
+
+      <FAQ />
 
       {/* CTA */}
       <section className="py-24 md:py-32 bg-surface">
