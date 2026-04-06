@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { GlassCard } from "@/components/shared/glass-card";
 import { CountUp } from "@/components/shared/motion";
+import { MagneticButton } from "@/components/shared/magnetic-button";
 
 const Galaxy = dynamic(() => import("@/components/Galaxy"), { ssr: false });
 
@@ -128,18 +129,18 @@ export function Hero() {
           transition={{ ...cinematicSpring, delay: 0.8 }}
           className="flex flex-col md:flex-row gap-4 justify-center items-center mb-16"
         >
-          <a
+          <MagneticButton
             href="#work"
             className="group bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(250,112,37,0.4)] active:scale-[0.97] transition-all duration-500"
           >
             See what I&apos;ve built
-          </a>
-          <a
+          </MagneticButton>
+          <MagneticButton
             href="#contact"
             className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/15 hover:border-white/30 hover:bg-white/10 active:scale-[0.97] transition-all duration-500"
           >
             Get in touch
-          </a>
+          </MagneticButton>
         </motion.div>
 
         {/* AI Console Widget */}
