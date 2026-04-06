@@ -28,7 +28,6 @@ const footerColumns = [
       { label: "Email", href: "mailto:hello@ramon.dev" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/ramon-vallejera-jr-mba-6976a3115/" },
       { label: "GitHub", href: "https://github.com/ramonaljr" },
-      { label: "Twitter / X", href: "#" },
     ],
   },
 ];
@@ -51,7 +50,7 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://ramon.dev"
               className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
             >
               <MaterialIcon name="public" className="text-[16px]" />
@@ -88,18 +87,10 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t py-8 px-12 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.2em] relative z-10 border-white/20 text-white/60">
+      <div className="border-t py-8 px-12 max-w-screen-2xl mx-auto flex items-center justify-center text-[10px] uppercase tracking-[0.2em] relative z-10 border-white/20 text-white/60">
         <span>
           &copy; {new Date().getFullYear()} Ramon. Crafted with intention.
         </span>
-        <div className="flex gap-8">
-          <a href="#" className="hover:text-white transition-colors">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
-            Terms of Service
-          </a>
-        </div>
       </div>
     </footer>
   );
