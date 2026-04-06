@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <PageHeader
           eyebrow="About Me"
           title="Building at the intersection of design & intelligence"

@@ -14,7 +14,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <PageHeader
           eyebrow="Contact"
           title="Let's talk"

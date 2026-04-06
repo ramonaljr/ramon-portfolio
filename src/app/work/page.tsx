@@ -14,7 +14,7 @@ export default function WorkPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <PageHeader
           eyebrow="Portfolio"
           title="Selected Work"

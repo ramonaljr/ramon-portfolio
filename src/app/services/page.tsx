@@ -14,7 +14,7 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <PageHeader
           eyebrow="Services"
           title="What I Build"
