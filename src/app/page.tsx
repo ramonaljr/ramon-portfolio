@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Hero } from "@/components/sections/hero";
+import { PersonalIntro } from "@/components/sections/personal-intro";
 import { LogoCloud } from "@/components/sections/logo-cloud";
 import { BentoFeatures } from "@/components/sections/bento-features";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <main id="main-content">
         <Hero />
+        <PersonalIntro />
         <LogoCloud />
         <BentoFeatures />
         <FeaturedProjects />
