@@ -1,12 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import dynamic from "next/dynamic";
-import { GlassCard } from "@/components/shared/glass-card";
 import { CountUp } from "@/components/shared/motion";
-import { MagneticButton } from "@/components/shared/magnetic-button";
-
-const Galaxy = dynamic(() => import("@/components/Galaxy"), { ssr: false });
 
 const cinematicSpring = {
   type: "spring" as const,
@@ -62,27 +57,8 @@ function ConsoleMetric({
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Galaxy WebGL Background */}
-      <motion.div
-        className="absolute inset-0 z-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.1 }}
-      >
-        <Galaxy
-          hueShift={25}
-          speed={0.3}
-          density={1.2}
-          saturation={0.6}
-          glowIntensity={0.4}
-          starSpeed={0.3}
-          twinkleIntensity={0.4}
-          rotationSpeed={0.02}
-          mouseRepulsion={true}
-          repulsionStrength={1.5}
-          transparent={false}
-        />
-      </motion.div>
+      {/* Background placeholder (Galaxy removed) */}
+      <div className="absolute inset-0 z-0" />
 
       {/* Subtle gradient overlay to warm the bottom */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
@@ -95,10 +71,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ ...cinematicSpring, delay: 0.2 }}
         >
-          <GlassCard className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-white/80 text-sm font-medium mb-8 border border-white/10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium mb-8 border border-border">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             Open to new projects
-          </GlassCard>
+          </div>
         </motion.div>
 
         {/* Headline */}
@@ -129,18 +105,18 @@ export function Hero() {
           transition={{ ...cinematicSpring, delay: 0.8 }}
           className="flex flex-col md:flex-row gap-4 justify-center items-center mb-16"
         >
-          <MagneticButton
+          <a
             href="#work"
-            className="group bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_50px_rgba(250,112,37,0.4)] active:scale-[0.97] transition-all duration-500"
+            className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-lg active:scale-[0.97] transition-all duration-500"
           >
             See what I&apos;ve built
-          </MagneticButton>
-          <MagneticButton
+          </a>
+          <a
             href="#contact"
-            className="glass-card text-white px-8 py-4 rounded-full font-bold text-lg border border-white/15 hover:border-white/30 hover:bg-white/10 active:scale-[0.97] transition-all duration-500"
+            className="px-8 py-4 rounded-full font-bold text-lg border border-border hover:bg-secondary active:scale-[0.97] transition-all duration-500"
           >
             Get in touch
-          </MagneticButton>
+          </a>
         </motion.div>
 
         {/* AI Console Widget */}
