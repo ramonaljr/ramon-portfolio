@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const cinematicSpring = {
-  type: "spring" as const,
-  damping: 30,
-  stiffness: 100,
-  mass: 1.2,
-};
+import { SectionPill } from "@/components/shared/section-pill";
 
 export function PageHeader({
   eyebrow,
@@ -19,25 +13,20 @@ export function PageHeader({
   description?: string;
 }) {
   return (
-    <section className="relative pt-40 pb-20 overflow-hidden">
-      <div className="absolute inset-0 bg-[#0a0a0a]" />
-      <div className="absolute inset-0 mesh-accent opacity-20" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-8">
-        <motion.span
+    <section className="pt-40 pb-20">
+      <div className="max-w-6xl mx-auto px-8">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ...cinematicSpring, delay: 0.1 }}
-          className="text-white/60 font-bold uppercase tracking-widest text-xs"
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          {eyebrow}
-        </motion.span>
+          <SectionPill label={eyebrow} />
+        </motion.div>
         <motion.h1
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ ...cinematicSpring, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold text-white leading-[1.1] tracking-tight mt-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mt-4"
         >
           {title}
         </motion.h1>
@@ -45,8 +34,8 @@ export function PageHeader({
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...cinematicSpring, delay: 0.4 }}
-            className="text-lg text-white/60 max-w-2xl mt-6 leading-relaxed"
+            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
+            className="text-lg text-muted-foreground max-w-2xl mt-6 leading-relaxed"
           >
             {description}
           </motion.p>
