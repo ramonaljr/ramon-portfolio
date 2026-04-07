@@ -60,7 +60,7 @@ export function BentoFeatures() {
             const Icon = service.icon;
             return (
               <StaggerItem key={service.title}>
-                <div className="bg-white rounded-2xl p-8 text-center border border-border hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-white rounded-2xl p-8 text-center border border-border hover:shadow-lg hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500">
                   <p className="text-sm text-muted-foreground">
                     {service.description}
                   </p>

@@ -9,30 +9,36 @@ export function FinalCTA() {
     <section id="contact" className="px-4 lg:px-8 py-16">
       <FadeIn>
         <div className="bg-[#0a0a0a] rounded-3xl py-20 md:py-28 px-8 text-center relative overflow-hidden">
-          <h2 className="text-3xl md:text-5xl font-semibold text-white max-w-3xl mx-auto leading-tight">
-            Let&apos;s build something together
-          </h2>
-          <p className="text-white/60 text-lg mt-6 max-w-xl mx-auto">
-            Whether you&apos;re hiring for a team, need a freelance developer,
-            or just want to talk through an idea — I&apos;d love to hear from
-            you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-1.5 px-6 py-3 text-sm font-medium rounded-full bg-white text-[#0a0a0a] hover:bg-white/90 transition-colors"
-            >
-              Send me a message
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/work"
-              className="inline-flex items-center gap-1.5 px-6 py-3 text-sm font-medium rounded-full border border-white/30 text-white hover:bg-white/10 hover:border-white transition-all duration-300"
-            >
-              See my work
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <FadeIn delay={0.1} direction="none">
+            <h2 className="text-3xl md:text-5xl font-semibold text-white max-w-3xl mx-auto leading-tight">
+              Let&apos;s build something together
+            </h2>
+          </FadeIn>
+          <FadeIn delay={0.2} direction="none">
+            <p className="text-white/60 text-lg mt-6 max-w-xl mx-auto">
+              Whether you&apos;re hiring for a team, need a freelance developer,
+              or just want to talk through an idea — I&apos;d love to hear from
+              you.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3} direction="none">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-1.5 px-6 py-3 text-sm font-medium rounded-full bg-white text-[#0a0a0a] hover:bg-white/90 transition-colors"
+              >
+                Send me a message
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/work"
+                className="inline-flex items-center gap-1.5 px-6 py-3 text-sm font-medium rounded-full border border-white/30 text-white hover:bg-white/10 hover:border-white transition-all duration-300"
+              >
+                See my work
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </FadeIn>
         </div>
       </FadeIn>
     </section>

@@ -39,6 +39,14 @@ const defaultTransition: Transition = {
   ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
 };
 
+// ── Cinematic Spring ────────────────────────────────────
+const cinematicSpring: Transition = {
+  type: "spring",
+  damping: 30,
+  stiffness: 100,
+  mass: 1.2,
+};
+
 // ── Instant transition for reduced motion ────────────────
 const instantTransition: Transition = {
   duration: 0.01,
@@ -89,7 +97,7 @@ export function FadeIn({
     ? instantTransition
     : duration
       ? { duration, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number], delay }
-      : { ...defaultTransition, delay };
+      : { ...cinematicSpring, delay };
 
   return (
     <motion.div
@@ -206,7 +214,7 @@ export function StaggerItem({
           opacity: 1,
           x: 0,
           y: 0,
-          transition: defaultTransition,
+          transition: cinematicSpring,
         },
       }}
       className={className}

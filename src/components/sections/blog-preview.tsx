@@ -23,7 +23,7 @@ export function BlogPreview() {
           {posts.slice(0, 3).map((post) => (
             <StaggerItem key={post.slug}>
               <Link href={`/blog/${post.slug}`} className="group block">
-                <div className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   {/* Placeholder image */}
                   <div className="aspect-[16/10] bg-muted" />
                   <div className="p-6">

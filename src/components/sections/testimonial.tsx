@@ -42,7 +42,7 @@ export function Testimonial() {
         >
           {valueProps.map((prop) => (
             <StaggerItem key={prop.title}>
-              <div className="bg-white rounded-2xl border border-border p-8 h-full">
+              <div className="bg-white rounded-2xl border border-border p-8 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mb-6">
                   <prop.icon className="w-5 h-5" />
                 </div>

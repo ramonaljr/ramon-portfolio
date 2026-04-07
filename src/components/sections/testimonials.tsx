@@ -86,7 +86,7 @@ export function Testimonials() {
         >
           {testimonials.slice(0, 6).map((testimonial) => (
             <StaggerItem key={testimonial.name}>
-              <div className="bg-white rounded-2xl p-8 border border-border">
+              <div className="bg-white rounded-2xl p-8 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>

@@ -88,7 +88,7 @@ export function Navbar() {
               <ResumeButton variant="compact" />
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-medium rounded-full border border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
+                className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-medium rounded-full border border-foreground hover:bg-foreground hover:text-background active:scale-[0.97] transition-all duration-300"
               >
                 Book A Call
                 <ArrowUpRight className="w-3.5 h-3.5" />

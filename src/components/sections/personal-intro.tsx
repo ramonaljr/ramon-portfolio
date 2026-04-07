@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Sparkles, Target } from "lucide-react";
-import { FadeIn } from "@/components/shared/motion";
+import { FadeIn, CountUp } from "@/components/shared/motion";
 
 export function PersonalIntro() {
   return (
@@ -32,7 +32,9 @@ export function PersonalIntro() {
                     <Sparkles className="w-5 h-5 text-foreground" />
                   </div>
                 </div>
-                <div className="text-5xl font-bold tracking-tight">320%</div>
+                <div className="text-5xl font-bold tracking-tight">
+                  <CountUp target={320} suffix="%" />
+                </div>
                 <p className="text-sm text-muted-foreground mt-2">
                   Average efficiency improvement for client workflows
                 </p>

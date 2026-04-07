@@ -57,7 +57,7 @@ export function FeaturedProjects() {
                 variant="outline"
                 onClick={() => carouselApi?.scrollPrev()}
                 disabled={!canScrollPrev}
-                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted"
+                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted active:scale-95 transition-all"
               >
                 <ArrowLeft className="size-5" />
               </Button>
@@ -66,7 +66,7 @@ export function FeaturedProjects() {
                 variant="outline"
                 onClick={() => carouselApi?.scrollNext()}
                 disabled={!canScrollNext}
-                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted"
+                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted active:scale-95 transition-all"
               >
                 <ArrowRight className="size-5" />
               </Button>

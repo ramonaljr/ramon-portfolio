@@ -46,7 +46,7 @@ export function ProcessTimeline() {
         <StaggerChildren stagger={0.1}>
           {phases.map((phase) => (
             <StaggerItem key={phase.title}>
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start py-8 border-b border-border">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start py-8 border-b border-border hover:bg-muted/50 transition-colors duration-300 -mx-4 px-4 rounded-lg">
                 {/* Left: Title + Subtitle */}
                 <div className="md:col-span-4">
                   <h3 className="text-xl font-semibold">{phase.title}</h3>
