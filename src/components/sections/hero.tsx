@@ -95,13 +95,13 @@ export function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ...cinematicSpring, delay: 0.3 }}
-            className="relative lg:h-[80vh] h-[50vh] lg:-mr-8"
+            className="relative lg:h-[80vh] h-[50vh] lg:-mr-8 overflow-hidden"
           >
             <Image
               src="/ramon-photo.jpg"
               alt="Ramon A. Vallejera, Jr. — Full-Stack Developer"
               fill
-              className="object-contain object-top"
+              className="object-cover object-top origin-top scale-[1.35]"
               priority
             />
           </motion.div>

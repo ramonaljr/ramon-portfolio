@@ -65,7 +65,7 @@ export function AboutHero() {
           src="/ramon-photo.jpg"
           alt="Ramon A. Vallejera, Jr."
           fill
-          className="object-contain object-top"
+          className="object-cover object-top origin-top scale-[1.35]"
           priority
         />
       </motion.div>
