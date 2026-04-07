@@ -7,7 +7,6 @@ import {
   FadeIn,
   StaggerChildren,
   StaggerItem,
-  ScaleIn,
 } from "@/components/shared/motion";
 import type { Project } from "@/data/projects";
 
@@ -91,7 +90,7 @@ export function CaseStudyContent({
       {/* Project Image */}
       <section className="bg-surface">
         <div className="max-w-screen-2xl mx-auto px-8 -mt-8">
-          <ScaleIn initialScale={0.95}>
+          <FadeIn>
             <div className="relative aspect-[16/9] overflow-hidden rounded-xl shadow-2xl">
               <Image
                 src={project.image}
@@ -101,7 +100,7 @@ export function CaseStudyContent({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
-          </ScaleIn>
+          </FadeIn>
         </div>
       </section>
 

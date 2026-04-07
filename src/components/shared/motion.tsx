@@ -33,12 +33,10 @@ export function useReducedMotion(): boolean {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
-// ── Cinematic Spring Config ──────────────────────────────
-const cinematicSpring: Transition = {
-  type: "spring",
-  damping: 30,
-  stiffness: 100,
-  mass: 1.2,
+// ── Default Transition ──────────────────────────────────
+const defaultTransition: Transition = {
+  duration: 0.5,
+  ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
 };
 
 // ── Instant transition for reduced motion ────────────────
@@ -91,7 +89,7 @@ export function FadeIn({
     ? instantTransition
     : duration
       ? { duration, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number], delay }
-      : { ...cinematicSpring, delay };
+      : { ...defaultTransition, delay };
 
   return (
     <motion.div
@@ -208,50 +206,11 @@ export function StaggerItem({
           opacity: 1,
           x: 0,
           y: 0,
-          transition: cinematicSpring,
+          transition: defaultTransition,
         },
       }}
       className={className}
     >
-      {children}
-    </motion.div>
-  );
-}
-
-// ── ParallaxLayer ────────────────────────────────────────
-// Subtle vertical parallax driven by scroll position.
-export function ParallaxLayer({
-  children,
-  className,
-  speed = 0.2,
-  direction = "up",
-}: {
-  children: ReactNode;
-  className?: string;
-  speed?: number;
-  direction?: "up" | "down";
-}) {
-  const reduced = useReducedMotion();
-
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  const factor = direction === "up" ? -1 : 1;
-  const y = useTransform(scrollYProgress, [0, 1], [factor * 100 * speed, factor * -100 * speed]);
-
-  if (reduced) {
-    return (
-      <div ref={ref} className={className}>
-        {children}
-      </div>
-    );
-  }
-
-  return (
-    <motion.div ref={ref} style={{ y }} className={className}>
       {children}
     </motion.div>
   );
@@ -311,72 +270,6 @@ export function CountUp({
     <span ref={ref} className={className}>
       {display}
     </span>
-  );
-}
-
-// ── ScaleIn ──────────────────────────────────────────────
-// Scroll-triggered scale + fade. For dramatic reveals.
-export function ScaleIn({
-  children,
-  className,
-  delay = 0,
-  initialScale = 0.9,
-  once = true,
-  amount = 0.2,
-}: {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-  initialScale?: number;
-  once?: boolean;
-  amount?: number;
-}) {
-  const reduced = useReducedMotion();
-
-  return (
-    <motion.div
-      initial={reduced ? { opacity: 0 } : { opacity: 0, scale: initialScale }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once, amount }}
-      transition={reduced ? instantTransition : { ...cinematicSpring, delay }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-// ── TextReveal ───────────────────────────────────────────
-// Reveals text line by line with a clip mask effect.
-export function TextReveal({
-  children,
-  className,
-  delay = 0,
-}: {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  const reduced = useReducedMotion();
-
-  return (
-    <motion.div
-      initial={
-        reduced
-          ? { opacity: 0 }
-          : { opacity: 0, y: 30, filter: "blur(10px)" }
-      }
-      whileInView={
-        reduced
-          ? { opacity: 1 }
-          : { opacity: 1, y: 0, filter: "blur(0px)" }
-      }
-      viewport={{ once: true, amount: 0.3 }}
-      transition={reduced ? instantTransition : { ...cinematicSpring, delay }}
-      className={className}
-    >
-      {children}
-    </motion.div>
   );
 }
 

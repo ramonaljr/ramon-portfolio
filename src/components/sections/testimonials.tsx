@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { FadeIn, ParallaxLayer, useReducedMotion } from "@/components/shared/motion";
+import { FadeIn, useReducedMotion } from "@/components/shared/motion";
 
 interface Testimonial {
   text: string;
@@ -136,9 +136,7 @@ function TestimonialsColumn({
 export function Testimonials() {
   return (
     <section className="relative py-24 md:py-32 bg-surface overflow-hidden">
-      <ParallaxLayer speed={0.1}>
-        <div className="absolute inset-0 mesh-accent opacity-20 pointer-events-none" />
-      </ParallaxLayer>
+      <div className="absolute inset-0 opacity-20 pointer-events-none" />
 
       <div className="max-w-screen-2xl mx-auto px-8">
         <FadeIn className="text-center mb-16">

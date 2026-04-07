@@ -6,7 +6,6 @@ import {
   FadeIn,
   StaggerChildren,
   StaggerItem,
-  ScaleIn,
 } from "@/components/shared/motion";
 import { FAQ } from "@/components/sections/faq";
 
@@ -367,12 +366,9 @@ export function ServicesContent() {
 
       {/* CTA */}
       <section className="py-24 md:py-32 bg-surface">
-        <ScaleIn initialScale={0.95}>
+        <FadeIn>
           <div className="max-w-screen-2xl mx-auto px-8">
             <div className="relative rounded-2xl overflow-hidden bg-primary p-16 md:p-20 text-center">
-              <div className="absolute inset-0 hero-gradient opacity-70" />
-              <div className="absolute inset-0 mesh-accent opacity-20" />
-
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-5xl font-headline font-bold text-white mb-6">
                   Ready to start?
@@ -384,7 +380,7 @@ export function ServicesContent() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href="/contact"
-                    className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-orange-50 hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] active:scale-[0.97] transition-all duration-500"
+                    className="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-50 active:scale-[0.97] transition-all duration-500"
                   >
                     Start a Conversation
                   </a>
@@ -398,7 +394,7 @@ export function ServicesContent() {
               </div>
             </div>
           </div>
-        </ScaleIn>
+        </FadeIn>
       </section>
     </>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FadeIn, ScaleIn } from "@/components/shared/motion";
+import { FadeIn } from "@/components/shared/motion";
 
 export function PersonalIntro() {
   return (
@@ -12,15 +12,9 @@ export function PersonalIntro() {
       <div className="max-w-screen-2xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Photo */}
-          <ScaleIn
-            initialScale={0.9}
-            className="lg:col-span-4 flex justify-center"
-          >
+          <FadeIn className="lg:col-span-4 flex justify-center">
             <div className="relative">
-              {/* Orange glow behind photo */}
-              <div className="absolute -inset-4 bg-primary-container/15 blur-[60px] rounded-full" />
-
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-border shadow-2xl">
                 <Image
                   src="/ramon-photo.jpeg"
                   alt="Ramon Vallejera — Full-Stack Developer & AI Engineer"
@@ -28,11 +22,9 @@ export function PersonalIntro() {
                   className="object-cover object-top"
                   priority
                 />
-                {/* Subtle gradient overlay at bottom for blending */}
-                <div className="absolute inset-0 bg-gradient-to-t from-surface/40 via-transparent to-transparent" />
               </div>
             </div>
-          </ScaleIn>
+          </FadeIn>
 
           {/* Text */}
           <div className="lg:col-span-8">

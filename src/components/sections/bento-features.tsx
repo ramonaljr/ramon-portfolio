@@ -3,7 +3,6 @@
 import { MaterialIcon } from "@/components/shared/material-icon";
 import {
   FadeIn,
-  ParallaxLayer,
   StaggerChildren,
   StaggerItem,
 } from "@/components/shared/motion";
@@ -45,9 +44,7 @@ export function BentoFeatures() {
       id="services"
       className="relative overflow-hidden py-24 md:py-32 bg-surface"
     >
-      <ParallaxLayer speed={0.1} direction="up">
-        <div className="absolute inset-0 mesh-accent opacity-30 pointer-events-none" />
-      </ParallaxLayer>
+      <div className="absolute inset-0 opacity-30 pointer-events-none" />
 
       <div className="max-w-screen-2xl mx-auto px-8">
         {/* Section Header */}

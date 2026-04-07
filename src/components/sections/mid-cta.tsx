@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Link from "next/link";
-import { ScaleIn } from "@/components/shared/motion";
 
 const IMG_PADDING = 12;
 
@@ -67,7 +66,7 @@ function OverlayCopy() {
 export function MidCTA() {
   return (
     <section className="bg-surface">
-      <ScaleIn initialScale={0.95}>
+      <div>
         <div
           style={{
             paddingLeft: IMG_PADDING,
@@ -101,7 +100,7 @@ export function MidCTA() {
             </div>
           </div>
         </div>
-      </ScaleIn>
+      </div>
     </section>
   );
 }
