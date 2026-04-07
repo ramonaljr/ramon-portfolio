@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { projects } from "@/data/projects";
 import { FadeIn } from "@/components/shared/motion";
+import { SectionPill } from "@/components/shared/section-pill";
 
 export function FeaturedProjects() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -33,19 +34,17 @@ export function FeaturedProjects() {
   }, [carouselApi]);
 
   return (
-    <section id="work" className="py-24 md:py-32 bg-surface-container overflow-hidden">
-      <div className="container max-w-screen-2xl mx-auto px-8">
+    <section id="work" className="bg-background py-32 overflow-hidden">
+      <div className="container max-w-6xl mx-auto px-8">
         <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16">
           <FadeIn>
-            <span className="text-primary font-bold uppercase tracking-widest text-xs">
-              Recent work
-            </span>
-            <h2 className="mb-3 text-4xl md:text-5xl font-headline font-bold mt-4 text-on-surface">
+            <SectionPill label="Portfolio" />
+            <h2 className="text-4xl md:text-5xl font-semibold mt-4">
               Projects I&apos;ve shipped
             </h2>
             <Link
               href="/work"
-              className="group flex items-center gap-1 text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
+              className="group flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mt-2"
             >
               View all projects
               <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -58,7 +57,7 @@ export function FeaturedProjects() {
                 variant="outline"
                 onClick={() => carouselApi?.scrollPrev()}
                 disabled={!canScrollPrev}
-                className="disabled:pointer-events-auto border-outline-variant/30 text-on-surface hover:bg-surface-container-high hover:border-primary-container"
+                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted"
               >
                 <ArrowLeft className="size-5" />
               </Button>
@@ -67,7 +66,7 @@ export function FeaturedProjects() {
                 variant="outline"
                 onClick={() => carouselApi?.scrollNext()}
                 disabled={!canScrollNext}
-                className="disabled:pointer-events-auto border-outline-variant/30 text-on-surface hover:bg-surface-container-high hover:border-primary-container"
+                className="disabled:pointer-events-auto border border-border text-foreground hover:bg-muted"
               >
                 <ArrowRight className="size-5" />
               </Button>
@@ -113,20 +112,20 @@ export function FeaturedProjects() {
                     </div>
                   </div>
                   <div className="flex items-center gap-3 pt-4">
-                    <span className="text-xs font-bold text-primary uppercase tracking-widest">
+                    <span className="text-sm text-muted-foreground">
                       {project.number}
                     </span>
-                    <span className="text-xs text-on-surface-variant">
+                    <span className="text-sm text-muted-foreground">
                       {project.category}
                     </span>
                   </div>
-                  <div className="mb-2 line-clamp-3 break-words pt-2 text-lg font-headline font-bold text-on-surface md:mb-3 md:text-xl lg:text-2xl">
+                  <div className="mb-2 line-clamp-3 break-words pt-2 text-xl font-semibold md:mb-3">
                     {project.title}
                   </div>
-                  <div className="mb-8 line-clamp-2 text-sm text-on-surface-variant md:mb-12 md:text-base lg:mb-9">
+                  <div className="mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 lg:mb-9">
                     {project.tagline}
                   </div>
-                  <div className="flex items-center text-sm text-on-surface-variant group-hover:text-primary transition-colors">
+                  <div className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
                     View case study
                     <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                   </div>
