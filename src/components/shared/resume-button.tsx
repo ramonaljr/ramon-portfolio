@@ -9,7 +9,7 @@ export function ResumeButton({ variant = "default" }: { variant?: "default" | "c
       href="/ramon-vallejera-resume.pdf"
       download
       className={variant === "compact"
-        ? "flex items-center gap-1.5 text-sm font-medium text-white/50 hover:text-white transition-colors duration-300"
+        ? "flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
         : "inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold border border-border hover:border-foreground/30 active:scale-[0.97] transition-all duration-500 group"
       }
       whileHover={{ scale: variant === "compact" ? 1 : 1.02 }}

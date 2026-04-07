@@ -5,15 +5,14 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
-import { MaterialIcon } from "@/components/shared/material-icon";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { ResumeButton } from "@/components/shared/resume-button";
 
 const navLinks = [
+  { label: "About Me", href: "/about" },
+  { label: "Portfolio", href: "/work" },
   { label: "Services", href: "/services" },
-  { label: "Work", href: "/work" },
-  { label: "Process", href: "/#process" },
   { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
 ];
 
 export function Navbar() {
@@ -52,16 +51,13 @@ export function Navbar() {
         className={cn(
           "fixed top-0 w-full z-50 transition-all duration-500",
           scrolled
-            ? "bg-background/80 backdrop-blur-xl border-b border-white/5"
-            : "bg-transparent backdrop-blur-md"
+            ? "border-b border-border backdrop-blur-sm bg-background/80"
+            : "bg-background"
         )}
       >
         <div className="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
-          <Link
-            href="/"
-            className="text-2xl font-headline italic text-white transition-colors duration-500"
-          >
-            ramon.
+          <Link href="/" className="text-xl font-bold tracking-tight">
+            Ramon
           </Link>
 
           <div className="hidden md:flex items-center space-x-12">
@@ -70,16 +66,16 @@ export function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={cn(
-                  "relative font-body text-sm font-medium tracking-wide transition-all duration-300",
+                  "relative text-sm font-medium transition-colors",
                   isActive(link.href)
-                    ? "text-primary"
-                    : "text-white/50 hover:text-white/80"
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
                 )}
               >
                 {link.label}
                 <span
                   className={cn(
-                    "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300",
+                    "absolute -bottom-1 left-0 h-0.5 bg-foreground transition-all duration-300",
                     isActive(link.href) ? "w-full" : "w-0"
                   )}
                 />
@@ -92,18 +88,19 @@ export function Navbar() {
               <ResumeButton variant="compact" />
               <Link
                 href="/contact"
-                className="inline-flex px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 active:scale-[0.97] bg-primary-container text-on-primary-container hover:shadow-[0_0_30px_rgba(250,112,37,0.3)]"
+                className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-medium rounded-full border border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
-                Let&apos;s Talk
+                Book A Call
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden w-10 h-10 flex items-center justify-center rounded-full transition-colors text-white"
+              className="md:hidden w-10 h-10 flex items-center justify-center rounded-full transition-colors text-foreground"
               aria-label="Toggle menu"
             >
-              <MaterialIcon name={mobileOpen ? "close" : "menu"} />
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -119,7 +116,7 @@ export function Navbar() {
             className="fixed inset-0 z-40 md:hidden"
           >
             <div
-              className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+              className="absolute inset-0 bg-background/80 backdrop-blur-sm"
               onClick={() => setMobileOpen(false)}
             />
 
@@ -128,7 +125,7 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 200 }}
-              className="absolute right-0 top-0 bottom-0 w-80 bg-[#0a0a0a]/95 backdrop-blur-xl p-12 flex flex-col justify-center border-l border-white/5"
+              className="absolute right-0 top-0 bottom-0 w-full bg-background p-12 flex flex-col justify-center"
             >
               <nav className="space-y-8">
                 {navLinks.map((link, i) => (
@@ -147,10 +144,10 @@ export function Navbar() {
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
                       className={cn(
-                        "block text-3xl font-headline transition-colors",
+                        "block text-2xl font-semibold transition-colors",
                         isActive(link.href)
-                          ? "text-primary"
-                          : "text-white/80 hover:text-primary"
+                          ? "text-foreground"
+                          : "text-muted-foreground hover:text-foreground"
                       )}
                     >
                       {link.label}
@@ -167,9 +164,10 @@ export function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="mt-16 inline-flex justify-center bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg active:scale-[0.97]"
+                  className="mt-16 inline-flex items-center gap-1.5 px-5 py-2 text-sm font-medium rounded-full border border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
                 >
-                  Let&apos;s Talk
+                  Book A Call
+                  <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
               </motion.div>
             </motion.div>
