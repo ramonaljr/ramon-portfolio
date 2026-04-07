@@ -1,16 +1,25 @@
 "use client";
 
-import { MaterialIcon } from "@/components/shared/material-icon";
+import {
+  Code,
+  Server,
+  Bot,
+  Smartphone,
+  Cloud,
+  Palette,
+} from "lucide-react";
 import {
   FadeIn,
   StaggerChildren,
   StaggerItem,
 } from "@/components/shared/motion";
+import { SectionPill } from "@/components/shared/section-pill";
+import type { LucideIcon } from "lucide-react";
 
-const skills = [
+const skills: { category: string; icon: LucideIcon; items: string[] }[] = [
   {
     category: "Frontend",
-    icon: "code",
+    icon: Code,
     items: [
       "React / Next.js",
       "TypeScript",
@@ -22,7 +31,7 @@ const skills = [
   },
   {
     category: "Backend",
-    icon: "dns",
+    icon: Server,
     items: [
       "Node.js",
       "Supabase",
@@ -34,7 +43,7 @@ const skills = [
   },
   {
     category: "AI & ML",
-    icon: "smart_toy",
+    icon: Bot,
     items: [
       "OpenAI API",
       "Google Gemini",
@@ -46,7 +55,7 @@ const skills = [
   },
   {
     category: "Mobile",
-    icon: "phone_iphone",
+    icon: Smartphone,
     items: [
       "React Native",
       "Expo",
@@ -58,7 +67,7 @@ const skills = [
   },
   {
     category: "Infrastructure",
-    icon: "cloud",
+    icon: Cloud,
     items: [
       "Docker",
       "Turborepo",
@@ -70,7 +79,7 @@ const skills = [
   },
   {
     category: "Design",
-    icon: "palette",
+    icon: Palette,
     items: [
       "Figma",
       "UI/UX Design",
@@ -84,13 +93,11 @@ const skills = [
 
 export function TechStackGrid() {
   return (
-    <section className="py-24 md:py-32 bg-surface-container">
-      <div className="max-w-screen-2xl mx-auto px-8">
+    <section className="py-32 bg-muted">
+      <div className="max-w-6xl mx-auto px-8">
         <FadeIn className="mb-16">
-          <span className="text-primary font-bold uppercase tracking-widest text-xs">
-            Technical Expertise
-          </span>
-          <h2 className="text-3xl md:text-4xl font-headline font-bold mt-4 text-on-surface">
+          <SectionPill label="Technical Expertise" />
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 text-foreground">
             Skills & Technologies
           </h2>
         </FadeIn>
@@ -101,15 +108,12 @@ export function TechStackGrid() {
         >
           {skills.map((group) => (
             <StaggerItem key={group.category}>
-              <div className="group bg-surface rounded-xl p-8 border border-outline-variant/20 h-full hover:border-primary-container/50 hover:shadow-[0_0_30px_rgba(250,112,37,0.08)] transition-all duration-500">
+              <div className="group bg-white rounded-2xl p-8 border border-border h-full hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center">
-                    <MaterialIcon
-                      name={group.icon}
-                      className="text-primary-container text-xl"
-                    />
+                  <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
+                    <group.icon className="w-5 h-5 text-foreground" />
                   </div>
-                  <h3 className="font-bold text-lg text-on-surface">
+                  <h3 className="font-semibold text-lg text-foreground">
                     {group.category}
                   </h3>
                 </div>
@@ -117,7 +121,7 @@ export function TechStackGrid() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="text-sm px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant group-hover:scale-105 transition-transform duration-300"
+                      className="text-sm px-3 py-1.5 rounded-full bg-muted text-muted-foreground"
                     >
                       {item}
                     </span>
