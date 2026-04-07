@@ -1,0 +1,362 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e8]
+          - navigation [ref=e9]:
+            - generic [ref=e10]:
+              - link "About Me About Me" [ref=e11] [cursor=pointer]:
+                - /url: /about
+                - generic "About Me" [ref=e12]:
+                  - generic [ref=e13]:
+                    - generic [ref=e14]: A
+                    - generic [ref=e15]: b
+                    - generic [ref=e16]: o
+                    - generic [ref=e17]: u
+                    - generic [ref=e18]: t
+                  - generic [ref=e19]:
+                    - generic [ref=e20]: M
+                    - generic [ref=e21]: e
+                - generic "About Me" [ref=e22]:
+                  - generic [ref=e23]:
+                    - generic [ref=e24]: A
+                    - generic [ref=e25]: b
+                    - generic [ref=e26]: o
+                    - generic [ref=e27]: u
+                    - generic [ref=e28]: t
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: M
+                    - generic [ref=e31]: e
+              - link "Portfolio Portfolio" [ref=e32] [cursor=pointer]:
+                - /url: /portfolio
+                - generic "Portfolio" [ref=e33]:
+                  - generic [ref=e34]:
+                    - generic [ref=e35]: P
+                    - generic [ref=e36]: o
+                    - generic [ref=e37]: r
+                    - generic [ref=e38]: t
+                    - generic [ref=e39]: f
+                    - generic [ref=e40]: o
+                    - generic [ref=e41]: l
+                    - generic [ref=e42]: i
+                    - generic [ref=e43]: o
+                - generic "Portfolio" [ref=e44]:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: P
+                    - generic [ref=e47]: o
+                    - generic [ref=e48]: r
+                    - generic [ref=e49]: t
+                    - generic [ref=e50]: f
+                    - generic [ref=e51]: o
+                    - generic [ref=e52]: l
+                    - generic [ref=e53]: i
+                    - generic [ref=e54]: o
+              - button "Pages Pages" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic "Pages" [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic [ref=e60]: P
+                      - generic [ref=e61]: a
+                      - generic [ref=e62]: g
+                      - generic [ref=e63]: e
+                      - generic [ref=e64]: s
+                  - generic "Pages" [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: P
+                      - generic [ref=e68]: a
+                      - generic [ref=e69]: g
+                      - generic [ref=e70]: e
+                      - generic [ref=e71]: s
+                - generic [ref=e72]: 
+              - link "Services Services" [ref=e73] [cursor=pointer]:
+                - /url: /services
+                - generic "Services" [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: S
+                    - generic [ref=e77]: e
+                    - generic [ref=e78]: r
+                    - generic [ref=e79]: v
+                    - generic [ref=e80]: i
+                    - generic [ref=e81]: c
+                    - generic [ref=e82]: e
+                    - generic [ref=e83]: s
+                - generic "Services" [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: S
+                    - generic [ref=e87]: e
+                    - generic [ref=e88]: r
+                    - generic [ref=e89]: v
+                    - generic [ref=e90]: i
+                    - generic [ref=e91]: c
+                    - generic [ref=e92]: e
+                    - generic [ref=e93]: s
+              - link "Blog Blog" [ref=e94] [cursor=pointer]:
+                - /url: /blog
+                - generic "Blog" [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: B
+                    - generic [ref=e98]: l
+                    - generic [ref=e99]: o
+                    - generic [ref=e100]: g
+                - generic "Blog" [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: B
+                    - generic [ref=e104]: l
+                    - generic [ref=e105]: o
+                    - generic [ref=e106]: g
+        - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e108] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e110]: Book A Call
+          - generic [ref=e112]:
+            - img "Outline Button Icon" [ref=e113]
+            - img "Outline Button Icon" [ref=e114]
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e122]: Webfiow Development
+        - heading "Rhome - Brand Guidlines" [level=1] [ref=e123]
+        - paragraph [ref=e124]: Explore a range of tailored UI/UX and product design services designed to meet your unique needs and goals. From initial research and strategy to wireframing, prototyping
+      - img "Single Project Image" [ref=e126]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - heading "Project overview" [level=2] [ref=e129]
+          - img "Overview Arrow" [ref=e131]
+        - generic [ref=e132]:
+          - paragraph [ref=e134]:
+            - strong [ref=e135]: Rhome
+            - text: — a modern all-in-one CRM & Sales Analytics dashboard built to help businesses streamline customer management, visualize sales performance, and make smarter decisions with real-time insights. The platform centralizes leads, opportunities, accounts, and reports into a clean, intuitive interface while empowering teams to collaborate seamlessly and stay productive.
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - generic [ref=e138]: Project
+              - generic [ref=e139]: Rhome - Brand Guidlines
+            - generic [ref=e140]:
+              - generic [ref=e141]: Industry
+              - generic [ref=e142]: CRM & Sales Analytics
+            - generic [ref=e143]:
+              - generic [ref=e144]: Location
+              - generic [ref=e145]: San Francisco, USA
+            - generic [ref=e146]:
+              - generic [ref=e147]: Tools Used
+              - generic:
+                - img "Project Tools Icon"
+                - img "Project Tools Icon"
+                - img "Project Tools Icon"
+                - img "Project Tools Icon"
+                - img "Project Tools Icon"
+      - generic [ref=e148]:
+        - list [ref=e150]:
+          - listitem [ref=e151]:
+            - generic [ref=e152]:
+              - img "Portfolio Multiimage"
+          - listitem [ref=e154]:
+            - generic [ref=e155]:
+              - img "Portfolio Multiimage"
+        - img "Single Project Image" [ref=e158]
+        - list [ref=e160]:
+          - listitem [ref=e161]:
+            - generic [ref=e162]:
+              - img "Portfolio Multiimage"
+          - listitem [ref=e164]:
+            - generic [ref=e165]:
+              - img "Portfolio Multiimage"
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - generic [ref=e175]: Result
+        - heading "What We Deliver" [level=2] [ref=e176]
+        - paragraph [ref=e177]: Through strategic design, data-driven decisions, and seamless user experiences, our work consistently helps brands scale faster, engage deeper, and perform better across every digital touchpoint.
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - generic [ref=e184]: "0"
+              - generic [ref=e185]: "1"
+              - generic [ref=e186]: "2"
+              - generic [ref=e187]: "3"
+              - generic [ref=e188]: "4"
+              - generic [ref=e189]: "5"
+              - generic [ref=e190]: "6"
+              - generic [ref=e191]: "7"
+              - generic [ref=e192]: "8"
+              - generic [ref=e193]: "4"
+            - generic [ref=e194]:
+              - generic [ref=e195]: "5"
+              - generic [ref=e196]: "1"
+              - generic [ref=e197]: "2"
+              - generic [ref=e198]: "3"
+              - generic [ref=e199]: "4"
+              - generic [ref=e200]: "5"
+              - generic [ref=e201]: "6"
+              - generic [ref=e202]: "7"
+              - generic [ref=e203]: "8"
+              - generic [ref=e204]: "3"
+            - generic [ref=e205]: "%"
+          - generic [ref=e206]: User Increase
+        - generic [ref=e207]:
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: "0"
+              - generic [ref=e213]: "1"
+              - generic [ref=e214]: "2"
+              - generic [ref=e215]: "3"
+              - generic [ref=e216]: "4"
+              - generic [ref=e217]: "5"
+              - generic [ref=e218]: "6"
+              - generic [ref=e219]: "7"
+              - generic [ref=e220]: "8"
+              - generic [ref=e221]: "3"
+            - generic [ref=e222]:
+              - generic [ref=e223]: "1"
+              - generic [ref=e224]: "8"
+              - generic [ref=e225]: "7"
+              - generic [ref=e226]: "6"
+              - generic [ref=e227]: "5"
+              - generic [ref=e228]: "4"
+              - generic [ref=e229]: "3"
+              - generic [ref=e230]: "2"
+              - generic [ref=e231]: "1"
+              - generic [ref=e232]: "0"
+            - generic [ref=e233]: "%"
+          - generic [ref=e234]: Growth in conversion rate
+        - generic [ref=e235]:
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: "0"
+              - generic [ref=e241]: "1"
+              - generic [ref=e242]: "2"
+              - generic [ref=e243]: "3"
+              - generic [ref=e244]: "4"
+              - generic [ref=e245]: "5"
+              - generic [ref=e246]: "6"
+              - generic [ref=e247]: "7"
+              - generic [ref=e248]: "8"
+              - generic [ref=e249]: "4"
+            - generic [ref=e250]: .
+            - generic [ref=e251]:
+              - generic [ref=e252]: "2"
+              - generic [ref=e253]: "8"
+              - generic [ref=e254]: "7"
+              - generic [ref=e255]: "6"
+              - generic [ref=e256]: "5"
+              - generic [ref=e257]: "4"
+              - generic [ref=e258]: "3"
+              - generic [ref=e259]: "2"
+              - generic [ref=e260]: "1"
+              - generic [ref=e261]: "0"
+            - generic [ref=e262]: "%"
+          - generic [ref=e263]: Improved page load
+        - generic [ref=e264]:
+          - generic [ref=e267]:
+            - generic [ref=e268]:
+              - generic [ref=e269]: "0"
+              - generic [ref=e270]: "1"
+              - generic [ref=e271]: "2"
+              - generic [ref=e272]: "3"
+              - generic [ref=e273]: "4"
+              - generic [ref=e274]: "5"
+              - generic [ref=e275]: "6"
+              - generic [ref=e276]: "7"
+              - generic [ref=e277]: "8"
+              - generic [ref=e278]: "7"
+            - generic [ref=e279]:
+              - generic [ref=e280]: "5"
+              - generic [ref=e281]: "8"
+              - generic [ref=e282]: "7"
+              - generic [ref=e283]: "6"
+              - generic [ref=e284]: "5"
+              - generic [ref=e285]: "4"
+              - generic [ref=e286]: "3"
+              - generic [ref=e287]: "2"
+              - generic [ref=e288]: "1"
+              - generic [ref=e289]: "0"
+            - generic [ref=e290]: "%"
+          - generic [ref=e291]: Higher customer retention
+    - generic [ref=e294]:
+      - generic [ref=e295]:
+        - generic [ref=e299]: Result
+        - heading "More Projects" [level=2] [ref=e300]
+      - list [ref=e303]:
+        - listitem [ref=e304]:
+          - generic [ref=e305]:
+            - link "Arrow Button Icon" [ref=e306] [cursor=pointer]:
+              - /url: /portfolios/koels-live-shop-landing-page
+              - img "Arrow Button Icon" [ref=e308]
+            - link "Koel’s live shop Landing Page" [ref=e310] [cursor=pointer]:
+              - /url: /portfolios/koels-live-shop-landing-page
+        - listitem [ref=e311]:
+          - generic [ref=e312]:
+            - link "Arrow Button Icon" [ref=e313] [cursor=pointer]:
+              - /url: /portfolios/crto---crypto-merket-app
+              - img "Arrow Button Icon" [ref=e315]
+            - link "Crto - Crypto Merket app" [ref=e317] [cursor=pointer]:
+              - /url: /portfolios/crto---crypto-merket-app
+    - generic [ref=e318]:
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - link "Brand Img" [ref=e322] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e323]
+          - generic [ref=e324]:
+            - link "About Me About Me" [ref=e325] [cursor=pointer]:
+              - /url: /about
+              - generic [ref=e326]: About Me
+              - generic [ref=e327]: About Me
+            - link "Portfolio Portfolio" [ref=e328] [cursor=pointer]:
+              - /url: /portfolio
+              - generic [ref=e329]: Portfolio
+              - generic [ref=e330]: Portfolio
+            - link "Services Services" [ref=e331] [cursor=pointer]:
+              - /url: /services
+              - generic [ref=e332]: Services
+              - generic [ref=e333]: Services
+            - link "Blog Blog" [ref=e334] [cursor=pointer]:
+              - /url: /blog
+              - generic [ref=e335]: Blog
+              - generic [ref=e336]: Blog
+          - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e338] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e340]: Book A Call
+            - generic [ref=e342]:
+              - img "Outline Button Icon" [ref=e343]
+              - img "Outline Button Icon" [ref=e344]
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - link "Instargram" [ref=e347] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "Linkedin" [ref=e348] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - generic [ref=e349]:
+            - link "(207) 555-0119" [ref=e350] [cursor=pointer]:
+              - /url: tel:(207)555-0119
+            - link "finox@gmail.com" [ref=e351] [cursor=pointer]:
+              - /url: mailto:finox@gmail.com?subject=Contact%20with%20us
+          - generic [ref=e352]:
+            - link "Facebook" [ref=e353] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+            - link "Twitter" [ref=e354] [cursor=pointer]:
+              - /url: https://x.com/
+      - generic [ref=e356]:
+        - link "©Finox" [ref=e357] [cursor=pointer]:
+          - /url: /
+        - text: "|"
+        - link "Wolfpixel" [ref=e358] [cursor=pointer]:
+          - /url: https://webflow.com/templates/designers/wolfpixel
+        - text: "|"
+        - link "License" [ref=e359] [cursor=pointer]:
+          - /url: /utility-pages/license
+        - text: "| Poward By"
+        - link "Webflow" [ref=e360] [cursor=pointer]:
+          - /url: https://webflow.com/
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - generic [ref=e364]: Finox
+          - generic [ref=e365]: Finox FInox
+          - generic [ref=e366]: Finox FInox
+        - generic [ref=e367]:
+          - generic [ref=e368]: Finox
+          - generic [ref=e369]: Finox FInox
+          - generic [ref=e370]: Finox FInox
+  - link "Made in Webflow" [ref=e371] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e372]

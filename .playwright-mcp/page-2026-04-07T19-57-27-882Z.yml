@@ -1,0 +1,656 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e8]
+          - navigation [ref=e9]:
+            - generic [ref=e10]:
+              - link "About Me About Me" [ref=e11] [cursor=pointer]:
+                - /url: /about
+                - generic "About Me" [ref=e12]:
+                  - generic [ref=e13]:
+                    - generic [ref=e14]: A
+                    - generic [ref=e15]: b
+                    - generic [ref=e16]: o
+                    - generic [ref=e17]: u
+                    - generic [ref=e18]: t
+                  - generic [ref=e19]:
+                    - generic [ref=e20]: M
+                    - generic [ref=e21]: e
+                - generic "About Me" [ref=e22]:
+                  - generic [ref=e23]:
+                    - generic [ref=e24]: A
+                    - generic [ref=e25]: b
+                    - generic [ref=e26]: o
+                    - generic [ref=e27]: u
+                    - generic [ref=e28]: t
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: M
+                    - generic [ref=e31]: e
+              - link "Portfolio Portfolio" [ref=e32] [cursor=pointer]:
+                - /url: /portfolio
+                - generic "Portfolio" [ref=e33]:
+                  - generic [ref=e34]:
+                    - generic [ref=e35]: P
+                    - generic [ref=e36]: o
+                    - generic [ref=e37]: r
+                    - generic [ref=e38]: t
+                    - generic [ref=e39]: f
+                    - generic [ref=e40]: o
+                    - generic [ref=e41]: l
+                    - generic [ref=e42]: i
+                    - generic [ref=e43]: o
+                - generic "Portfolio" [ref=e44]:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: P
+                    - generic [ref=e47]: o
+                    - generic [ref=e48]: r
+                    - generic [ref=e49]: t
+                    - generic [ref=e50]: f
+                    - generic [ref=e51]: o
+                    - generic [ref=e52]: l
+                    - generic [ref=e53]: i
+                    - generic [ref=e54]: o
+              - button "Pages Pages" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic "Pages" [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic [ref=e60]: P
+                      - generic [ref=e61]: a
+                      - generic [ref=e62]: g
+                      - generic [ref=e63]: e
+                      - generic [ref=e64]: s
+                  - generic "Pages" [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: P
+                      - generic [ref=e68]: a
+                      - generic [ref=e69]: g
+                      - generic [ref=e70]: e
+                      - generic [ref=e71]: s
+                - generic [ref=e72]: 
+              - link "Services Services" [ref=e73] [cursor=pointer]:
+                - /url: /services
+                - generic "Services" [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: S
+                    - generic [ref=e77]: e
+                    - generic [ref=e78]: r
+                    - generic [ref=e79]: v
+                    - generic [ref=e80]: i
+                    - generic [ref=e81]: c
+                    - generic [ref=e82]: e
+                    - generic [ref=e83]: s
+                - generic "Services" [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: S
+                    - generic [ref=e87]: e
+                    - generic [ref=e88]: r
+                    - generic [ref=e89]: v
+                    - generic [ref=e90]: i
+                    - generic [ref=e91]: c
+                    - generic [ref=e92]: e
+                    - generic [ref=e93]: s
+              - link "Blog Blog" [ref=e94] [cursor=pointer]:
+                - /url: /blog
+                - generic "Blog" [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: B
+                    - generic [ref=e98]: l
+                    - generic [ref=e99]: o
+                    - generic [ref=e100]: g
+                - generic "Blog" [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: B
+                    - generic [ref=e104]: l
+                    - generic [ref=e105]: o
+                    - generic [ref=e106]: g
+        - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e108] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e110]: Book A Call
+          - generic [ref=e112]:
+            - img "Outline Button Icon" [ref=e113]
+            - img "Outline Button Icon" [ref=e114]
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e120]: Product Designer
+          - generic [ref=e123]: "2026"
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: "0"
+                  - generic [ref=e133]: "1"
+                  - generic [ref=e134]: "2"
+                  - generic [ref=e135]: "3"
+                  - generic [ref=e136]: "4"
+                  - generic [ref=e137]: "5"
+                  - generic [ref=e138]: "6"
+                  - generic [ref=e139]: "7"
+                  - generic [ref=e140]: "8"
+                  - generic [ref=e141]: "2"
+                - generic [ref=e142]:
+                  - generic [ref=e143]: "0"
+                  - generic [ref=e144]: "8"
+                  - generic [ref=e145]: "7"
+                  - generic [ref=e146]: "6"
+                  - generic [ref=e147]: "5"
+                  - generic [ref=e148]: "4"
+                  - generic [ref=e149]: "3"
+                  - generic [ref=e150]: "2"
+                  - generic [ref=e151]: "1"
+                  - generic [ref=e152]: "0"
+                - generic [ref=e153]:
+                  - generic [ref=e154]: "0"
+                  - generic [ref=e155]: "1"
+                  - generic [ref=e156]: "2"
+                  - generic [ref=e157]: "3"
+                  - generic [ref=e158]: "4"
+                  - generic [ref=e159]: "5"
+                  - generic [ref=e160]: "6"
+                  - generic [ref=e161]: "7"
+                  - generic [ref=e162]: "8"
+                  - generic [ref=e163]: "0"
+                - generic [ref=e164]: +
+              - generic [ref=e165]: Project completed
+            - generic [ref=e166]:
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - generic [ref=e171]: "0"
+                  - generic [ref=e172]: "1"
+                  - generic [ref=e173]: "2"
+                  - generic [ref=e174]: "3"
+                  - generic [ref=e175]: "4"
+                  - generic [ref=e176]: "5"
+                  - generic [ref=e177]: "6"
+                  - generic [ref=e178]: "7"
+                  - generic [ref=e179]: "8"
+                  - generic [ref=e180]: "5"
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "5"
+                  - generic [ref=e183]: "8"
+                  - generic [ref=e184]: "7"
+                  - generic [ref=e185]: "6"
+                  - generic [ref=e186]: "5"
+                  - generic [ref=e187]: "4"
+                  - generic [ref=e188]: "3"
+                  - generic [ref=e189]: "2"
+                  - generic [ref=e190]: "1"
+                  - generic [ref=e191]: "0"
+                - generic [ref=e192]: +
+              - generic [ref=e193]: Startup raised
+          - generic [ref=e194]:
+            - heading "Hello" [level=1] [ref=e195]
+            - generic [ref=e196]: — It’s Finox a design wizerd
+          - link "Scroll down ↓" [ref=e198] [cursor=pointer]:
+            - /url: "#about"
+            - generic [ref=e199]: Scroll down ↓
+      - img "Hero Image" [ref=e201]
+    - generic [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - heading "About Me" [level=2] [ref=e208]
+          - paragraph [ref=e209]: I’m specialize in turning complex problems into elegant solutions. My approach blends creativity with strategic thinking to deliver designs that not only look great but work seamlessly. Ready to start your next project?
+        - img "About Arrow" [ref=e211]
+      - generic [ref=e212]:
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - img "About Icon" [ref=e217]
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - generic [ref=e222]: "0"
+                - generic [ref=e223]: "1"
+                - generic [ref=e224]: "2"
+                - generic [ref=e225]: "3"
+                - generic [ref=e226]: "4"
+                - generic [ref=e227]: "5"
+                - generic [ref=e228]: "6"
+                - generic [ref=e229]: "7"
+                - generic [ref=e230]: "8"
+                - generic [ref=e231]: "3"
+              - generic [ref=e232]:
+                - generic [ref=e233]: "2"
+                - generic [ref=e234]: "8"
+                - generic [ref=e235]: "7"
+                - generic [ref=e236]: "6"
+                - generic [ref=e237]: "5"
+                - generic [ref=e238]: "4"
+                - generic [ref=e239]: "3"
+                - generic [ref=e240]: "2"
+                - generic [ref=e241]: "1"
+                - generic [ref=e242]: "0"
+              - generic [ref=e243]:
+                - generic [ref=e244]: "0"
+                - generic [ref=e245]: "1"
+                - generic [ref=e246]: "2"
+                - generic [ref=e247]: "3"
+                - generic [ref=e248]: "4"
+                - generic [ref=e249]: "5"
+                - generic [ref=e250]: "6"
+                - generic [ref=e251]: "7"
+                - generic [ref=e252]: "8"
+                - generic [ref=e253]: "0"
+              - generic [ref=e254]: "%"
+            - paragraph [ref=e255]: Average increase in client engagement in the first 6 months
+          - img "About Image" [ref=e257]
+        - generic [ref=e259]:
+          - link "About Link Image About Link Icon" [ref=e261] [cursor=pointer]:
+            - /url: /about
+            - img "About Link Image" [ref=e262]
+            - img "About Link Icon" [ref=e264]
+          - generic [ref=e266]:
+            - generic [ref=e267]:
+              - img "About Item Icon" [ref=e269]
+              - generic [ref=e270]: With 4+ years of experience, I specialize in creating intuitive, user-focused designs that solve real-world problems and deliver seamless digital experiences.
+            - generic [ref=e271]:
+              - img "About Item Icon" [ref=e273]
+              - generic [ref=e274]: I thrive on working closely with clients, blending creativity with strategy to bring their vision to life through thoughtful, impactful design solutions.
+    - generic [ref=e277]:
+      - generic [ref=e278]:
+        - list [ref=e280]:
+          - listitem [ref=e281]:
+            - generic [ref=e282]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e283] [cursor=pointer]:
+                - /url: /portfolios/rhome---brand-guidlines
+                - img "Project V1 Image" [ref=e284]
+                - img "Arrow Button Icon" [ref=e286]
+              - generic [ref=e287]:
+                - link "Rhome - Brand Guidlines" [ref=e288] [cursor=pointer]:
+                  - /url: /portfolios/rhome---brand-guidlines
+                - img "Project V1 Logo"
+        - list [ref=e290]:
+          - listitem [ref=e291]:
+            - generic [ref=e292]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e293] [cursor=pointer]:
+                - /url: /portfolios/koels-live-shop-landing-page
+                - img "Project V1 Image" [ref=e294]
+                - img "Arrow Button Icon" [ref=e296]
+              - generic [ref=e297]:
+                - link "Koel’s live shop Landing Page" [ref=e298] [cursor=pointer]:
+                  - /url: /portfolios/koels-live-shop-landing-page
+                - img "Project V1 Logo"
+        - list [ref=e300]:
+          - listitem [ref=e301]:
+            - generic [ref=e302]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e303] [cursor=pointer]:
+                - /url: /portfolios/crto---crypto-merket-app
+                - img "Project V1 Image" [ref=e304]
+                - img "Arrow Button Icon" [ref=e306]
+              - generic [ref=e307]:
+                - link "Crto - Crypto Merket app" [ref=e308] [cursor=pointer]:
+                  - /url: /portfolios/crto---crypto-merket-app
+                - img "Project V1 Logo"
+        - list [ref=e310]:
+          - listitem [ref=e311]:
+            - generic [ref=e312]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e313] [cursor=pointer]:
+                - /url: /portfolios/norio----fitness-wellness-app
+                - img "Project V1 Image" [ref=e314]
+                - img "Arrow Button Icon" [ref=e316]
+              - generic [ref=e317]:
+                - link "Norio — Fitness & Wellness App" [ref=e318] [cursor=pointer]:
+                  - /url: /portfolios/norio----fitness-wellness-app
+                - img "Project V1 Logo"
+        - list [ref=e320]:
+          - listitem [ref=e321]:
+            - generic [ref=e322]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e323] [cursor=pointer]:
+                - /url: /portfolios/revo----travel-booking-landing-page
+                - img "Project V1 Image" [ref=e324]
+                - img "Arrow Button Icon" [ref=e326]
+              - generic [ref=e327]:
+                - link "Revo — Travel Booking Landing Page" [ref=e328] [cursor=pointer]:
+                  - /url: /portfolios/revo----travel-booking-landing-page
+                - img "Project V1 Logo"
+        - list [ref=e330]:
+          - listitem [ref=e331]:
+            - generic [ref=e332]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e333] [cursor=pointer]:
+                - /url: /portfolios/kairo----minimal-portfolio-website
+                - img "Project V1 Image" [ref=e334]
+                - img "Arrow Button Icon" [ref=e336]
+              - generic [ref=e337]:
+                - link "Kairo — Minimal Portfolio Website" [ref=e338] [cursor=pointer]:
+                  - /url: /portfolios/kairo----minimal-portfolio-website
+                - img "Project V1 Logo"
+        - list [ref=e340]:
+          - listitem [ref=e341]:
+            - generic [ref=e342]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e343] [cursor=pointer]:
+                - /url: /portfolios/tivo----saas-analytics-dashboard
+                - img "Project V1 Image" [ref=e344]
+                - img "Arrow Button Icon" [ref=e346]
+              - generic [ref=e347]:
+                - link "Tivo — SaaS Analytics Dashboard" [ref=e348] [cursor=pointer]:
+                  - /url: /portfolios/tivo----saas-analytics-dashboard
+                - img "Project V1 Logo"
+      - generic [ref=e349]:
+        - list [ref=e351]:
+          - listitem [ref=e352]:
+            - generic [ref=e353]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e354] [cursor=pointer]:
+                - /url: /portfolios/rhome---brand-guidlines
+                - img "Project V1 Image" [ref=e355]
+                - img "Arrow Button Icon" [ref=e357]
+              - generic [ref=e358]:
+                - link "Rhome - Brand Guidlines" [ref=e359] [cursor=pointer]:
+                  - /url: /portfolios/rhome---brand-guidlines
+                - img "Project V1 Logo"
+        - list [ref=e361]:
+          - listitem [ref=e362]:
+            - generic [ref=e363]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e364] [cursor=pointer]:
+                - /url: /portfolios/koels-live-shop-landing-page
+                - img "Project V1 Image" [ref=e365]
+                - img "Arrow Button Icon" [ref=e367]
+              - generic [ref=e368]:
+                - link "Koel’s live shop Landing Page" [ref=e369] [cursor=pointer]:
+                  - /url: /portfolios/koels-live-shop-landing-page
+                - img "Project V1 Logo"
+        - list [ref=e371]:
+          - listitem [ref=e372]:
+            - generic [ref=e373]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e374] [cursor=pointer]:
+                - /url: /portfolios/crto---crypto-merket-app
+                - img "Project V1 Image" [ref=e375]
+                - img "Arrow Button Icon" [ref=e377]
+              - generic [ref=e378]:
+                - link "Crto - Crypto Merket app" [ref=e379] [cursor=pointer]:
+                  - /url: /portfolios/crto---crypto-merket-app
+                - img "Project V1 Logo"
+        - list [ref=e381]:
+          - listitem [ref=e382]:
+            - generic [ref=e383]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e384] [cursor=pointer]:
+                - /url: /portfolios/norio----fitness-wellness-app
+                - img "Project V1 Image" [ref=e385]
+                - img "Arrow Button Icon" [ref=e387]
+              - generic [ref=e388]:
+                - link "Norio — Fitness & Wellness App" [ref=e389] [cursor=pointer]:
+                  - /url: /portfolios/norio----fitness-wellness-app
+                - img "Project V1 Logo"
+        - list [ref=e391]:
+          - listitem [ref=e392]:
+            - generic [ref=e393]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e394] [cursor=pointer]:
+                - /url: /portfolios/revo----travel-booking-landing-page
+                - img "Project V1 Image" [ref=e395]
+                - img "Arrow Button Icon" [ref=e397]
+              - generic [ref=e398]:
+                - link "Revo — Travel Booking Landing Page" [ref=e399] [cursor=pointer]:
+                  - /url: /portfolios/revo----travel-booking-landing-page
+                - img "Project V1 Logo"
+        - list [ref=e401]:
+          - listitem [ref=e402]:
+            - generic [ref=e403]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e404] [cursor=pointer]:
+                - /url: /portfolios/kairo----minimal-portfolio-website
+                - img "Project V1 Image" [ref=e405]
+                - img "Arrow Button Icon" [ref=e407]
+              - generic [ref=e408]:
+                - link "Kairo — Minimal Portfolio Website" [ref=e409] [cursor=pointer]:
+                  - /url: /portfolios/kairo----minimal-portfolio-website
+                - img "Project V1 Logo"
+        - list [ref=e411]:
+          - listitem [ref=e412]:
+            - generic [ref=e413]:
+              - link "Project V1 Image Arrow Button Icon" [ref=e414] [cursor=pointer]:
+                - /url: /portfolios/tivo----saas-analytics-dashboard
+                - img "Project V1 Image" [ref=e415]
+                - img "Arrow Button Icon" [ref=e417]
+              - generic [ref=e418]:
+                - link "Tivo — SaaS Analytics Dashboard" [ref=e419] [cursor=pointer]:
+                  - /url: /portfolios/tivo----saas-analytics-dashboard
+                - img "Project V1 Logo"
+    - generic [ref=e422]:
+      - generic [ref=e423]:
+        - generic [ref=e424]:
+          - generic [ref=e428]: Experiences
+          - heading "Explore My Design Journey" [level=2] [ref=e429]
+        - generic [ref=e430]:
+          - paragraph [ref=e431]: Over the past 4+ years, I’ve had the opportunity to work on a wide range of design projects, collaborating with diverse teams and clients to bring creative visions to life.
+          - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e433] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e435]: Book A Call
+            - generic [ref=e437]:
+              - img "Outline Button Icon" [ref=e438]
+              - img "Outline Button Icon" [ref=e439]
+      - generic [ref=e440]:
+        - generic [ref=e441]:
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - generic [ref=e444]: Creative Minds, New York, USA
+              - generic [ref=e447]: February 2022 - Present
+            - paragraph [ref=e449]: Innovated designs, New York, Senior Product Designer
+            - generic [ref=e450]:
+              - generic [ref=e451]: UIUX
+              - generic [ref=e452]: Web Desing
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - img "Career Image" [ref=e456]
+              - img "Career Image" [ref=e458]
+              - img "Career Image" [ref=e460]
+            - paragraph [ref=e462]: Innovated designs, New York, Senior Product Designer
+            - link "Career Button Icons Career Button Icons" [ref=e463] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e464]:
+                - img "Career Button Icons" [ref=e465]
+                - img "Career Button Icons" [ref=e466]
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - generic [ref=e469]:
+              - generic [ref=e470]: Innovative Designs Inc, USA
+              - generic [ref=e473]: January 2020 - February 2022
+            - paragraph [ref=e475]: Led UX/UI, San Francisco . Crafting tomorrow's experiences
+            - generic [ref=e476]:
+              - generic [ref=e477]: Brand Identity
+              - generic [ref=e478]: Branding
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - img "Career Image" [ref=e482]
+              - img "Career Image" [ref=e484]
+              - img "Career Image" [ref=e486]
+            - paragraph [ref=e488]: Led UX/UI, San Francisco . Crafting tomorrow's experiences
+            - link "Career Button Icons Career Button Icons" [ref=e489] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e490]:
+                - img "Career Button Icons" [ref=e491]
+                - img "Career Button Icons" [ref=e492]
+        - generic [ref=e493]:
+          - generic [ref=e494]:
+            - generic [ref=e495]:
+              - generic [ref=e496]: Visionary Creations Ltd, UK
+              - generic [ref=e499]: February 2022 - Present
+            - paragraph [ref=e501]: Principal Designer, Berlin, Crafting tomorrow's experiences
+            - generic [ref=e502]:
+              - generic [ref=e503]: UIUX
+              - generic [ref=e504]: Development
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - img "Career Image" [ref=e508]
+              - img "Career Image" [ref=e510]
+              - img "Career Image" [ref=e512]
+            - paragraph [ref=e514]: Principal Designer, Berlin, Crafting tomorrow's experiences
+            - link "Career Button Icons Career Button Icons" [ref=e515] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e516]:
+                - img "Career Button Icons" [ref=e517]
+                - img "Career Button Icons" [ref=e518]
+        - generic [ref=e519]:
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - generic [ref=e522]: FutureTech, Berlin, Germany
+              - generic [ref=e525]: February 2022 - Present
+            - paragraph [ref=e527]: Innovated designs, New York, Senior Product Designer
+            - generic [ref=e528]:
+              - generic [ref=e529]: Branding
+              - generic [ref=e530]: UIUX
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - img "Career Image" [ref=e534]
+              - img "Career Image" [ref=e536]
+              - img "Career Image" [ref=e538]
+            - paragraph [ref=e540]: From crafting seamless user experiences to leading strategic product design initiatives, each experience has shaped my approach and strengthened my passion for solving design challenges
+            - link "Career Button Icons Career Button Icons" [ref=e541] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e542]:
+                - img "Career Button Icons" [ref=e543]
+                - img "Career Button Icons" [ref=e544]
+        - generic [ref=e545]:
+          - generic [ref=e546]:
+            - generic [ref=e547]:
+              - generic [ref=e548]: Expert Designs Inc, USA
+              - generic [ref=e551]: February 2022 - Present
+            - paragraph [ref=e553]: Innovated designs, New York, Senior Product Designer
+            - generic [ref=e554]:
+              - generic [ref=e555]: UIUX
+              - generic [ref=e556]: Dashboard
+          - generic [ref=e557]:
+            - generic [ref=e558]:
+              - img "Career Image" [ref=e560]
+              - img "Career Image" [ref=e562]
+              - img "Career Image" [ref=e564]
+            - paragraph [ref=e566]: Innovated designs, New York, Senior Product Designer
+            - link "Career Button Icons Career Button Icons" [ref=e567] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e568]:
+                - img "Career Button Icons" [ref=e569]
+                - img "Career Button Icons" [ref=e570]
+    - generic [ref=e574]:
+      - generic [ref=e575]: (Book Your Free Consultation Now!)
+      - heading "Exclusive Winter Deal Days Get a Free Consultation!" [level=2] [ref=e576]
+      - paragraph [ref=e577]: Take advantage of this limited-time offer to discuss your design needs with an experienced UI/UX and product designer.
+      - link "Let’s talk Outline Button Icon Outline Button Icon" [ref=e579] [cursor=pointer]:
+        - /url: /contact
+        - generic [ref=e581]: Let’s talk
+        - generic [ref=e583]:
+          - img "Outline Button Icon" [ref=e584]
+          - img "Outline Button Icon" [ref=e585]
+    - generic [ref=e589]:
+      - generic [ref=e590]:
+        - generic [ref=e594]: Blogs
+        - heading "Design Insights & Trends" [level=2] [ref=e595]
+      - generic [ref=e596]:
+        - generic [ref=e597]:
+          - list [ref=e599]:
+            - listitem [ref=e600]:
+              - generic [ref=e601]:
+                - link "Blog V1 Image" [ref=e602] [cursor=pointer]:
+                  - /url: /blogs/digital-marketing-is-evolving-at-a-breakneck
+                  - img "Blog V1 Image"
+                - link "Digital marketing is evolving at a breakneck Primary Button Img Primary Button Img" [ref=e605] [cursor=pointer]:
+                  - /url: /blogs/digital-marketing-is-evolving-at-a-breakneck
+                  - generic [ref=e607]: Digital marketing is evolving at a breakneck
+                  - generic [ref=e608]:
+                    - img "Primary Button Img" [ref=e609]
+                    - img "Primary Button Img" [ref=e610]
+          - list [ref=e613]:
+            - listitem [ref=e614]:
+              - generic [ref=e615]:
+                - link "Blog V1 Image" [ref=e616] [cursor=pointer]:
+                  - /url: /blogs/why-your-website-isnt-converting
+                  - img "Blog V1 Image"
+                - link "Why Your Website Isn’t Converting Primary Button Img Primary Button Img" [ref=e619] [cursor=pointer]:
+                  - /url: /blogs/why-your-website-isnt-converting
+                  - generic [ref=e621]: Why Your Website Isn’t Converting
+                  - generic [ref=e622]:
+                    - img "Primary Button Img" [ref=e623]
+                    - img "Primary Button Img" [ref=e624]
+        - generic [ref=e626]:
+          - list [ref=e628]:
+            - listitem [ref=e629]:
+              - generic [ref=e630]:
+                - link "Blog V1 Image" [ref=e631] [cursor=pointer]:
+                  - /url: /blogs/4-ways-to-increase-your-website-trafic
+                  - img "Blog V1 Image"
+                - link "4 Ways to increase your website trafic Primary Button Img Primary Button Img" [ref=e634] [cursor=pointer]:
+                  - /url: /blogs/4-ways-to-increase-your-website-trafic
+                  - generic [ref=e636]: 4 Ways to increase your website trafic
+                  - generic [ref=e637]:
+                    - img "Primary Button Img" [ref=e638]
+                    - img "Primary Button Img" [ref=e639]
+          - list [ref=e642]:
+            - listitem [ref=e643]:
+              - generic [ref=e644]:
+                - link "Blog V1 Image" [ref=e645] [cursor=pointer]:
+                  - /url: /blogs/top-ai-apps-right-now-design-edition
+                  - img "Blog V1 Image"
+                - 'link "Top AI apps right now: Design Edition Primary Button Img Primary Button Img" [ref=e648] [cursor=pointer]':
+                  - /url: /blogs/top-ai-apps-right-now-design-edition
+                  - generic [ref=e650]: "Top AI apps right now: Design Edition"
+                  - generic [ref=e651]:
+                    - img "Primary Button Img" [ref=e652]
+                    - img "Primary Button Img" [ref=e653]
+    - generic [ref=e655]:
+      - generic [ref=e657]:
+        - generic [ref=e658]:
+          - link "Brand Img" [ref=e659] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e660]
+          - generic [ref=e661]:
+            - link "About Me About Me" [ref=e662] [cursor=pointer]:
+              - /url: /about
+              - generic [ref=e663]: About Me
+              - generic [ref=e664]: About Me
+            - link "Portfolio Portfolio" [ref=e665] [cursor=pointer]:
+              - /url: /portfolio
+              - generic [ref=e666]: Portfolio
+              - generic [ref=e667]: Portfolio
+            - link "Services Services" [ref=e668] [cursor=pointer]:
+              - /url: /services
+              - generic [ref=e669]: Services
+              - generic [ref=e670]: Services
+            - link "Blog Blog" [ref=e671] [cursor=pointer]:
+              - /url: /blog
+              - generic [ref=e672]: Blog
+              - generic [ref=e673]: Blog
+          - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e675] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e677]: Book A Call
+            - generic [ref=e679]:
+              - img "Outline Button Icon" [ref=e680]
+              - img "Outline Button Icon" [ref=e681]
+        - generic [ref=e682]:
+          - generic [ref=e683]:
+            - link "Instargram" [ref=e684] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "Linkedin" [ref=e685] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - generic [ref=e686]:
+            - link "(207) 555-0119" [ref=e687] [cursor=pointer]:
+              - /url: tel:(207)555-0119
+            - link "finox@gmail.com" [ref=e688] [cursor=pointer]:
+              - /url: mailto:finox@gmail.com?subject=Contact%20with%20us
+          - generic [ref=e689]:
+            - link "Facebook" [ref=e690] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+            - link "Twitter" [ref=e691] [cursor=pointer]:
+              - /url: https://x.com/
+      - generic [ref=e693]:
+        - link "©Finox" [ref=e694] [cursor=pointer]:
+          - /url: /
+        - text: "|"
+        - link "Wolfpixel" [ref=e695] [cursor=pointer]:
+          - /url: https://webflow.com/templates/designers/wolfpixel
+        - text: "|"
+        - link "License" [ref=e696] [cursor=pointer]:
+          - /url: /utility-pages/license
+        - text: "| Poward By"
+        - link "Webflow" [ref=e697] [cursor=pointer]:
+          - /url: https://webflow.com/
+      - generic [ref=e699]:
+        - generic [ref=e700]:
+          - generic [ref=e701]: Finox
+          - generic [ref=e702]: Finox FInox
+          - generic [ref=e703]: Finox FInox
+        - generic [ref=e704]:
+          - generic [ref=e705]: Finox
+          - generic [ref=e706]: Finox FInox
+          - generic [ref=e707]: Finox FInox
+  - link "Made in Webflow" [ref=e708] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e709]

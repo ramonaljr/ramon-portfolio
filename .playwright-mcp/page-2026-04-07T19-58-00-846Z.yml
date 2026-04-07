@@ -1,0 +1,244 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e8]
+          - navigation [ref=e9]:
+            - generic [ref=e10]:
+              - link "About Me About Me" [ref=e11] [cursor=pointer]:
+                - /url: /about
+                - generic "About Me" [ref=e12]:
+                  - generic [ref=e13]:
+                    - generic [ref=e14]: A
+                    - generic [ref=e15]: b
+                    - generic [ref=e16]: o
+                    - generic [ref=e17]: u
+                    - generic [ref=e18]: t
+                  - generic [ref=e19]:
+                    - generic [ref=e20]: M
+                    - generic [ref=e21]: e
+                - generic "About Me" [ref=e22]:
+                  - generic [ref=e23]:
+                    - generic [ref=e24]: A
+                    - generic [ref=e25]: b
+                    - generic [ref=e26]: o
+                    - generic [ref=e27]: u
+                    - generic [ref=e28]: t
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: M
+                    - generic [ref=e31]: e
+              - link "Portfolio Portfolio" [ref=e32] [cursor=pointer]:
+                - /url: /portfolio
+                - generic "Portfolio" [ref=e33]:
+                  - generic [ref=e34]:
+                    - generic [ref=e35]: P
+                    - generic [ref=e36]: o
+                    - generic [ref=e37]: r
+                    - generic [ref=e38]: t
+                    - generic [ref=e39]: f
+                    - generic [ref=e40]: o
+                    - generic [ref=e41]: l
+                    - generic [ref=e42]: i
+                    - generic [ref=e43]: o
+                - generic "Portfolio" [ref=e44]:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: P
+                    - generic [ref=e47]: o
+                    - generic [ref=e48]: r
+                    - generic [ref=e49]: t
+                    - generic [ref=e50]: f
+                    - generic [ref=e51]: o
+                    - generic [ref=e52]: l
+                    - generic [ref=e53]: i
+                    - generic [ref=e54]: o
+              - button "Pages Pages" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic "Pages" [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic [ref=e60]: P
+                      - generic [ref=e61]: a
+                      - generic [ref=e62]: g
+                      - generic [ref=e63]: e
+                      - generic [ref=e64]: s
+                  - generic "Pages" [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: P
+                      - generic [ref=e68]: a
+                      - generic [ref=e69]: g
+                      - generic [ref=e70]: e
+                      - generic [ref=e71]: s
+                - generic [ref=e72]: 
+              - link "Services Services" [ref=e73] [cursor=pointer]:
+                - /url: /services
+                - generic "Services" [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: S
+                    - generic [ref=e77]: e
+                    - generic [ref=e78]: r
+                    - generic [ref=e79]: v
+                    - generic [ref=e80]: i
+                    - generic [ref=e81]: c
+                    - generic [ref=e82]: e
+                    - generic [ref=e83]: s
+                - generic "Services" [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: S
+                    - generic [ref=e87]: e
+                    - generic [ref=e88]: r
+                    - generic [ref=e89]: v
+                    - generic [ref=e90]: i
+                    - generic [ref=e91]: c
+                    - generic [ref=e92]: e
+                    - generic [ref=e93]: s
+              - link "Blog Blog" [ref=e94] [cursor=pointer]:
+                - /url: /blog
+                - generic "Blog" [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: B
+                    - generic [ref=e98]: l
+                    - generic [ref=e99]: o
+                    - generic [ref=e100]: g
+                - generic "Blog" [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: B
+                    - generic [ref=e104]: l
+                    - generic [ref=e105]: o
+                    - generic [ref=e106]: g
+        - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e108] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e110]: Book A Call
+          - generic [ref=e112]:
+            - img "Outline Button Icon" [ref=e113]
+            - img "Outline Button Icon" [ref=e114]
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e122]: Services
+        - heading "What i do best" [level=1] [ref=e123]
+        - paragraph [ref=e124]: I’m specialize in turning complex problems into elegant solutions. My approach blends creativity with strategic.
+      - list [ref=e127]:
+        - listitem [ref=e128]:
+          - generic [ref=e129]:
+            - paragraph [ref=e130]: Crafting intuitive, user-focused digital experiences that boost engagement.
+            - link "Service Icon Service Icon" [ref=e131] [cursor=pointer]:
+              - /url: /services/ui-ux-design
+              - img "Service Icon" [ref=e132]
+              - img "Service Icon" [ref=e133]
+            - link "UI/UX Design" [ref=e134] [cursor=pointer]:
+              - /url: /services/ui-ux-design
+        - listitem [ref=e135]:
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Building memorable brand identities that communicate your vision with clarity.
+            - link "Service Icon Service Icon" [ref=e138] [cursor=pointer]:
+              - /url: /services/branding
+              - img "Service Icon" [ref=e139]
+              - img "Service Icon" [ref=e140]
+            - link "Branding" [ref=e141] [cursor=pointer]:
+              - /url: /services/branding
+        - listitem [ref=e142]:
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Creating Visually Compelling designs that elevate your message and capture.
+            - link "Service Icon Service Icon" [ref=e145] [cursor=pointer]:
+              - /url: /services/graphic-design
+              - img "Service Icon" [ref=e146]
+              - img "Service Icon" [ref=e147]
+            - link "Graphic Design" [ref=e148] [cursor=pointer]:
+              - /url: /services/graphic-design
+        - listitem [ref=e149]:
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: Developing high - performing, responsive websites tailored to your business goals.
+            - link "Service Icon Service Icon" [ref=e152] [cursor=pointer]:
+              - /url: /services/web-development
+              - img "Service Icon" [ref=e153]
+              - img "Service Icon" [ref=e154]
+            - link "Web Development" [ref=e155] [cursor=pointer]:
+              - /url: /services/web-development
+        - listitem [ref=e156]:
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Driving growth through strategic marketing solutions that connect you.
+            - link "Service Icon Service Icon" [ref=e159] [cursor=pointer]:
+              - /url: /services/merketing
+              - img "Service Icon" [ref=e160]
+              - img "Service Icon" [ref=e161]
+            - link "Merketing" [ref=e162] [cursor=pointer]:
+              - /url: /services/merketing
+        - listitem [ref=e163]:
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: Bringing ideas to life with dynamic motion graphics that enhance storytelling.
+            - link "Service Icon Service Icon" [ref=e166] [cursor=pointer]:
+              - /url: /services/motion
+              - img "Service Icon" [ref=e167]
+              - img "Service Icon" [ref=e168]
+            - link "Motion" [ref=e169] [cursor=pointer]:
+              - /url: /services/motion
+    - generic [ref=e170]:
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - link "Brand Img" [ref=e174] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e175]
+          - generic [ref=e176]:
+            - link "About Me About Me" [ref=e177] [cursor=pointer]:
+              - /url: /about
+              - generic [ref=e178]: About Me
+              - generic [ref=e179]: About Me
+            - link "Portfolio Portfolio" [ref=e180] [cursor=pointer]:
+              - /url: /portfolio
+              - generic [ref=e181]: Portfolio
+              - generic [ref=e182]: Portfolio
+            - link "Services Services" [ref=e183] [cursor=pointer]:
+              - /url: /services
+              - generic [ref=e184]: Services
+              - generic [ref=e185]: Services
+            - link "Blog Blog" [ref=e186] [cursor=pointer]:
+              - /url: /blog
+              - generic [ref=e187]: Blog
+              - generic [ref=e188]: Blog
+          - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e190] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e192]: Book A Call
+            - generic [ref=e194]:
+              - img "Outline Button Icon" [ref=e195]
+              - img "Outline Button Icon" [ref=e196]
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - link "Instargram" [ref=e199] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "Linkedin" [ref=e200] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - generic [ref=e201]:
+            - link "(207) 555-0119" [ref=e202] [cursor=pointer]:
+              - /url: tel:(207)555-0119
+            - link "finox@gmail.com" [ref=e203] [cursor=pointer]:
+              - /url: mailto:finox@gmail.com?subject=Contact%20with%20us
+          - generic [ref=e204]:
+            - link "Facebook" [ref=e205] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+            - link "Twitter" [ref=e206] [cursor=pointer]:
+              - /url: https://x.com/
+      - generic [ref=e208]:
+        - link "©Finox" [ref=e209] [cursor=pointer]:
+          - /url: /
+        - text: "|"
+        - link "Wolfpixel" [ref=e210] [cursor=pointer]:
+          - /url: https://webflow.com/templates/designers/wolfpixel
+        - text: "|"
+        - link "License" [ref=e211] [cursor=pointer]:
+          - /url: /utility-pages/license
+        - text: "| Poward By"
+        - link "Webflow" [ref=e212] [cursor=pointer]:
+          - /url: https://webflow.com/
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]: Finox
+          - generic [ref=e217]: Finox FInox
+          - generic [ref=e218]: Finox FInox
+        - generic [ref=e219]:
+          - generic [ref=e220]: Finox
+          - generic [ref=e221]: Finox FInox
+          - generic [ref=e222]: Finox FInox
+  - link "Made in Webflow" [ref=e223] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e224]

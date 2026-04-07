@@ -1,0 +1,232 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e8]
+          - navigation [ref=e9]:
+            - generic [ref=e10]:
+              - link "About Me About Me" [ref=e11] [cursor=pointer]:
+                - /url: /about
+                - generic "About Me" [ref=e12]:
+                  - generic [ref=e13]:
+                    - generic [ref=e14]: A
+                    - generic [ref=e15]: b
+                    - generic [ref=e16]: o
+                    - generic [ref=e17]: u
+                    - generic [ref=e18]: t
+                  - generic [ref=e19]:
+                    - generic [ref=e20]: M
+                    - generic [ref=e21]: e
+                - generic "About Me" [ref=e22]:
+                  - generic [ref=e23]:
+                    - generic [ref=e24]: A
+                    - generic [ref=e25]: b
+                    - generic [ref=e26]: o
+                    - generic [ref=e27]: u
+                    - generic [ref=e28]: t
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: M
+                    - generic [ref=e31]: e
+              - link "Portfolio Portfolio" [ref=e32] [cursor=pointer]:
+                - /url: /portfolio
+                - generic "Portfolio" [ref=e33]:
+                  - generic [ref=e34]:
+                    - generic [ref=e35]: P
+                    - generic [ref=e36]: o
+                    - generic [ref=e37]: r
+                    - generic [ref=e38]: t
+                    - generic [ref=e39]: f
+                    - generic [ref=e40]: o
+                    - generic [ref=e41]: l
+                    - generic [ref=e42]: i
+                    - generic [ref=e43]: o
+                - generic "Portfolio" [ref=e44]:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: P
+                    - generic [ref=e47]: o
+                    - generic [ref=e48]: r
+                    - generic [ref=e49]: t
+                    - generic [ref=e50]: f
+                    - generic [ref=e51]: o
+                    - generic [ref=e52]: l
+                    - generic [ref=e53]: i
+                    - generic [ref=e54]: o
+              - button "Pages Pages" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic "Pages" [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic [ref=e60]: P
+                      - generic [ref=e61]: a
+                      - generic [ref=e62]: g
+                      - generic [ref=e63]: e
+                      - generic [ref=e64]: s
+                  - generic "Pages" [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: P
+                      - generic [ref=e68]: a
+                      - generic [ref=e69]: g
+                      - generic [ref=e70]: e
+                      - generic [ref=e71]: s
+                - generic [ref=e72]: 
+              - link "Services Services" [ref=e73] [cursor=pointer]:
+                - /url: /services
+                - generic "Services" [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: S
+                    - generic [ref=e77]: e
+                    - generic [ref=e78]: r
+                    - generic [ref=e79]: v
+                    - generic [ref=e80]: i
+                    - generic [ref=e81]: c
+                    - generic [ref=e82]: e
+                    - generic [ref=e83]: s
+                - generic "Services" [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: S
+                    - generic [ref=e87]: e
+                    - generic [ref=e88]: r
+                    - generic [ref=e89]: v
+                    - generic [ref=e90]: i
+                    - generic [ref=e91]: c
+                    - generic [ref=e92]: e
+                    - generic [ref=e93]: s
+              - link "Blog Blog" [ref=e94] [cursor=pointer]:
+                - /url: /blog
+                - generic "Blog" [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: B
+                    - generic [ref=e98]: l
+                    - generic [ref=e99]: o
+                    - generic [ref=e100]: g
+                - generic "Blog" [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: B
+                    - generic [ref=e104]: l
+                    - generic [ref=e105]: o
+                    - generic [ref=e106]: g
+        - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e108] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e110]: Book A Call
+          - generic [ref=e112]:
+            - img "Outline Button Icon" [ref=e113]
+            - img "Outline Button Icon" [ref=e114]
+    - generic [ref=e115]:
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e124]: Contact
+            - heading "Contact Me" [level=2] [ref=e125]
+            - paragraph [ref=e126]: Ready to Transform Your Ideas into Stunning Designs? Contact Me to Discuss Your Vision and Explore How We Can Bring Your Project to Life
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - generic [ref=e129]: Email
+              - link "finox@gmail.com" [ref=e130] [cursor=pointer]:
+                - /url: mailto:finox@gmail.com?subject=Contact%20With%20US
+            - generic [ref=e131]:
+              - generic [ref=e132]: Phone
+              - link "(207) 555-0119" [ref=e133] [cursor=pointer]:
+                - /url: tel:(207)555-0119
+            - generic [ref=e134]:
+              - generic [ref=e135]: Address
+              - link "123 Main Street, Suite 123, Tegal, USA" [ref=e136] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/123+Main+Street,+Suite+123,+Tegal,+USA/@-6.8705277,109.0966401,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D
+        - form "Contact Form" [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]: First name
+                - textbox "First name" [ref=e144]
+              - generic [ref=e145]:
+                - generic [ref=e146]: Last name
+                - textbox "Last name" [ref=e147]
+            - generic [ref=e148]:
+              - generic [ref=e149]: Email
+              - textbox "Email" [ref=e150]:
+                - /placeholder: you@company.com
+            - generic [ref=e151]:
+              - generic [ref=e152]: Phone number
+              - textbox "Phone number" [ref=e153]:
+                - /placeholder: +1 (555) 000-0000
+            - generic [ref=e154]:
+              - generic [ref=e155]: Message
+              - textbox "Message" [ref=e156]:
+                - /placeholder: Leave us a message...
+            - generic [ref=e157]:
+              - checkbox "You agree to our friendly privacy policy." [ref=e159]
+              - generic [ref=e160] [cursor=pointer]:
+                - text: You agree to our friendly
+                - link "privacy policy." [ref=e161]:
+                  - /url: /privacy-policy
+          - button "Submit" [ref=e162] [cursor=pointer]
+      - generic [ref=e163]:
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - link "Brand Img" [ref=e167] [cursor=pointer]:
+              - /url: /
+              - img "Brand Img" [ref=e168]
+            - generic [ref=e169]:
+              - link "About Me About Me" [ref=e170] [cursor=pointer]:
+                - /url: /about
+                - generic [ref=e171]: About Me
+                - generic [ref=e172]: About Me
+              - link "Portfolio Portfolio" [ref=e173] [cursor=pointer]:
+                - /url: /portfolio
+                - generic [ref=e174]: Portfolio
+                - generic [ref=e175]: Portfolio
+              - link "Services Services" [ref=e176] [cursor=pointer]:
+                - /url: /services
+                - generic [ref=e177]: Services
+                - generic [ref=e178]: Services
+              - link "Blog Blog" [ref=e179] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e180]: Blog
+                - generic [ref=e181]: Blog
+            - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e183] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e185]: Book A Call
+              - generic [ref=e187]:
+                - img "Outline Button Icon" [ref=e188]
+                - img "Outline Button Icon" [ref=e189]
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - link "Instargram" [ref=e192] [cursor=pointer]:
+                - /url: https://www.instagram.com/
+              - link "Linkedin" [ref=e193] [cursor=pointer]:
+                - /url: https://www.linkedin.com/
+            - generic [ref=e194]:
+              - link "(207) 555-0119" [ref=e195] [cursor=pointer]:
+                - /url: tel:(207)555-0119
+              - link "finox@gmail.com" [ref=e196] [cursor=pointer]:
+                - /url: mailto:finox@gmail.com?subject=Contact%20with%20us
+            - generic [ref=e197]:
+              - link "Facebook" [ref=e198] [cursor=pointer]:
+                - /url: https://www.facebook.com/
+              - link "Twitter" [ref=e199] [cursor=pointer]:
+                - /url: https://x.com/
+        - generic [ref=e201]:
+          - link "©Finox" [ref=e202] [cursor=pointer]:
+            - /url: /
+          - text: "|"
+          - link "Wolfpixel" [ref=e203] [cursor=pointer]:
+            - /url: https://webflow.com/templates/designers/wolfpixel
+          - text: "|"
+          - link "License" [ref=e204] [cursor=pointer]:
+            - /url: /utility-pages/license
+          - text: "| Poward By"
+          - link "Webflow" [ref=e205] [cursor=pointer]:
+            - /url: https://webflow.com/
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - generic [ref=e209]: Finox
+            - generic [ref=e210]: Finox FInox
+            - generic [ref=e211]: Finox FInox
+          - generic [ref=e212]:
+            - generic [ref=e213]: Finox
+            - generic [ref=e214]: Finox FInox
+            - generic [ref=e215]: Finox FInox
+  - link "Made in Webflow" [ref=e217] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e218]

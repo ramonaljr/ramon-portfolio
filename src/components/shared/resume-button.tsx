@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { MaterialIcon } from "@/components/shared/material-icon";
+import { Download } from "lucide-react";
 
 export function ResumeButton({ variant = "default" }: { variant?: "default" | "compact" }) {
   return (
@@ -19,7 +19,7 @@ export function ResumeButton({ variant = "default" }: { variant?: "default" | "c
         whileHover={{ y: 2 }}
         transition={{ type: "spring", damping: 20, stiffness: 300 }}
       >
-        <MaterialIcon name="download" className={variant === "compact" ? "text-base" : "text-lg"} />
+        <Download className={variant === "compact" ? "w-4 h-4" : "w-5 h-5"} />
       </motion.span>
       {variant === "compact" ? "CV" : "Download Resume"}
     </motion.a>

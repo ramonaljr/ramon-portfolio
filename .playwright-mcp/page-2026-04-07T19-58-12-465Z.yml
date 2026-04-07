@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e8]
+          - navigation [ref=e9]:
+            - generic [ref=e10]:
+              - link "About Me About Me" [ref=e11] [cursor=pointer]:
+                - /url: /about
+                - generic "About Me" [ref=e12]:
+                  - generic [ref=e13]:
+                    - generic [ref=e14]: A
+                    - generic [ref=e15]: b
+                    - generic [ref=e16]: o
+                    - generic [ref=e17]: u
+                    - generic [ref=e18]: t
+                  - generic [ref=e19]:
+                    - generic [ref=e20]: M
+                    - generic [ref=e21]: e
+                - generic "About Me" [ref=e22]:
+                  - generic [ref=e23]:
+                    - generic [ref=e24]: A
+                    - generic [ref=e25]: b
+                    - generic [ref=e26]: o
+                    - generic [ref=e27]: u
+                    - generic [ref=e28]: t
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: M
+                    - generic [ref=e31]: e
+              - link "Portfolio Portfolio" [ref=e32] [cursor=pointer]:
+                - /url: /portfolio
+                - generic "Portfolio" [ref=e33]:
+                  - generic [ref=e34]:
+                    - generic [ref=e35]: P
+                    - generic [ref=e36]: o
+                    - generic [ref=e37]: r
+                    - generic [ref=e38]: t
+                    - generic [ref=e39]: f
+                    - generic [ref=e40]: o
+                    - generic [ref=e41]: l
+                    - generic [ref=e42]: i
+                    - generic [ref=e43]: o
+                - generic "Portfolio" [ref=e44]:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: P
+                    - generic [ref=e47]: o
+                    - generic [ref=e48]: r
+                    - generic [ref=e49]: t
+                    - generic [ref=e50]: f
+                    - generic [ref=e51]: o
+                    - generic [ref=e52]: l
+                    - generic [ref=e53]: i
+                    - generic [ref=e54]: o
+              - button "Pages Pages" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic "Pages" [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic [ref=e60]: P
+                      - generic [ref=e61]: a
+                      - generic [ref=e62]: g
+                      - generic [ref=e63]: e
+                      - generic [ref=e64]: s
+                  - generic "Pages" [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: P
+                      - generic [ref=e68]: a
+                      - generic [ref=e69]: g
+                      - generic [ref=e70]: e
+                      - generic [ref=e71]: s
+                - generic [ref=e72]: 
+              - link "Services Services" [ref=e73] [cursor=pointer]:
+                - /url: /services
+                - generic "Services" [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: S
+                    - generic [ref=e77]: e
+                    - generic [ref=e78]: r
+                    - generic [ref=e79]: v
+                    - generic [ref=e80]: i
+                    - generic [ref=e81]: c
+                    - generic [ref=e82]: e
+                    - generic [ref=e83]: s
+                - generic "Services" [ref=e84]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: S
+                    - generic [ref=e87]: e
+                    - generic [ref=e88]: r
+                    - generic [ref=e89]: v
+                    - generic [ref=e90]: i
+                    - generic [ref=e91]: c
+                    - generic [ref=e92]: e
+                    - generic [ref=e93]: s
+              - link "Blog Blog" [ref=e94] [cursor=pointer]:
+                - /url: /blog
+                - generic "Blog" [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: B
+                    - generic [ref=e98]: l
+                    - generic [ref=e99]: o
+                    - generic [ref=e100]: g
+                - generic "Blog" [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: B
+                    - generic [ref=e104]: l
+                    - generic [ref=e105]: o
+                    - generic [ref=e106]: g
+        - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e108] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e110]: Book A Call
+          - generic [ref=e112]:
+            - img "Outline Button Icon" [ref=e113]
+            - img "Outline Button Icon" [ref=e114]
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e122]: Latest Insights
+        - heading "Latest Insights & Trends" [level=1] [ref=e123]
+        - paragraph [ref=e124]: Stay updated with the latest in UI/UX design, product design, and industry trends. Here, you'll find in-depth articles, case studies, and expert opinions that offer valuable insights and inspiration for your next project.
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - tablist [ref=e127]:
+            - tab "All" [selected] [ref=e128] [cursor=pointer]:
+              - generic [ref=e129]: All
+            - tab "Resources" [ref=e130] [cursor=pointer]:
+              - generic [ref=e131]: Resources
+            - tab "Creative Process" [ref=e132] [cursor=pointer]:
+              - generic [ref=e133]: Creative Process
+            - tab "Design Principles" [ref=e134] [cursor=pointer]:
+              - generic [ref=e135]: Design Principles
+            - tab "Trips & Tricks" [ref=e136] [cursor=pointer]:
+              - generic [ref=e137]: Trips & Tricks
+          - tabpanel "All" [ref=e139]:
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic:
+                  - list:
+                    - listitem:
+                      - link "Blog Image Arrow Button Icon Digital marketing is evolving at a breakneck 17 October, 2025":
+                        - /url: /blogs/digital-marketing-is-evolving-at-a-breakneck
+                        - img "Blog Image"
+                        - img "Arrow Button Icon" [ref=e144] [cursor=pointer]
+                        - generic [ref=e145] [cursor=pointer]:
+                          - generic [ref=e146]: Digital marketing is evolving at a breakneck
+                          - generic [ref=e147]: 17 October, 2025
+              - list [ref=e150]:
+                - listitem [ref=e151]:
+                  - link "Blog Image Arrow Button Icon Why Your Website Isn’t Converting 17 October, 2025" [ref=e152] [cursor=pointer]:
+                    - /url: /blogs/why-your-website-isnt-converting
+                    - img "Blog Image" [ref=e153]
+                    - img "Arrow Button Icon" [ref=e157]
+                    - generic [ref=e158]:
+                      - generic [ref=e159]: Why Your Website Isn’t Converting
+                      - generic [ref=e160]: 17 October, 2025
+                - listitem [ref=e161]:
+                  - link "Blog Image Arrow Button Icon 4 Ways to increase your website trafic 17 October, 2025" [ref=e162] [cursor=pointer]:
+                    - /url: /blogs/4-ways-to-increase-your-website-trafic
+                    - img "Blog Image" [ref=e163]
+                    - img "Arrow Button Icon" [ref=e167]
+                    - generic [ref=e168]:
+                      - generic [ref=e169]: 4 Ways to increase your website trafic
+                      - generic [ref=e170]: 17 October, 2025
+        - generic [ref=e171]:
+          - generic [ref=e172]: "Sort by:"
+          - form "Filter Form" [ref=e174]:
+            - combobox [ref=e176]:
+              - option "Newest" [selected]
+              - option "Resources"
+              - option "Creative Process"
+              - option "Design Principles"
+              - option "Trips & Tricks"
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e187]: Highlights projects
+          - heading "Case Studies & Project Highlights" [level=1] [ref=e188]
+          - paragraph [ref=e189]: Explore detailed case studies and highlights of recent projects. Learn about the challenges faced, the design solutions implemented, and the outcomes achieved.
+        - link "Contact Me Contact Me Primary Button Img Primary Button Img" [ref=e191] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e192]:
+            - generic [ref=e193]: Contact Me
+            - generic [ref=e194]: Contact Me
+          - generic [ref=e195]:
+            - img "Primary Button Img" [ref=e196]
+            - img "Primary Button Img" [ref=e197]
+      - generic [ref=e199]:
+        - list [ref=e202]:
+          - listitem [ref=e203]:
+            - generic [ref=e204]:
+              - link "Blog Image Arrow Button Icon" [ref=e205] [cursor=pointer]:
+                - /url: /blogs/digital-marketing-is-evolving-at-a-breakneck
+                - img "Blog Image" [ref=e206]
+                - img "Arrow Button Icon" [ref=e208]
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - generic [ref=e211]: Resources
+                  - generic [ref=e212]: 20 minute read
+                - link "Digital marketing is evolving at a breakneck" [ref=e213] [cursor=pointer]:
+                  - /url: /blogs/digital-marketing-is-evolving-at-a-breakneck
+        - list [ref=e216]:
+          - listitem [ref=e217]:
+            - generic [ref=e218]:
+              - link "Blog Image Arrow Button Icon" [ref=e219] [cursor=pointer]:
+                - /url: /blogs/why-your-website-isnt-converting
+                - img "Blog Image" [ref=e220]
+                - img "Arrow Button Icon" [ref=e222]
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - generic [ref=e225]: Creative Process
+                  - generic [ref=e226]: 18 minute read
+                - link "Why Your Website Isn’t Converting" [ref=e227] [cursor=pointer]:
+                  - /url: /blogs/why-your-website-isnt-converting
+        - list [ref=e230]:
+          - listitem [ref=e231]:
+            - generic [ref=e232]:
+              - link "Blog Image Arrow Button Icon" [ref=e233] [cursor=pointer]:
+                - /url: /blogs/4-ways-to-increase-your-website-trafic
+                - img "Blog Image" [ref=e234]
+                - img "Arrow Button Icon" [ref=e236]
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - generic [ref=e239]: Design Principles
+                  - generic [ref=e240]: 21 minute read
+                - link "4 Ways to increase your website trafic" [ref=e241] [cursor=pointer]:
+                  - /url: /blogs/4-ways-to-increase-your-website-trafic
+        - list [ref=e244]:
+          - listitem [ref=e245]:
+            - generic [ref=e246]:
+              - link "Blog Image Arrow Button Icon" [ref=e247] [cursor=pointer]:
+                - /url: /blogs/top-ai-apps-right-now-design-edition
+                - img "Blog Image" [ref=e248]
+                - img "Arrow Button Icon" [ref=e250]
+              - generic [ref=e251]:
+                - generic [ref=e252]:
+                  - generic [ref=e253]: Trips & Tricks
+                  - generic [ref=e254]: 8 min read
+                - 'link "Top AI apps right now: Design Edition" [ref=e255] [cursor=pointer]':
+                  - /url: /blogs/top-ai-apps-right-now-design-edition
+        - list [ref=e258]:
+          - listitem [ref=e259]:
+            - generic [ref=e260]:
+              - link "Blog Image Arrow Button Icon" [ref=e261] [cursor=pointer]:
+                - /url: /blogs/conducting-in-depth-user-research
+                - img "Blog Image" [ref=e262]
+                - img "Arrow Button Icon" [ref=e264]
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - generic [ref=e267]: Resources
+                  - generic [ref=e268]: 7 min read
+                - link "Conducting in-depth user research." [ref=e269] [cursor=pointer]:
+                  - /url: /blogs/conducting-in-depth-user-research
+        - list [ref=e272]:
+          - listitem [ref=e273]:
+            - generic [ref=e274]:
+              - link "Blog Image Arrow Button Icon" [ref=e275] [cursor=pointer]:
+                - /url: /blogs/cover-a-broad-range-of-design-need
+                - img "Blog Image" [ref=e276]
+                - img "Arrow Button Icon" [ref=e278]
+              - generic [ref=e279]:
+                - generic [ref=e280]:
+                  - generic [ref=e281]: Creative Process
+                  - generic [ref=e282]: 6 min read
+                - link "Cover a broad range of design need." [ref=e283] [cursor=pointer]:
+                  - /url: /blogs/cover-a-broad-range-of-design-need
+        - list [ref=e286]:
+          - listitem [ref=e287]:
+            - generic [ref=e288]:
+              - link "Blog Image Arrow Button Icon" [ref=e289] [cursor=pointer]:
+                - /url: /blogs/providing-expert-advice-and-strategic
+                - img "Blog Image" [ref=e290]
+                - img "Arrow Button Icon" [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Design Principles
+                  - generic [ref=e296]: 5 min read
+                - link "Providing expert advice and strategic." [ref=e297] [cursor=pointer]:
+                  - /url: /blogs/providing-expert-advice-and-strategic
+    - generic [ref=e298]:
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - link "Brand Img" [ref=e302] [cursor=pointer]:
+            - /url: /
+            - img "Brand Img" [ref=e303]
+          - generic [ref=e304]:
+            - link "About Me About Me" [ref=e305] [cursor=pointer]:
+              - /url: /about
+              - generic [ref=e306]: About Me
+              - generic [ref=e307]: About Me
+            - link "Portfolio Portfolio" [ref=e308] [cursor=pointer]:
+              - /url: /portfolio
+              - generic [ref=e309]: Portfolio
+              - generic [ref=e310]: Portfolio
+            - link "Services Services" [ref=e311] [cursor=pointer]:
+              - /url: /services
+              - generic [ref=e312]: Services
+              - generic [ref=e313]: Services
+            - link "Blog Blog" [ref=e314] [cursor=pointer]:
+              - /url: /blog
+              - generic [ref=e315]: Blog
+              - generic [ref=e316]: Blog
+          - link "Book A Call Outline Button Icon Outline Button Icon" [ref=e318] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e320]: Book A Call
+            - generic [ref=e322]:
+              - img "Outline Button Icon" [ref=e323]
+              - img "Outline Button Icon" [ref=e324]
+        - generic [ref=e325]:
+          - generic [ref=e326]:
+            - link "Instargram" [ref=e327] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "Linkedin" [ref=e328] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+          - generic [ref=e329]:
+            - link "(207) 555-0119" [ref=e330] [cursor=pointer]:
+              - /url: tel:(207)555-0119
+            - link "finox@gmail.com" [ref=e331] [cursor=pointer]:
+              - /url: mailto:finox@gmail.com?subject=Contact%20with%20us
+          - generic [ref=e332]:
+            - link "Facebook" [ref=e333] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+            - link "Twitter" [ref=e334] [cursor=pointer]:
+              - /url: https://x.com/
+      - generic [ref=e336]:
+        - link "©Finox" [ref=e337] [cursor=pointer]:
+          - /url: /
+        - text: "|"
+        - link "Wolfpixel" [ref=e338] [cursor=pointer]:
+          - /url: https://webflow.com/templates/designers/wolfpixel
+        - text: "|"
+        - link "License" [ref=e339] [cursor=pointer]:
+          - /url: /utility-pages/license
+        - text: "| Poward By"
+        - link "Webflow" [ref=e340] [cursor=pointer]:
+          - /url: https://webflow.com/
+      - generic [ref=e342]:
+        - generic [ref=e343]:
+          - generic [ref=e344]: Finox
+          - generic [ref=e345]: Finox FInox
+          - generic [ref=e346]: Finox FInox
+        - generic [ref=e347]:
+          - generic [ref=e348]: Finox
+          - generic [ref=e349]: Finox FInox
+          - generic [ref=e350]: Finox FInox
+  - link "Made in Webflow" [ref=e351] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e352]
