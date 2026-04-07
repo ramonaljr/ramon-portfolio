@@ -6,9 +6,7 @@
 
 @theme inline {
   --font-sans: var(--font-manrope), "Manrope", sans-serif;
-  --font-headline: var(--font-manrope), "Manrope", sans-serif;
   --font-body: var(--font-manrope), "Manrope", sans-serif;
-  --font-label: var(--font-manrope), "Manrope", sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
   --color-background: #ffffff;
