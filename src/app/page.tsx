@@ -10,6 +10,7 @@ import { About } from "@/components/sections/about";
 import { Testimonial } from "@/components/sections/testimonial";
 import { Testimonials } from "@/components/sections/testimonials";
 import { FinalCTA } from "@/components/sections/final-cta";
+import { BlogPreview } from "@/components/sections/blog-preview";
 import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/shared/back-to-top";
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Testimonial />
         <Testimonials />
         <FinalCTA />
+        <BlogPreview />
       </main>
       <Footer />
       <BackToTop />
