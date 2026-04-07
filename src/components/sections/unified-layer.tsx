@@ -144,7 +144,7 @@ export function UnifiedLayer() {
 
             <div
               ref={logRef}
-              className="relative glass-card rounded-lg p-6 shadow-xl border border-white/10"
+              className="relative rounded-lg p-6 shadow-xl border border-border bg-card"
             >
               <div className="flex items-center justify-between mb-6">
                 <h4 className="text-sm font-bold uppercase tracking-widest text-outline">

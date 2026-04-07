@@ -10,7 +10,7 @@ export function ResumeButton({ variant = "default" }: { variant?: "default" | "c
       download
       className={variant === "compact"
         ? "flex items-center gap-1.5 text-sm font-medium text-white/50 hover:text-white transition-colors duration-300"
-        : "inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full font-bold text-white border border-white/15 hover:border-white/30 hover:shadow-[0_0_30px_rgba(250,112,37,0.15)] active:scale-[0.97] transition-all duration-500 group"
+        : "inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold border border-border hover:border-foreground/30 active:scale-[0.97] transition-all duration-500 group"
       }
       whileHover={{ scale: variant === "compact" ? 1 : 1.02 }}
     >
