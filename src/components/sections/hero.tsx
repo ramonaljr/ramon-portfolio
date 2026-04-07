@@ -98,10 +98,10 @@ export function Hero() {
             className="relative lg:h-[80vh] h-[50vh] lg:-mr-8"
           >
             <Image
-              src="/ramon-photo.jpeg"
+              src="/ramon-photo.jpg"
               alt="Ramon A. Vallejera, Jr. — Full-Stack Developer"
               fill
-              className="object-cover object-top grayscale"
+              className="object-contain object-top"
               priority
             />
           </motion.div>

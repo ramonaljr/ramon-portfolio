@@ -62,10 +62,10 @@ export function AboutHero() {
         className="relative w-full h-[50vh] md:h-[70vh] overflow-hidden"
       >
         <Image
-          src="/ramon-photo.jpeg"
+          src="/ramon-photo.jpg"
           alt="Ramon A. Vallejera, Jr."
           fill
-          className="object-cover object-top grayscale"
+          className="object-contain object-top"
           priority
         />
       </motion.div>

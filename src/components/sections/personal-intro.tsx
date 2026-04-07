@@ -45,7 +45,7 @@ export function PersonalIntro() {
             <FadeIn delay={0.3}>
               <div className="relative h-48 rounded-2xl overflow-hidden">
                 <Image
-                  src="/ramon-photo.jpeg"
+                  src="/ramon-photo.jpg"
                   alt="Ramon A. Vallejera, Jr. working"
                   fill
                   className="object-cover object-top"
