@@ -86,7 +86,7 @@ export function Hero() {
           >
             <Image
               src="/ramon-photo.jpeg"
-              alt="Ramon Vallejera — Full-Stack Developer"
+              alt="Ramon A. Vallejera, Jr. — Full-Stack Developer"
               fill
               className="object-cover object-top grayscale"
               priority

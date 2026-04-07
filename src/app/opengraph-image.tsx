@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Ramon Vallejera — Full-Stack Developer & AI Engineer";
+export const alt = "Ramon A. Vallejera, Jr. — Full-Stack Developer & AI Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

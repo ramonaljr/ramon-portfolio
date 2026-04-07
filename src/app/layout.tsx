@@ -15,8 +15,8 @@ const siteUrl = "https://ramon.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ramon Vallejera — Full-Stack Developer & AI Engineer",
-    template: "%s | Ramon Vallejera",
+    default: "Ramon A. Vallejera, Jr. — Full-Stack Developer & AI Engineer",
+    template: "%s | Ramon A. Vallejera, Jr.",
   },
   description:
     "Full-stack developer and AI engineer building smart software — React, Next.js, Node.js, Python, and AI automation. Available for hire.",
@@ -30,20 +30,20 @@ export const metadata: Metadata = {
     "AI automation",
     "hire full-stack developer",
   ],
-  authors: [{ name: "Ramon Vallejera", url: siteUrl }],
-  creator: "Ramon Vallejera",
+  authors: [{ name: "Ramon A. Vallejera, Jr.", url: siteUrl }],
+  creator: "Ramon A. Vallejera, Jr.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Ramon Vallejera",
-    title: "Ramon Vallejera — Full-Stack Developer & AI Engineer",
+    siteName: "Ramon A. Vallejera, Jr.",
+    title: "Ramon A. Vallejera, Jr. — Full-Stack Developer & AI Engineer",
     description:
       "Full-stack developer and AI engineer building smart software — React, Next.js, Node.js, Python, and AI automation. Available for hire.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ramon Vallejera — Full-Stack Developer & AI Engineer",
+    title: "Ramon A. Vallejera, Jr. — Full-Stack Developer & AI Engineer",
     description:
       "Full-stack developer and AI engineer building smart software — React, Next.js, Node.js, Python, and AI automation.",
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Ramon Vallejera",
+  name: "Ramon A. Vallejera, Jr.",
   jobTitle: "Full-Stack Developer & AI Engineer",
   url: siteUrl,
   sameAs: [

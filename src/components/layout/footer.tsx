@@ -72,17 +72,17 @@ export function Footer() {
         <div className="overflow-hidden py-8 border-t border-white/10">
           <div className="animate-marquee whitespace-nowrap flex">
             <span className="text-[6rem] lg:text-[8rem] font-bold text-white/[0.07] leading-none mx-4">
-              Ramon Vallejera
+              Ramon A. Vallejera, Jr.
             </span>
             <span className="text-[6rem] lg:text-[8rem] font-bold text-white/[0.07] leading-none mx-4">
-              Ramon Vallejera
+              Ramon A. Vallejera, Jr.
             </span>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="px-8 lg:px-16 py-6 border-t border-white/10 text-xs text-white/40">
-          &copy; {new Date().getFullYear()} Ramon Vallejera
+          &copy; {new Date().getFullYear()} Ramon A. Vallejera, Jr.
         </div>
       </footer>
     </FadeIn>

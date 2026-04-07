@@ -44,7 +44,7 @@ export function PersonalIntro() {
               <div className="relative h-48 rounded-2xl overflow-hidden">
                 <Image
                   src="/ramon-photo.jpeg"
-                  alt="Ramon Vallejera working"
+                  alt="Ramon A. Vallejera, Jr. working"
                   fill
                   className="object-cover object-top"
                 />
