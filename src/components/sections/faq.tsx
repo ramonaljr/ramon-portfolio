@@ -2,15 +2,9 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { MaterialIcon } from "@/components/shared/material-icon";
+import { ChevronDown } from "lucide-react";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/shared/motion";
-
-const cinematicSpring = {
-  type: "spring" as const,
-  damping: 30,
-  stiffness: 100,
-  mass: 1.2,
-};
+import { SectionPill } from "@/components/shared/section-pill";
 
 const faqs = [
   {
@@ -52,22 +46,19 @@ function FAQItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-b border-outline-variant/20">
+    <div className="border-b border-border">
       <button
         onClick={onToggle}
         className="flex items-center justify-between w-full py-6 text-left group"
       >
-        <span className="text-lg font-medium text-on-surface group-hover:text-primary transition-colors duration-300">
+        <span className="text-lg font-medium text-foreground group-hover:text-foreground/70 transition-colors duration-300">
           {question}
         </span>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={cinematicSpring}
+          transition={{ type: "spring", damping: 30, stiffness: 100, mass: 1.2 }}
         >
-          <MaterialIcon
-            name="expand_more"
-            className="text-on-surface-variant text-xl shrink-0 ml-4"
-          />
+          <ChevronDown className="w-5 h-5 text-muted-foreground shrink-0 ml-4" />
         </motion.div>
       </button>
       <AnimatePresence initial={false}>
@@ -76,10 +67,10 @@ function FAQItem({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={cinematicSpring}
+            transition={{ type: "spring", damping: 30, stiffness: 100, mass: 1.2 }}
             className="overflow-hidden"
           >
-            <p className="text-on-surface-variant leading-relaxed pb-6">
+            <p className="text-muted-foreground leading-relaxed pb-6">
               {answer}
             </p>
           </motion.div>
@@ -97,13 +88,11 @@ export function FAQ() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-surface">
-      <div className="max-w-screen-2xl mx-auto px-8">
+    <section className="py-32 bg-background">
+      <div className="max-w-6xl mx-auto px-8">
         <FadeIn className="text-center mb-16">
-          <span className="text-primary font-bold uppercase tracking-widest text-xs">
-            FAQ
-          </span>
-          <h2 className="text-3xl md:text-5xl font-headline font-bold mt-4 text-on-surface">
+          <SectionPill label="FAQ" />
+          <h2 className="text-3xl md:text-5xl font-semibold mt-4 text-foreground">
             Frequently Asked Questions
           </h2>
         </FadeIn>
