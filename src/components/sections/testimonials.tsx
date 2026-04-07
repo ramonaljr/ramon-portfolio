@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import { motion } from "motion/react";
-import { FadeIn, useReducedMotion } from "@/components/shared/motion";
+import { SectionPill } from "@/components/shared/section-pill";
+import { FadeIn, StaggerChildren, StaggerItem } from "@/components/shared/motion";
 
 interface Testimonial {
   text: string;
@@ -59,112 +58,53 @@ const testimonials: Testimonial[] = [
 ];
 
 function Avatar({ name }: { name: string }) {
-  const initials = name.split(" ").map(n => n[0]).join("");
-  const colors = [
-    "bg-primary-container", "bg-secondary-container", "bg-tertiary-container",
-    "bg-primary-fixed", "bg-secondary-fixed",
-  ];
-  const colorIndex = name.length % colors.length;
+  const initials = name
+    .split(" ")
+    .map((n) => n[0])
+    .join("");
   return (
-    <div className={`w-10 h-10 rounded-full ${colors[colorIndex]} flex items-center justify-center text-sm font-bold text-white`}>
+    <div className="w-10 h-10 rounded-full bg-muted text-foreground flex items-center justify-center text-sm font-bold">
       {initials}
-    </div>
-  );
-}
-
-const firstColumn = testimonials.slice(0, 3);
-const secondColumn = testimonials.slice(3, 6);
-const thirdColumn = testimonials.slice(6, 9);
-
-function TestimonialsColumn({
-  className,
-  items,
-  duration = 10,
-}: {
-  className?: string;
-  items: Testimonial[];
-  duration?: number;
-}) {
-  const reduced = useReducedMotion();
-
-  return (
-    <div className={className}>
-      <motion.div
-        animate={reduced ? {} : { translateY: "-50%" }}
-        transition={
-          reduced
-            ? {}
-            : {
-                duration,
-                repeat: Infinity,
-                ease: "linear",
-                repeatType: "loop",
-              }
-        }
-        className="flex flex-col gap-6 pb-6"
-      >
-        {[...new Array(2)].map((_, index) => (
-          <React.Fragment key={index}>
-            {items.map((testimonial, i) => (
-              <div
-                className="p-8 rounded-2xl border border-outline-variant/20 bg-surface-container max-w-xs w-full"
-                key={i}
-              >
-                <p className="text-on-surface-variant leading-relaxed text-sm">
-                  &ldquo;{testimonial.text}&rdquo;
-                </p>
-                <div className="flex items-center gap-3 mt-6">
-                  <Avatar name={testimonial.name} />
-                  <div className="flex flex-col">
-                    <div className="font-medium text-on-surface tracking-tight leading-5 text-sm">
-                      {testimonial.name}
-                    </div>
-                    <div className="leading-5 text-on-surface-variant tracking-tight text-xs">
-                      {testimonial.role}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </React.Fragment>
-        ))}
-      </motion.div>
     </div>
   );
 }
 
 export function Testimonials() {
   return (
-    <section className="relative py-24 md:py-32 bg-surface overflow-hidden">
-      <div className="absolute inset-0 opacity-20 pointer-events-none" />
-
-      <div className="max-w-screen-2xl mx-auto px-8">
+    <section className="bg-muted py-32">
+      <div className="max-w-6xl mx-auto px-8">
         <FadeIn className="text-center mb-16">
-          <span className="text-primary font-bold uppercase tracking-widest text-xs">
-            Testimonials
-          </span>
-          <h2 className="text-4xl md:text-5xl font-headline font-bold mt-4 text-on-surface">
+          <SectionPill label="Testimonials" />
+          <h2 className="text-4xl md:text-5xl font-semibold text-center mt-4">
             What people say
           </h2>
         </FadeIn>
-      </div>
 
-      <div className="flex justify-center gap-6 max-h-[600px] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]">
-        <FadeIn delay={0}>
-          <TestimonialsColumn items={firstColumn} duration={15} />
-        </FadeIn>
-        <FadeIn delay={0.15} className="hidden md:block">
-          <TestimonialsColumn
-            items={secondColumn}
-            duration={19}
-          />
-        </FadeIn>
-        <FadeIn delay={0.3} className="hidden lg:block">
-          <TestimonialsColumn
-            items={thirdColumn}
-            duration={17}
-          />
-        </FadeIn>
+        <StaggerChildren
+          stagger={0.1}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16"
+        >
+          {testimonials.slice(0, 6).map((testimonial) => (
+            <StaggerItem key={testimonial.name}>
+              <div className="bg-white rounded-2xl p-8 border border-border">
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
+                <div className="flex items-center gap-3 mt-6">
+                  <Avatar name={testimonial.name} />
+                  <div className="flex flex-col">
+                    <div className="font-medium text-foreground text-sm">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-muted-foreground text-xs">
+                      {testimonial.role}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
       </div>
     </section>
   );
